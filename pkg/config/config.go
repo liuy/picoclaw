@@ -246,6 +246,7 @@ type AgentDefaults struct {
 	SubTurn                   SubTurnConfig      `json:"subturn"                                                                                     envPrefix:"PICOCLAW_AGENTS_DEFAULTS_SUBTURN_"`
 	ToolFeedback              ToolFeedbackConfig `json:"tool_feedback,omitempty"`
 	SplitOnMarker             bool               `json:"split_on_marker"                 env:"PICOCLAW_AGENTS_DEFAULTS_SPLIT_ON_MARKER"` // split messages on <|[SPLIT]|> marker
+	ContextManager            string             `json:"context_manager,omitempty"       env:"PICOCLAW_AGENTS_DEFAULTS_CONTEXT_MANAGER"`
 }
 
 const DefaultMaxMediaSize = 20 * 1024 * 1024 // 20 MB

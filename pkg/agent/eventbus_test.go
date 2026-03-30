@@ -424,7 +424,7 @@ func TestAgentLoop_EmitsContextCompressEventOnRetry(t *testing.T) {
 	if !ok {
 		t.Fatalf("expected ContextCompressPayload, got %T", compressEvt.Payload)
 	}
-	if payload.Reason != ContextCompressReasonRetry {
+	if payload.Reason != "llm_retry" {
 		t.Fatalf("expected retry compress reason, got %q", payload.Reason)
 	}
 	if payload.DroppedMessages == 0 {
@@ -472,8 +472,9 @@ func TestAgentLoop_EmitsSessionSummarizeEvent(t *testing.T) {
 	sub := al.SubscribeEvents(16)
 	defer al.UnsubscribeEvents(sub.ID)
 
-	turnScope := al.newTurnEventScope(defaultAgent.ID, "session-1")
-	al.summarizeSession(defaultAgent, "session-1", turnScope)
+	// Use legacyContextManager's summarizeSession via contextManager interface
+	lcm := &legacyContextManager{al: al}
+	lcm.summarizeSession(defaultAgent, "session-1")
 
 	events := collectEventStream(sub.C)
 	summaryEvt, ok := findEvent(events, EventKindSessionSummarize)

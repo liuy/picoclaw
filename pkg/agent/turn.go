@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/sipeed/picoclaw/pkg/bus"
+	"github.com/sipeed/picoclaw/pkg/logger"
 	"github.com/sipeed/picoclaw/pkg/providers"
 	"github.com/sipeed/picoclaw/pkg/session"
 	"github.com/sipeed/picoclaw/pkg/tools"
@@ -321,6 +322,23 @@ func (ts *turnState) recordPersistedMessage(msg providers.Message) {
 	ts.mu.Lock()
 	defer ts.mu.Unlock()
 	ts.persistedMessages = append(ts.persistedMessages, msg)
+}
+
+// ingestMessage calls the ContextManager's Ingest method for a persisted message.
+// Errors are logged but never block the turn.
+func (ts *turnState) ingestMessage(ctx context.Context, al *AgentLoop, msg providers.Message) {
+	if al.contextManager == nil {
+		return
+	}
+	if err := al.contextManager.Ingest(ctx, &IngestRequest{
+		SessionKey: ts.sessionKey,
+		Message:    msg,
+	}); err != nil {
+		logger.WarnCF("agent", "Context manager ingest failed", map[string]any{
+			"session_key": ts.sessionKey,
+			"error":       err.Error(),
+		})
+	}
 }
 
 func (ts *turnState) refreshRestorePointFromSession(agent *AgentInstance) {
