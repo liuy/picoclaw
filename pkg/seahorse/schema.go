@@ -7,8 +7,26 @@ import (
 	"github.com/sipeed/picoclaw/pkg/logger"
 )
 
+// SQL statements for FTS5 tables with trigram tokenizer.
+const (
+	sqlCreateSummariesFTS = `CREATE VIRTUAL TABLE IF NOT EXISTS summaries_fts USING fts5(
+		summary_id,
+		content,
+		tokenize="trigram"
+	)`
+	sqlCreateMessagesFTS = `CREATE VIRTUAL TABLE IF NOT EXISTS messages_fts USING fts5(
+		message_id,
+		content,
+		tokenize="trigram"
+	)`
+	sqlCheckFTS5Available    = `CREATE VIRTUAL TABLE IF NOT EXISTS _fts5_check USING fts5(content)`
+	sqlCheckTrigramAvailable = `CREATE VIRTUAL TABLE IF NOT EXISTS _trigram_check USING fts5(content, tokenize="trigram")`
+	sqlDropFTS5Check         = `DROP TABLE IF EXISTS _fts5_check`
+	sqlDropTrigramCheck      = `DROP TABLE IF EXISTS _trigram_check`
+)
+
 // runSchema creates or upgrades the database schema.
-// All migrations are idempotent (safe to run multiple times).
+// All schemas are idempotent (safe to run multiple times).
 func runSchema(db *sql.DB) error {
 	// Check FTS5 support before creating tables
 	if err := checkFTS5Support(db); err != nil {
@@ -86,18 +104,10 @@ func runSchema(db *sql.DB) error {
 		)`,
 
 		// FTS5 virtual table with trigram tokenizer for CJK support
-		`CREATE VIRTUAL TABLE IF NOT EXISTS summaries_fts USING fts5(
-			summary_id,
-			content,
-			tokenize="trigram"
-		)`,
+		sqlCreateSummariesFTS,
 
 		// FTS5 virtual table for message search with trigram tokenizer
-		`CREATE VIRTUAL TABLE IF NOT EXISTS messages_fts USING fts5(
-			message_id,
-			content,
-			tokenize="trigram"
-		)`,
+		sqlCreateMessagesFTS,
 
 		// Indexes for common query patterns
 		`CREATE INDEX IF NOT EXISTS idx_messages_conversation ON messages(conversation_id)`,
@@ -150,25 +160,25 @@ func checkFTS5Support(db *sql.DB) error {
 	if err != nil {
 		// sqlite_compileoption_used might not exist in older SQLite
 		// Try a different approach: create a test FTS5 table
-		_, testErr := db.Exec(`CREATE TEMP TABLE IF NOT EXISTS _fts5_test USING fts5(content)`)
+		_, testErr := db.Exec(sqlCheckFTS5Available)
 		if testErr != nil {
 			return fmt.Errorf("SQLite FTS5 not available: %w (required for full-text search)", testErr)
 		}
-		db.Exec(`DROP TABLE IF EXISTS _fts5_test`)
+		db.Exec(sqlDropFTS5Check)
 	} else if fts5Enabled == 0 {
 		return fmt.Errorf("SQLite was compiled without FTS5 support (required for full-text search)")
 	}
 
 	// Check if trigram tokenizer is available by trying to create a test table
 	// Not all SQLite builds include the trigram tokenizer
-	_, err = db.Exec(`CREATE TEMP TABLE IF NOT EXISTS _trigram_test USING fts5(content, tokenize="trigram")`)
+	_, err = db.Exec(sqlCheckTrigramAvailable)
 	if err != nil {
 		logger.WarnCF("seahorse", "SQLite trigram tokenizer not available, CJK search may be limited",
 			map[string]any{"error": err.Error()})
 		// Trigram is not strictly required, just better for CJK
 		// Don't return error, just log warning
 	} else {
-		db.Exec(`DROP TABLE IF EXISTS _trigram_test`)
+		db.Exec(sqlDropTrigramCheck)
 	}
 
 	return nil

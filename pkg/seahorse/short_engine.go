@@ -46,11 +46,8 @@ type AssembleInput struct {
 
 // AssembleResult contains assembled context.
 type AssembleResult struct {
-	Messages             []Message `json:"messages"`
-	Summaries            []Summary `json:"summaries"`
-	TokenCount           int       `json:"tokenCount"`
-	SourceIDs            []string  `json:"sourceIds"`
-	SystemPromptAddition string    `json:"systemPromptAddition,omitempty"`
+	Messages []Message `json:"messages"`
+	Summary  string    `json:"summary"` // formatted XML summaries + system prompt addition
 }
 
 const numSessionShards = 256

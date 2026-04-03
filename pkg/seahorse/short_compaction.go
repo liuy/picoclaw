@@ -643,6 +643,12 @@ func (e *CompactionEngine) generateCondensedSummary(ctx context.Context, summari
 func (e *CompactionEngine) runCondensedLoop(ctx context.Context, convID int64) {
 	var prevTokens int
 	for {
+		select {
+		case <-ctx.Done():
+			return
+		default:
+		}
+
 		tokensBefore, err := e.store.GetContextTokenCount(ctx, convID)
 		if err != nil {
 			logger.ErrorCF("seahorse", "condensed: get tokens", map[string]any{"error": err.Error()})

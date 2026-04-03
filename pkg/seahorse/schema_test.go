@@ -181,3 +181,31 @@ func TestMigrationSummaryParentsPK(t *testing.T) {
 		t.Error("expected unique constraint violation for duplicate summary_parents link")
 	}
 }
+
+func TestFTS5SQLConstants(t *testing.T) {
+	db := openTestDB(t)
+
+	// Verify FTS5 check SQL executes without error
+	_, err := db.Exec(sqlCheckFTS5Available)
+	if err != nil {
+		t.Errorf("sqlCheckFTS5Available failed: %v", err)
+	}
+
+	// Verify trigram check SQL executes without error
+	_, err = db.Exec(sqlCheckTrigramAvailable)
+	if err != nil {
+		t.Errorf("sqlCheckTrigramAvailable failed: %v", err)
+	}
+
+	// Verify summaries_fts SQL executes without error
+	_, err = db.Exec(sqlCreateSummariesFTS)
+	if err != nil {
+		t.Errorf("sqlCreateSummariesFTS failed: %v", err)
+	}
+
+	// Verify messages_fts SQL executes without error
+	_, err = db.Exec(sqlCreateMessagesFTS)
+	if err != nil {
+		t.Errorf("sqlCreateMessagesFTS failed: %v", err)
+	}
+}

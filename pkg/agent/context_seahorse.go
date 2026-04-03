@@ -4,7 +4,6 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"strings"
 
 	"github.com/sipeed/picoclaw/pkg/logger"
 	"github.com/sipeed/picoclaw/pkg/providers"
@@ -112,42 +111,13 @@ func (m *seahorseContextManager) Assemble(ctx context.Context, req *AssembleRequ
 		return nil, fmt.Errorf("seahorse assemble: %w", err)
 	}
 
-	// Convert to provider messages
 	history := seahorseToProviderMessages(result)
 
-	// Format ALL summaries as XML with metadata (depth, kind, etc.)
-	// This allows the LLM to understand the hierarchical structure
-	var summaryParts []string
-	for _, sum := range result.Summaries {
-		if sum.Content != "" {
-			// Get parent IDs for condensed summaries
-			parentIDs := getParentSummaryIDs(ctx, m.engine.GetRetrieval().Store(), sum.SummaryID)
-			xml := seahorse.FormatSummaryXML(&sum, parentIDs)
-			summaryParts = append(summaryParts, xml)
-		}
-	}
-	var summary string
-	if len(summaryParts) > 0 {
-		summary = strings.Join(summaryParts, "\n\n")
-	}
-
+	// Summary is already formatted as XML with system prompt addition by assembler
 	return &AssembleResponse{
 		History: history,
-		Summary: summary,
+		Summary: result.Summary,
 	}, nil
-}
-
-// getParentSummaryIDs retrieves parent summary IDs for a summary.
-func getParentSummaryIDs(ctx context.Context, store *seahorse.Store, summaryID string) []string {
-	parents, err := store.GetSummaryParents(ctx, summaryID)
-	if err != nil {
-		return nil
-	}
-	ids := make([]string, len(parents))
-	for i, p := range parents {
-		ids[i] = p.SummaryID
-	}
-	return ids
 }
 
 // Compact compresses conversation history via seahorse summarization.
@@ -212,7 +182,7 @@ func providerToSeahorseMessage(msg protocoltypes.Message) seahorse.Message {
 		Role:             msg.Role,
 		Content:          msg.Content,
 		ReasoningContent: msg.ReasoningContent,
-		TokenCount:       tokenizer.EstimateMessageTokens(providers.Message{Content: msg.Content}),
+		TokenCount:       tokenizer.EstimateMessageTokens(msg),
 	}
 
 	// Convert ToolCalls → MessageParts
@@ -249,8 +219,6 @@ func providerToSeahorseMessage(msg protocoltypes.Message) seahorse.Message {
 }
 
 // seahorseToProviderMessages converts a seahorse.AssembleResult to []providers.Message.
-// NOTE: Summaries are already included in Messages as XML-formatted messages by the assembler.
-// We do NOT convert Summaries separately to avoid double injection.
 func seahorseToProviderMessages(result *seahorse.AssembleResult) []protocoltypes.Message {
 	messages := make([]protocoltypes.Message, 0, len(result.Messages))
 
@@ -276,6 +244,9 @@ func seahorseToProviderMessages(result *seahorse.AssembleResult) []protocoltypes
 			}
 			if part.Type == "tool_result" {
 				pm.ToolCallID = part.ToolCallID
+				if pm.Content == "" && part.Text != "" {
+					pm.Content = part.Text
+				}
 			}
 			if part.Type == "media" && part.MediaURI != "" {
 				pm.Media = append(pm.Media, part.MediaURI)

@@ -134,24 +134,6 @@ func (a *Assembler) Assemble(ctx context.Context, convID int64, input AssembleIn
 			if r.summary.Kind == SummaryKindCondensed {
 				condensedCount++
 			}
-			// Load parent IDs for XML formatting
-			parentSummaries, err := a.store.GetSummaryParents(ctx, r.summary.SummaryID)
-			if err != nil {
-				logger.WarnCF("seahorse", "assemble: get summary parents", map[string]any{
-					"summary_id": r.summary.SummaryID,
-					"error":      err.Error(),
-				})
-			}
-			var parentIDs []string
-			for _, ps := range parentSummaries {
-				parentIDs = append(parentIDs, ps.SummaryID)
-			}
-			xmlMsg := FormatSummaryXML(r.summary, parentIDs)
-			messages = append(messages, Message{
-				Role:       "system",
-				Content:    xmlMsg,
-				TokenCount: r.tokenCount,
-			})
 		}
 	}
 
@@ -168,12 +150,37 @@ func (a *Assembler) Assemble(ctx context.Context, convID int64, input AssembleIn
 		}
 	}
 
+	// Build Summary field: all XML summaries + system prompt addition
+	var summaryParts []string
+	for _, sum := range summaries {
+		if sum.Content == "" {
+			continue
+		}
+		// Load parent IDs for XML formatting
+		parentSummaries, err := a.store.GetSummaryParents(ctx, sum.SummaryID)
+		if err != nil {
+			logger.WarnCF("seahorse", "assemble: get summary parents", map[string]any{
+				"summary_id": sum.SummaryID,
+				"error":      err.Error(),
+			})
+		}
+		var parentIDs []string
+		for _, ps := range parentSummaries {
+			parentIDs = append(parentIDs, ps.SummaryID)
+		}
+		summaryParts = append(summaryParts, FormatSummaryXML(&sum, parentIDs))
+	}
+	summary := strings.Join(summaryParts, "\n\n")
+	if systemPromptAddition != "" {
+		if summary != "" {
+			summary += "\n\n"
+		}
+		summary += systemPromptAddition
+	}
+
 	return &AssembleResult{
-		Messages:             messages,
-		Summaries:            summaries,
-		TokenCount:           totalTokens,
-		SourceIDs:            sourceIDs,
-		SystemPromptAddition: systemPromptAddition,
+		Messages: messages,
+		Summary:  summary,
 	}, nil
 }
 

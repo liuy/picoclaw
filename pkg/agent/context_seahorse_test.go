@@ -221,16 +221,9 @@ func TestSeahorseToProviderMessages(t *testing.T) {
 		Content:    "hello",
 		TokenCount: 5,
 	}
-	summary := seahorse.Summary{
-		SummaryID:  "sum_test",
-		Kind:       seahorse.SummaryKindLeaf,
-		Content:    "test summary content",
-		TokenCount: 50,
-	}
 
 	result := seahorseToProviderMessages(&seahorse.AssembleResult{
-		Summaries: []seahorse.Summary{summary}, // Should be ignored
-		Messages:  []seahorse.Message{summaryMsg, rawMsg},
+		Messages: []seahorse.Message{summaryMsg, rawMsg},
 	})
 
 	// Should have exactly 2 messages (from Messages slice only)
@@ -516,7 +509,8 @@ func TestSeahorseCompactRetryUsesCompactUntilUnder(t *testing.T) {
 	if result == nil {
 		t.Fatal("expected non-nil assemble result")
 	}
-	_ = result.TokenCount // compaction attempted — no assertion on exact count since no LLM
+	// Compaction attempted — no assertion on exact count since no LLM
+	_ = result.Summary
 }
 
 // TestSeahorseRealLoopNoDuplicateMessages tests the real-world scenario:
@@ -693,42 +687,182 @@ func TestSeahorseAssembleReturnsAllSummaries(t *testing.T) {
 		t.Fatalf("engine.Assemble: %v", err)
 	}
 
-	t.Logf("Seahorse returned %d summaries", len(result.Summaries))
-	for i, sum := range result.Summaries {
-		contentPreview := sum.Content
-		if len(contentPreview) > 50 {
-			contentPreview = contentPreview[:50] + "..."
+	t.Logf("Seahorse returned Summary with %d chars", len(result.Summary))
+
+	// The Summary field should contain XML summaries with metadata (depth, kind)
+	// The assembler generates this from the Summaries list
+	if len(resp.Summary) > 0 {
+		// Should contain XML tag
+		if !strings.Contains(resp.Summary, "<summary") {
+			t.Error("Summary field should contain <summary XML tags")
 		}
-		t.Logf("  summary[%d]: id=%s depth=%d tokens=%d content=%s",
-			i, sum.SummaryID, sum.Depth, sum.TokenCount, contentPreview)
+		// Should contain depth attribute
+		if !strings.Contains(resp.Summary, `depth="`) {
+			t.Error("Summary field should contain depth attribute")
+		}
+		// Should contain kind attribute
+		if !strings.Contains(resp.Summary, `kind="`) {
+			t.Error("Summary field should contain kind attribute")
+		}
+	}
+}
+
+func TestProviderToSeahorseMessageTokenCountIncludesAllFields(t *testing.T) {
+	// Message with only Content
+	msgContentOnly := protocoltypes.Message{
+		Role:    "assistant",
+		Content: "This is a simple response with some text content.",
+	}
+	resultContentOnly := providerToSeahorseMessage(msgContentOnly)
+
+	// Message with Content + ToolCalls
+	msgWithToolCalls := protocoltypes.Message{
+		Role:    "assistant",
+		Content: "This is a simple response with some text content.",
+		ToolCalls: []protocoltypes.ToolCall{
+			{
+				ID: "tc_123",
+				Function: &protocoltypes.FunctionCall{
+					Name:      "read_file",
+					Arguments: `{"path":"/home/user/document.txt"}`,
+				},
+			},
+		},
+	}
+	resultWithToolCalls := providerToSeahorseMessage(msgWithToolCalls)
+
+	if resultWithToolCalls.TokenCount <= resultContentOnly.TokenCount {
+		t.Errorf("TokenCount with ToolCalls = %d, should be > Content-only = %d",
+			resultWithToolCalls.TokenCount, resultContentOnly.TokenCount)
 	}
 
-	// The Summary field in AssembleResponse should contain ALL summaries as XML
-	// with metadata (depth, kind) so the LLM can understand the hierarchy
-	if len(result.Summaries) > 1 {
-		// Check if Summary field contains all summaries
-		if resp.Summary == "" {
-			t.Error("Summary field is empty but there are multiple summaries")
-		}
+	// Message with ToolCallID
+	msgWithToolResult := protocoltypes.Message{
+		Role:       "tool",
+		Content:    "This is a simple response with some text content.",
+		ToolCallID: "tc_456",
+	}
+	resultWithToolResult := providerToSeahorseMessage(msgWithToolResult)
 
-		// Each summary should be wrapped in XML with depth and kind attributes
-		for i, sum := range result.Summaries {
-			// Should contain XML tag with metadata
-			expectedAttr := fmt.Sprintf(`depth="%d"`, sum.Depth)
-			if !strings.Contains(resp.Summary, expectedAttr) {
-				t.Errorf("Summary[%d] missing depth attribute %q in XML", i, expectedAttr)
-			}
-			expectedKind := fmt.Sprintf(`kind="%s"`, sum.Kind)
-			if !strings.Contains(resp.Summary, expectedKind) {
-				t.Errorf("Summary[%d] missing kind attribute %q in XML", i, expectedKind)
-			}
-			// Content should be present
-			if sum.Content != "" && len(sum.Content) > 20 {
-				prefix := sum.Content[:20]
-				if !strings.Contains(resp.Summary, prefix) {
-					t.Errorf("Summary[%d] content (prefix %q) not found in Summary", i, prefix)
-				}
-			}
+	if resultWithToolResult.TokenCount <= resultContentOnly.TokenCount {
+		t.Errorf("TokenCount with ToolCallID = %d, should be > Content-only = %d",
+			resultWithToolResult.TokenCount, resultContentOnly.TokenCount)
+	}
+
+	// Message with Media
+	msgWithMedia := protocoltypes.Message{
+		Role:    "user",
+		Content: "This is a simple response with some text content.",
+		Media:   []string{"data:image/png;base64,abc123"},
+	}
+	resultWithMedia := providerToSeahorseMessage(msgWithMedia)
+
+	if resultWithMedia.TokenCount <= resultContentOnly.TokenCount {
+		t.Errorf("TokenCount with Media = %d, should be > Content-only = %d",
+			resultWithMedia.TokenCount, resultContentOnly.TokenCount)
+	}
+}
+
+func TestSeahorseToProviderMessagesRebuildsContentFromParts(t *testing.T) {
+	msg := seahorse.Message{
+		Role:       "tool",
+		Content:    "",
+		TokenCount: 50,
+		Parts: []seahorse.MessagePart{
+			{
+				Type:       "tool_result",
+				ToolCallID: "tc_999",
+				Text:       "This is the actual tool output that should be in Content",
+			},
+		},
+	}
+
+	result := seahorseToProviderMessages(&seahorse.AssembleResult{
+		Messages: []seahorse.Message{msg},
+	})
+
+	if len(result) != 1 {
+		t.Fatalf("expected 1 message, got %d", len(result))
+	}
+
+	if result[0].Content == "" {
+		t.Error("Content is empty - tool_result text was not rebuilt into Content")
+	}
+	if result[0].Content != "This is the actual tool output that should be in Content" {
+		t.Errorf("Content = %q, want tool output text from Parts", result[0].Content)
+	}
+}
+
+func TestSeahorseAssembleSummaryNotInMessages(t *testing.T) {
+	engine, err := seahorse.NewEngine(seahorse.Config{
+		DBPath: t.TempDir() + "/test.db",
+	}, nil)
+	if err != nil {
+		t.Fatalf("NewEngine: %v", err)
+	}
+	defer engine.Close()
+
+	ctx := context.Background()
+	mgr := &seahorseContextManager{engine: engine}
+	sessionKey := "test-no-dup-summary"
+
+	// Get the store to directly create a summary
+	store := engine.GetRetrieval().Store()
+	conv, err := store.GetOrCreateConversation(ctx, sessionKey)
+	if err != nil {
+		t.Fatalf("GetOrCreateConversation: %v", err)
+	}
+
+	// Ingest some messages first
+	for i := 0; i < 10; i++ {
+		_ = mgr.Ingest(ctx, &IngestRequest{
+			SessionKey: sessionKey,
+			Message:    protocoltypes.Message{Role: "user", Content: fmt.Sprintf("Message %d", i)},
+		})
+	}
+
+	// Create a summary
+	input := seahorse.CreateSummaryInput{
+		ConversationID: conv.ConversationID,
+		Kind:           seahorse.SummaryKindLeaf,
+		Depth:          0,
+		Content:        "This is a test summary about the conversation",
+		TokenCount:     50,
+	}
+	summary, err := store.CreateSummary(ctx, input)
+	if err != nil {
+		t.Fatalf("CreateSummary: %v", err)
+	}
+	err = store.AppendContextSummary(ctx, conv.ConversationID, summary.SummaryID)
+	if err != nil {
+		t.Fatalf("AppendContextSummary: %v", err)
+	}
+
+	// Assemble
+	resp, err := mgr.Assemble(ctx, &AssembleRequest{
+		SessionKey: sessionKey,
+		Budget:     50000,
+		MaxTokens:  4096,
+	})
+	if err != nil {
+		t.Fatalf("Assemble: %v", err)
+	}
+
+	// Count how many times the summary content appears
+	summaryContent := "This is a test summary"
+	countInHistory := 0
+	for _, msg := range resp.History {
+		if strings.Contains(msg.Content, summaryContent) {
+			countInHistory++
 		}
+	}
+
+	if countInHistory > 0 {
+		t.Errorf("Summary content appears %d times in History - should be 0", countInHistory)
+	}
+
+	// Summary should appear in Summary field
+	if !strings.Contains(resp.Summary, summaryContent) {
+		t.Error("Summary content should appear in response.Summary field")
 	}
 }

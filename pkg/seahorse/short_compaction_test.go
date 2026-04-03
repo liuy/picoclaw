@@ -28,7 +28,11 @@ func waitForCondensed(ce *CompactionEngine, convID int64, timeout time.Duration)
 
 func newTestCompactionEngine(t *testing.T) (*CompactionEngine, *Store, int64) {
 	t.Helper()
-	s := openTestStore(t)
+	db := openTestDB(t)
+	if err := runSchema(db); err != nil {
+		t.Fatalf("migration: %v", err)
+	}
+	s := &Store{db: db}
 	ctx := context.Background()
 	conv, _ := s.GetOrCreateConversation(ctx, "test:compact")
 	shutdownCtx, shutdownCancel := context.WithCancel(context.Background())
@@ -40,7 +44,8 @@ func newTestCompactionEngine(t *testing.T) (*CompactionEngine, *Store, int64) {
 		shutdownCancel: shutdownCancel,
 	}
 	convID := conv.ConversationID
-	// Ensure async goroutines are stopped before database is closed
+	// Ensure async goroutines are stopped before database is closed.
+	// Register cleanup here (after openTestDB) so it runs BEFORE openTestDB's db.Close().
 	t.Cleanup(func() {
 		shutdownCancel()
 		// Wait for async condensed goroutine to finish (poll condensing map)
@@ -852,7 +857,7 @@ func TestCompactAsyncDedup(t *testing.T) {
 	ce, cancel := newTestCompactionEngineWithStore(s, slowComplete)
 	t.Cleanup(func() {
 		cancel()
-		time.Sleep(100 * time.Millisecond)
+		waitForCondensed(ce, convID, 2*time.Second)
 	})
 
 	// Create conditions for condensed compaction

@@ -1131,13 +1131,13 @@ func (s *Store) scanSearchResults(rows *sql.Rows, withRank bool) ([]SearchResult
 		var kind string
 		if withRank {
 			// FTS5 mode: no TotalCount in query (set by caller after COUNT)
-			if err := rows.Scan(&r.SummaryID, &r.ConversationID, &kind, &r.Snippet, &createdAt, &r.Rank); err != nil {
+			if err := rows.Scan(&r.SummaryID, &r.ConversationID, &kind, &r.Content, &createdAt, &r.Rank); err != nil {
 				return nil, err
 			}
 		} else {
 			// LIKE mode: TotalCount from window function
 			if err := rows.Scan(&r.SummaryID, &r.ConversationID, &kind,
-				&r.Snippet, &createdAt, &r.TotalCount); err != nil {
+				&r.Content, &createdAt, &r.TotalCount); err != nil {
 				return nil, err
 			}
 		}

@@ -1106,3 +1106,38 @@ func TestSearchMessagesWithTimeFilter(t *testing.T) {
 		t.Errorf("Since=1h-future: expected 0 results, got %d", len(results))
 	}
 }
+
+func TestStoreSearchSummariesReturnsContent(t *testing.T) {
+	s := openTestStore(t)
+	ctx := context.Background()
+
+	conv, _ := s.GetOrCreateConversation(ctx, "agent:test")
+
+	// Create a summary with known content
+	s.CreateSummary(ctx, CreateSummaryInput{
+		ConversationID: conv.ConversationID,
+		Kind:           SummaryKindLeaf,
+		Depth:          0,
+		Content:        "This is the summary content for testing",
+		TokenCount:     10,
+	})
+
+	// Search should return the full content, not empty
+	results, err := s.SearchSummaries(ctx, SearchInput{
+		Pattern:        "summary content",
+		Mode:           "like",
+		ConversationID: conv.ConversationID,
+	})
+	if err != nil {
+		t.Fatalf("SearchSummaries: %v", err)
+	}
+	if len(results) != 1 {
+		t.Fatalf("expected 1 result, got %d", len(results))
+	}
+	if results[0].Content == "" {
+		t.Error("SearchResult.Content is empty, want full summary content")
+	}
+	if results[0].Content != "This is the summary content for testing" {
+		t.Errorf("SearchResult.Content = %q, want %q", results[0].Content, "This is the summary content for testing")
+	}
+}

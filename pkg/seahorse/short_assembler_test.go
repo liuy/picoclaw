@@ -35,11 +35,8 @@ func TestAssemblerAssembleEmpty(t *testing.T) {
 	if len(result.Messages) != 0 {
 		t.Errorf("Messages = %d, want 0", len(result.Messages))
 	}
-	if len(result.Summaries) != 0 {
-		t.Errorf("Summaries = %d, want 0", len(result.Summaries))
-	}
-	if result.TokenCount != 0 {
-		t.Errorf("TokenCount = %d, want 0", result.TokenCount)
+	if result.Summary != "" {
+		t.Errorf("Summary = %q, want empty", result.Summary)
 	}
 }
 
@@ -72,8 +69,9 @@ func TestAssemblerAssembleMessagesOnly(t *testing.T) {
 	if result.Messages[1].Content != "world" {
 		t.Errorf("Messages[1].Content = %q, want 'world'", result.Messages[1].Content)
 	}
-	if result.TokenCount != 10 {
-		t.Errorf("TokenCount = %d, want 10", result.TokenCount)
+	// No summaries, so Summary should be empty
+	if result.Summary != "" {
+		t.Errorf("Summary = %q, want empty", result.Summary)
 	}
 }
 
@@ -107,15 +105,19 @@ func TestAssemblerAssembleWithSummary(t *testing.T) {
 		t.Fatalf("Assemble: %v", err)
 	}
 
-	if len(result.Summaries) != 1 {
-		t.Fatalf("Summaries = %d, want 1", len(result.Summaries))
+	// Messages = 2 raw messages (summaries are in Summary field, not Messages)
+	if len(result.Messages) != 2 {
+		t.Errorf("Messages = %d, want 2 (raw messages only)", len(result.Messages))
 	}
-	if result.Summaries[0].SummaryID != summary.SummaryID {
-		t.Errorf("Summary ID = %q, want %q", result.Summaries[0].SummaryID, summary.SummaryID)
+	// Summary should contain XML with summary content
+	if result.Summary == "" {
+		t.Error("Summary should not be empty when summary exists")
 	}
-	// Messages = 1 summary-as-user-msg + 2 raw messages = 3
-	if len(result.Messages) != 3 {
-		t.Errorf("Messages = %d, want 3 (1 summary + 2 raw)", len(result.Messages))
+	if !strings.Contains(result.Summary, summary.Content) {
+		t.Errorf("Summary should contain summary content %q", summary.Content)
+	}
+	if !strings.Contains(result.Summary, "<summary") {
+		t.Error("Summary should contain <summary XML tag")
 	}
 }
 
@@ -220,20 +222,19 @@ func TestAssemblerSummaryXMLFormat(t *testing.T) {
 		t.Fatalf("Assemble: %v", err)
 	}
 
-	// Summary should be formatted as XML system message
-	if len(result.Messages) < 1 {
-		t.Fatal("expected at least 1 message (summary formatted as message)")
+	// Messages should only contain raw messages (no XML summary in Messages)
+	if len(result.Messages) != 1 {
+		t.Errorf("Messages = %d, want 1 (raw message only)", len(result.Messages))
 	}
-	summaryMsg := result.Messages[0]
-	if summaryMsg.Role != "system" {
-		t.Errorf("summary message role = %q, want 'system'", summaryMsg.Role)
+	// Summary should contain XML with summary content
+	if result.Summary == "" {
+		t.Fatal("Summary should not be empty")
 	}
-	// Should contain XML summary tags
-	if !contains(summaryMsg.Content, "<summary") {
-		t.Errorf("summary message missing <summary tag: %q", summaryMsg.Content)
+	if !contains(result.Summary, "<summary") {
+		t.Errorf("Summary missing <summary tag: %q", result.Summary)
 	}
-	if !contains(summaryMsg.Content, summary.SummaryID) {
-		t.Errorf("summary message missing summary ID: %q", summaryMsg.Content)
+	if !contains(result.Summary, summary.SummaryID) {
+		t.Errorf("Summary missing summary ID: %q", result.Summary)
 	}
 }
 
@@ -261,48 +262,21 @@ func TestAssemblerSummaryXMLEscaping(t *testing.T) {
 		t.Fatalf("Assemble: %v", err)
 	}
 
-	if len(result.Messages) < 1 {
-		t.Fatal("expected at least 1 message")
+	// Summary field should contain XML with escaped special characters
+	if result.Summary == "" {
+		t.Fatal("Summary should not be empty")
 	}
-
-	// The XML should be well-formed - no unescaped special characters
-	xmlContent := result.Messages[0].Content
 
 	// Check that special characters are escaped
-	if strings.Contains(xmlContent, "<tags>") {
-		t.Errorf("BUG: unescaped < in summary content: %q", xmlContent)
+	if strings.Contains(result.Summary, "<tags>") {
+		t.Errorf("BUG: unescaped < in summary content: %q", result.Summary)
 	}
-	if strings.Contains(xmlContent, `"hello"`) {
-		t.Errorf("BUG: unescaped \" in summary content: %q", xmlContent)
+	if strings.Contains(result.Summary, `"hello"`) {
+		t.Errorf("BUG: unescaped \" in summary content: %q", result.Summary)
 	}
 	// & should be escaped as &amp;
-	if strings.Contains(xmlContent, " & ") {
-		t.Errorf("BUG: unescaped & in summary content: %q", xmlContent)
-	}
-}
-
-func TestAssemblerSourceIDs(t *testing.T) {
-	s, convID := setupAssemblerStore(t)
-	ctx := context.Background()
-
-	// Create messages
-	msg1, _ := s.AddMessage(ctx, convID, "user", "hello", 5)
-	msg2, _ := s.AddMessage(ctx, convID, "assistant", "world", 5)
-
-	s.UpsertContextItems(ctx, convID, []ContextItem{
-		{Ordinal: 100, ItemType: "message", MessageID: msg1.ID, TokenCount: 5},
-		{Ordinal: 200, ItemType: "message", MessageID: msg2.ID, TokenCount: 5},
-	})
-
-	a := &Assembler{store: s, config: Config{}}
-	result, err := a.Assemble(ctx, convID, AssembleInput{Budget: 100})
-	if err != nil {
-		t.Fatalf("Assemble: %v", err)
-	}
-
-	// SourceIDs should contain message IDs
-	if len(result.SourceIDs) != 2 {
-		t.Errorf("SourceIDs = %d, want 2", len(result.SourceIDs))
+	if strings.Contains(result.Summary, " & ") {
+		t.Errorf("BUG: unescaped & in summary content: %q", result.Summary)
 	}
 }
 
@@ -340,11 +314,11 @@ func TestAssemblerSummaryXMLWithParents(t *testing.T) {
 		t.Fatalf("Assemble: %v", err)
 	}
 
-	// Find the summary message (first message, formatted as XML)
-	if len(result.Messages) < 1 {
-		t.Fatal("expected at least 1 message")
+	// Summary field should contain XML with parent information
+	if result.Summary == "" {
+		t.Fatal("Summary should not be empty")
 	}
-	xmlContent := result.Messages[0].Content
+	xmlContent := result.Summary
 
 	// Should contain <parents> section with parent ID
 	if !contains(xmlContent, "<parents>") {
@@ -388,10 +362,10 @@ func TestAssemblerSummaryXMLIncludesDescendantCount(t *testing.T) {
 		t.Fatalf("Assemble: %v", err)
 	}
 
-	if len(result.Messages) < 1 {
-		t.Fatal("expected at least 1 message")
+	if result.Summary == "" {
+		t.Fatal("Summary should not be empty")
 	}
-	xmlContent := result.Messages[0].Content
+	xmlContent := result.Summary
 
 	// Should contain descendant_count="8"
 	if !contains(xmlContent, `descendant_count="8"`) {
@@ -425,7 +399,10 @@ func TestAssemblerLeafSummaryNoParents(t *testing.T) {
 		t.Fatalf("Assemble: %v", err)
 	}
 
-	xmlContent := result.Messages[0].Content
+	if result.Summary == "" {
+		t.Fatal("Summary should not be empty")
+	}
+	xmlContent := result.Summary
 
 	// Leaf summary should NOT have <parents> section
 	if contains(xmlContent, "<parents>") {
@@ -472,9 +449,13 @@ func TestAssemblerDepthAwarePrompt(t *testing.T) {
 		t.Fatalf("Assemble: %v", err)
 	}
 
-	// Should have a depth-aware prompt
-	if result.SystemPromptAddition == "" {
-		t.Error("expected non-empty SystemPromptAddition when depth >= 2")
+	// Should have a depth-aware prompt in Summary field
+	if result.Summary == "" {
+		t.Error("expected non-empty Summary when depth >= 2")
+	}
+	// SystemPromptAddition is embedded in Summary field
+	if !strings.Contains(result.Summary, "multi-level summarization") {
+		t.Error("Summary should contain system prompt addition about multi-level summarization")
 	}
 }
 
