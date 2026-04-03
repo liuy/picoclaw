@@ -1857,6 +1857,7 @@ turnLoop:
 				if !ts.opts.NoHistory {
 					ts.agent.Sessions.AddFullMessage(ts.sessionKey, pm)
 					ts.recordPersistedMessage(pm)
+					ts.ingestMessage(turnCtx, al, pm)
 				}
 				logger.InfoCF("agent", "Injected steering message into context",
 					map[string]any{

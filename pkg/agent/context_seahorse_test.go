@@ -866,3 +866,107 @@ func TestSeahorseAssembleSummaryNotInMessages(t *testing.T) {
 		t.Error("Summary content should appear in response.Summary field")
 	}
 }
+
+// TestSeahorseSteeringMessageIngested verifies that steering messages are ingested
+// into seahorse SQLite, not just session JSONL.
+func TestSeahorseSteeringMessageIngested(t *testing.T) {
+	cfg := &config.Config{
+		Agents: config.AgentsConfig{
+			Defaults: config.AgentDefaults{
+				Workspace:         t.TempDir(),
+				ModelName:         "test-model",
+				MaxTokens:         4096,
+				MaxToolIterations: 10,
+				ContextManager:    "seahorse",
+			},
+		},
+	}
+
+	msgBus := bus.NewMessageBus()
+	mockProvider := &simpleMockProvider{response: "I received your message."}
+	al := NewAgentLoop(cfg, msgBus, mockProvider)
+	defaultAgent := al.registry.GetDefaultAgent()
+	if defaultAgent == nil {
+		t.Fatal("expected default agent")
+	}
+
+	ctx := context.Background()
+	sessionKey := "test-steering-ingest"
+
+	// First turn: establish conversation
+	_, err := al.runAgentLoop(ctx, defaultAgent, processOptions{
+		SessionKey:      sessionKey,
+		Channel:         "cli",
+		ChatID:          "direct",
+		UserMessage:     "hello",
+		DefaultResponse: defaultResponse,
+		EnableSummary:   false,
+		SendResponse:    false,
+	})
+	if err != nil {
+		t.Fatalf("first runAgentLoop failed: %v", err)
+	}
+
+	// Inject a steering message
+	steerErr := al.InjectSteering(providers.Message{
+		Role:    "user",
+		Content: "steering message content",
+	})
+	if steerErr != nil {
+		t.Fatalf("InjectSteering failed: %v", steerErr)
+	}
+
+	// Second turn: should process steering message
+	_, err = al.runAgentLoop(ctx, defaultAgent, processOptions{
+		SessionKey:      sessionKey,
+		Channel:         "cli",
+		ChatID:          "direct",
+		UserMessage:     "continue",
+		DefaultResponse: defaultResponse,
+		EnableSummary:   false,
+		SendResponse:    false,
+	})
+	if err != nil {
+		t.Fatalf("second runAgentLoop failed: %v", err)
+	}
+
+	// Get the seahorse engine from context manager
+	seahorseCM, ok := al.contextManager.(*seahorseContextManager)
+	if !ok {
+		t.Fatal("expected seahorseContextManager")
+	}
+
+	// Check DB for steering message
+	store := seahorseCM.engine.GetRetrieval().Store()
+	conv, err := store.GetOrCreateConversation(ctx, sessionKey)
+	if err != nil {
+		t.Fatalf("GetOrCreateConversation: %v", err)
+	}
+
+	stored, err := store.GetMessages(ctx, conv.ConversationID, 20, 0)
+	if err != nil {
+		t.Fatalf("GetMessages: %v", err)
+	}
+
+	t.Logf("DB has %d messages:", len(stored))
+	for i, msg := range stored {
+		content := msg.Content
+		if len(content) > 40 {
+			content = content[:40] + "..."
+		}
+		t.Logf("  msg[%d]: role=%s content=%q", i, msg.Role, content)
+	}
+
+	// Find steering message in stored messages
+	foundSteering := false
+	for _, msg := range stored {
+		if msg.Content == "steering message content" {
+			foundSteering = true
+			break
+		}
+	}
+
+	if !foundSteering {
+		t.Error("STEERING MESSAGE NOT IN SEAHORSE DB: steering message should be ingested into SQLite")
+	}
+}
