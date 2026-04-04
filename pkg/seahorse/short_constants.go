@@ -21,4 +21,10 @@ const (
 	LeafTargetTokens      int = 1200  // Target tokens for leaf summaries
 	CondensedTargetTokens int = 2000  // Target tokens for condensed summaries
 	MaxExpandTokens       int = 4000  // Token cap for expansion queries
+
+	// MaxCompactIterations caps CompactUntilUnder to prevent infinite loops.
+	// Each iteration reduces ~4x tokens via leaf (8:1) or condensed (4:1) compaction.
+	// With a 200k token context window and 75% threshold, ~20 iterations is enough
+	// for any realistic scenario. If exceeded, the issue is logged as a warning.
+	MaxCompactIterations int = 20
 )

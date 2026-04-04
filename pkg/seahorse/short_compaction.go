@@ -98,7 +98,7 @@ func (e *CompactionEngine) CompactUntilUnder(ctx context.Context, convID int64, 
 	prevTokens := 0
 	logger.InfoCF("seahorse", "compact_until_under: start", map[string]any{"conv_id": convID, "budget": budget})
 
-	for {
+	for iter := 0; iter < MaxCompactIterations; iter++ {
 		tokens, err := e.store.GetContextTokenCount(ctx, convID)
 		if err != nil {
 			return result, fmt.Errorf("get tokens: %w", err)
@@ -155,6 +155,15 @@ func (e *CompactionEngine) CompactUntilUnder(ctx context.Context, convID int64, 
 		}
 		prevTokens = newTokens
 	}
+
+	// Safety cap exceeded — see MaxCompactIterations doc for rationale.
+	logger.WarnCF("seahorse", "compact_until_under: exceeded max iterations", map[string]any{
+		"conv_id":    convID,
+		"budget":     budget,
+		"iterations": MaxCompactIterations,
+		"tokens":     prevTokens,
+	})
+	return result, nil
 }
 
 // compactLeaf compresses the oldest contiguous message chunk into a leaf summary.
@@ -738,7 +747,11 @@ func formatMessagesForSummary(messages []Message) string {
 	var result string
 	for _, m := range messages {
 		ts := m.CreatedAt.Format("2006-01-02 15:04 MST")
-		result += fmt.Sprintf("[%s]\n%s\n\n", ts, m.Content)
+		content := m.Content
+		if content == "" && len(m.Parts) > 0 {
+			content = partsToReadableContent(m.Parts)
+		}
+		result += fmt.Sprintf("[%s]\n%s\n\n", ts, content)
 	}
 	return result
 }
@@ -836,7 +849,11 @@ Output requirements:
 func truncateSummary(messages []Message) string {
 	content := ""
 	for _, m := range messages {
-		content += m.Content + "\n"
+		c := m.Content
+		if c == "" && len(m.Parts) > 0 {
+			c = partsToReadableContent(m.Parts)
+		}
+		content += c + "\n"
 	}
 	if len(content) > 2048 {
 		content = content[:2048]

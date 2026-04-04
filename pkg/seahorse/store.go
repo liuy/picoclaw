@@ -179,6 +179,32 @@ func (s *Store) AddMessage(ctx context.Context, convID int64, role, content stri
 	}, nil
 }
 
+// partsToReadableContent derives a readable text summary from message parts.
+// This ensures FTS5 indexing and summary formatting can access tool call information.
+func partsToReadableContent(parts []MessagePart) string {
+	var b strings.Builder
+	for i, p := range parts {
+		if i > 0 {
+			b.WriteString("\n")
+		}
+		switch p.Type {
+		case "text":
+			b.WriteString(p.Text)
+		case "tool_use":
+			fmt.Fprintf(&b, "[tool_use: %s, args: %s]", p.Name, p.Arguments)
+		case "tool_result":
+			fmt.Fprintf(&b, "[tool_result for %s: %s]", p.ToolCallID, p.Text)
+		case "media":
+			fmt.Fprintf(&b, "[media: %s (%s)]", p.MediaURI, p.MimeType)
+		default:
+			if p.Text != "" {
+				b.WriteString(p.Text)
+			}
+		}
+	}
+	return b.String()
+}
+
 // AddMessageWithParts adds a message with structured parts.
 func (s *Store) AddMessageWithParts(
 	ctx context.Context,
@@ -193,9 +219,12 @@ func (s *Store) AddMessageWithParts(
 	}
 	defer tx.Rollback()
 
+	// Derive readable content from Parts for FTS5 indexing and summary formatting
+	readableContent := partsToReadableContent(parts)
+
 	result, err := tx.ExecContext(ctx,
 		"INSERT INTO messages (conversation_id, role, content, token_count) VALUES (?, ?, ?, ?)",
-		convID, role, "", tokenCount,
+		convID, role, readableContent, tokenCount,
 	)
 	if err != nil {
 		return nil, fmt.Errorf("add message: %w", err)
