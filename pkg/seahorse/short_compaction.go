@@ -3,6 +3,7 @@ package seahorse
 import (
 	"context"
 	"fmt"
+	"sort"
 	"time"
 
 	"github.com/sipeed/picoclaw/pkg/logger"
@@ -480,11 +481,15 @@ func (e *CompactionEngine) selectShallowestCondensationCandidate(
 	}
 
 	// Find shallowest depth with enough candidates
-	for depth := 0; ; depth++ {
-		group, ok := depthGroups[depth]
-		if !ok {
-			break
-		}
+	// Collect all depths and sort to handle non-consecutive depths
+	var depths []int
+	for depth := range depthGroups {
+		depths = append(depths, depth)
+	}
+	sort.Ints(depths)
+
+	for _, depth := range depths {
+		group := depthGroups[depth]
 		if len(group) >= minFanout {
 			// Load summaries
 			var result []Summary

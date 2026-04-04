@@ -8,6 +8,7 @@ import (
 	"strings"
 	"sync"
 	"testing"
+	"time"
 )
 
 // helper: open a test engine with in-memory DB
@@ -1371,5 +1372,77 @@ func TestAssemblerLazyInitRace(t *testing.T) {
 		// Start all goroutines simultaneously
 		close(start)
 		wg.Wait()
+	}
+}
+
+// --- selectShallowestCondensationCandidate with non-consecutive depths ---
+
+func TestSelectShallowestCondensationWithNonConsecutiveDepths(t *testing.T) {
+	e := newTestEngineForConcurrency(t)
+	defer e.Close()
+	ctx := context.Background()
+	sessionKey := "test-non-consecutive-depths"
+
+	// Create conversation
+	conv, err := e.store.GetOrCreateConversation(ctx, sessionKey)
+	if err != nil {
+		t.Fatalf("GetOrCreateConversation: %v", err)
+	}
+
+	// Create summaries with non-consecutive depths: 0 and 1 have < 5, 2 is missing, 3 has >= 5
+	// This tests the bug: when depth=2 is missing, the loop breaks and depth=3 is never checked
+	// Need > FreshTailCount(32) summaries so they are not all in fresh tail
+	// Depth 0: 3 summaries (not enough), Depth 1: 3 summaries (not enough)
+	// Depth 2: 0 summaries (missing), Depth 3: 40 summaries (enough)
+	depths := []int{0, 0, 0, 1, 1, 1}
+	for i := 0; i < 40; i++ {
+		depths = append(depths, 3)
+	}
+	now := time.Now().UTC()
+
+	for i, depth := range depths {
+		sum, createErr := e.store.CreateSummary(ctx, CreateSummaryInput{
+			ConversationID: conv.ConversationID,
+			Kind:           SummaryKindLeaf,
+			Depth:          depth,
+			Content:        fmt.Sprintf("summary depth %d #%d", depth, i),
+			TokenCount:     10,
+			EarliestAt:     &now,
+			LatestAt:       &now,
+		})
+		if createErr != nil {
+			t.Fatalf("CreateSummary: %v", createErr)
+		}
+		// Add to context items (not in fresh tail)
+		if appendErr := e.store.AppendContextSummary(ctx, conv.ConversationID, sum.SummaryID); appendErr != nil {
+			t.Fatalf("AppendContextSummary: %v", appendErr)
+		}
+	}
+
+	// Initialize compaction engine (lazy init)
+	e.initCompactionOnce()
+
+	// Call selectShallowestCondensationCandidate
+	candidates, err := e.compaction.selectShallowestCondensationCandidate(ctx, conv.ConversationID, false)
+	if err != nil {
+		t.Fatalf("selectShallowestCondensationCandidate: %v", err)
+	}
+
+	// Should find depth=0 (shallowest) with 5 summaries
+	if candidates == nil {
+		t.Fatal("expected candidates, got nil")
+	}
+	if len(candidates) < CondensedMinFanout {
+		t.Errorf("expected at least %d candidates, got %d", CondensedMinFanout, len(candidates))
+	}
+
+	// Verify all returned summaries have the same depth
+	if len(candidates) > 0 {
+		expectedDepth := candidates[0].Depth
+		for _, c := range candidates[1:] {
+			if c.Depth != expectedDepth {
+				t.Errorf("candidates have mixed depths: %d vs %d", expectedDepth, c.Depth)
+			}
+		}
 	}
 }
