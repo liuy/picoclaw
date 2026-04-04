@@ -644,9 +644,16 @@ func (s *Store) ClearContextItems(ctx context.Context, convID int64) error {
 
 // DeleteMessagesAfterID deletes all messages with ID > afterID for a conversation.
 // Also clears related context_items, message_parts, summary_messages, and FTS entries.
+// Uses transaction to ensure atomicity of the delete cascade.
 func (s *Store) DeleteMessagesAfterID(ctx context.Context, convID int64, afterID int64) error {
+	tx, err := s.db.BeginTx(ctx, nil)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback()
+
 	// Get message IDs to delete for cleaning up related tables
-	rows, err := s.db.QueryContext(ctx,
+	rows, err := tx.QueryContext(ctx,
 		"SELECT message_id FROM messages WHERE conversation_id = ? AND message_id > ?", convID, afterID)
 	if err != nil {
 		return err
@@ -667,20 +674,29 @@ func (s *Store) DeleteMessagesAfterID(ctx context.Context, convID int64, afterID
 
 	// Delete context_items referencing these messages
 	for _, msgID := range msgIDs {
-		s.db.ExecContext(ctx, "DELETE FROM context_items WHERE message_id = ?", msgID)
+		if _, err := tx.ExecContext(ctx, "DELETE FROM context_items WHERE message_id = ?", msgID); err != nil {
+			return err
+		}
 	}
 
-	// Delete from message_parts, summary_messages, and FTS
+	// Delete from message_parts and summary_messages
+	// Note: messages_fts is handled automatically by trigger, no manual delete needed
 	for _, msgID := range msgIDs {
-		s.db.ExecContext(ctx, "DELETE FROM message_parts WHERE message_id = ?", msgID)
-		s.db.ExecContext(ctx, "DELETE FROM summary_messages WHERE message_id = ?", msgID)
-		s.db.ExecContext(ctx, "DELETE FROM messages_fts WHERE message_id = ?", msgID)
+		if _, err := tx.ExecContext(ctx, "DELETE FROM message_parts WHERE message_id = ?", msgID); err != nil {
+			return err
+		}
+		if _, err := tx.ExecContext(ctx, "DELETE FROM summary_messages WHERE message_id = ?", msgID); err != nil {
+			return err
+		}
 	}
 
 	// Delete messages
-	_, err = s.db.ExecContext(ctx,
-		"DELETE FROM messages WHERE conversation_id = ? AND message_id > ?", convID, afterID)
-	return err
+	if _, err := tx.ExecContext(ctx,
+		"DELETE FROM messages WHERE conversation_id = ? AND message_id > ?", convID, afterID); err != nil {
+		return err
+	}
+
+	return tx.Commit()
 }
 
 // AppendContextMessage appends a single message to context_items at next ordinal.
@@ -707,7 +723,13 @@ func (s *Store) AppendContextSummary(ctx context.Context, convID int64, summaryI
 }
 
 func (s *Store) appendContextItems(ctx context.Context, convID int64, items []ContextItem) error {
-	maxOrd, err := s.GetMaxOrdinal(ctx, convID)
+	tx, err := s.db.BeginTx(ctx, nil)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback()
+
+	maxOrd, err := s.GetMaxOrdinalTx(ctx, tx, convID)
 	if err != nil {
 		return err
 	}
@@ -720,10 +742,10 @@ func (s *Store) appendContextItems(ctx context.Context, convID int64, items []Co
 		// Resolve token count if not set
 		tokenCount := item.TokenCount
 		if tokenCount == 0 {
-			tokenCount = s.resolveItemTokenCount(ctx, item)
+			tokenCount = s.resolveItemTokenCountTx(ctx, tx, item)
 		}
 
-		_, err = s.db.ExecContext(ctx,
+		_, err = tx.ExecContext(ctx,
 			`INSERT INTO context_items (conversation_id, ordinal, item_type, summary_id, message_id, token_count)
 			 VALUES (?, ?, ?, ?, ?, ?)`,
 			convID, ordinal, item.ItemType,
@@ -735,14 +757,14 @@ func (s *Store) appendContextItems(ctx context.Context, convID int64, items []Co
 		}
 		ordinal += OrdinalStep
 	}
-	return nil
+	return tx.Commit()
 }
 
-// resolveItemTokenCount looks up token count from message or summary if not provided.
-func (s *Store) resolveItemTokenCount(ctx context.Context, item ContextItem) int {
+// resolveItemTokenCountTx looks up token count within a transaction.
+func (s *Store) resolveItemTokenCountTx(ctx context.Context, tx *sql.Tx, item ContextItem) int {
 	if item.ItemType == "message" && item.MessageID > 0 {
 		var tc int
-		err := s.db.QueryRowContext(ctx,
+		err := tx.QueryRowContext(ctx,
 			"SELECT token_count FROM messages WHERE message_id = ?", item.MessageID,
 		).Scan(&tc)
 		if err == nil {
@@ -751,7 +773,7 @@ func (s *Store) resolveItemTokenCount(ctx context.Context, item ContextItem) int
 	}
 	if item.ItemType == "summary" && item.SummaryID != "" {
 		var tc int
-		err := s.db.QueryRowContext(ctx,
+		err := tx.QueryRowContext(ctx,
 			"SELECT token_count FROM summaries WHERE summary_id = ?", item.SummaryID,
 		).Scan(&tc)
 		if err == nil {
@@ -1016,6 +1038,22 @@ func (s *Store) GetContextTokenCount(ctx context.Context, convID int64) (int, er
 func (s *Store) GetMaxOrdinal(ctx context.Context, convID int64) (int, error) {
 	var maxOrd sql.NullInt64
 	err := s.db.QueryRowContext(ctx,
+		"SELECT MAX(ordinal) FROM context_items WHERE conversation_id = ?",
+		convID,
+	).Scan(&maxOrd)
+	if err != nil {
+		return 0, err
+	}
+	if !maxOrd.Valid {
+		return 0, nil
+	}
+	return int(maxOrd.Int64), nil
+}
+
+// GetMaxOrdinalTx returns the highest ordinal within a transaction.
+func (s *Store) GetMaxOrdinalTx(ctx context.Context, tx *sql.Tx, convID int64) (int, error) {
+	var maxOrd sql.NullInt64
+	err := tx.QueryRowContext(ctx,
 		"SELECT MAX(ordinal) FROM context_items WHERE conversation_id = ?",
 		convID,
 	).Scan(&maxOrd)
