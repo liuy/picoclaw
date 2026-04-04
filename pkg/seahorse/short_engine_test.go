@@ -1329,3 +1329,47 @@ func TestBootstrapAnchorWithDuplicateContent_Simple(t *testing.T) {
 		t.Errorf("last message content = %q, want 'D'", lastMsg.Content)
 	}
 }
+
+// --- Assembler lazy init race detection ---
+
+func TestAssemblerLazyInitRace(t *testing.T) {
+	// This test verifies that Assemble() lazy initialization of e.assembler
+	// is thread-safe. The original code has a data race:
+	//   if e.assembler == nil {
+	//       e.assembler = &Assembler{...}
+	//   }
+
+	// Run multiple iterations to increase chance of catching race
+	for i := 0; i < 30; i++ {
+		// Create fresh engine with nil assembler
+		e := newTestEngine(t)
+
+		ctx := context.Background()
+		sessionKey := fmt.Sprintf("race-test-%d", i)
+
+		// Add message first (avoid SQLite concurrency issues)
+		_, err := e.Ingest(ctx, sessionKey, []Message{
+			{Role: "user", Content: "hello", TokenCount: 5},
+		})
+		if err != nil {
+			t.Fatalf("Ingest: %v", err)
+		}
+
+		// Use a barrier to ensure all goroutines start at the same time
+		start := make(chan struct{})
+		var wg sync.WaitGroup
+
+		for j := 0; j < 20; j++ {
+			wg.Add(1)
+			go func() {
+				defer wg.Done()
+				<-start // Wait for all goroutines to be ready
+				e.Assemble(ctx, sessionKey, AssembleInput{Budget: 1000})
+			}()
+		}
+
+		// Start all goroutines simultaneously
+		close(start)
+		wg.Wait()
+	}
+}

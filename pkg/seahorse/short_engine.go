@@ -58,6 +58,7 @@ type Engine struct {
 	compaction        *CompactionEngine
 	compactionMu      sync.Mutex
 	assembler         *Assembler
+	assemblerMu       sync.Mutex
 	retrieval         *RetrievalEngine
 	config            Config
 	complete          CompleteFn
@@ -307,9 +308,7 @@ func (e *Engine) Assemble(ctx context.Context, sessionKey string, input Assemble
 		return nil, fmt.Errorf("get conversation: %w", err)
 	}
 
-	if e.assembler == nil {
-		e.assembler = &Assembler{store: e.store, config: e.config}
-	}
+	e.initAssemblerOnce()
 	return e.assembler.Assemble(ctx, conv.ConversationID, input)
 }
 
@@ -358,6 +357,17 @@ func (e *Engine) initCompactionOnce() {
 				shutdownCtx:    shutdownCtx,
 				shutdownCancel: shutdownCancel,
 			}
+		}
+	}
+}
+
+// initAssemblerOnce lazily initializes the assembler.
+func (e *Engine) initAssemblerOnce() {
+	if e.assembler == nil {
+		e.assemblerMu.Lock()
+		defer e.assemblerMu.Unlock()
+		if e.assembler == nil {
+			e.assembler = &Assembler{store: e.store, config: e.config}
 		}
 	}
 }
