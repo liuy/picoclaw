@@ -1,0 +1,1711 @@
+{
+  "mode": "A",
+  "sampleId": "conv-48",
+  "qaResults": [
+    {
+      "question": "What kind of project was Jolene working on in the beginning of January 2023?",
+      "category": 2,
+      "goldAnswer": "electricity engineering project",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which of Deborah`s family and friends have passed away?",
+      "category": 1,
+      "goldAnswer": "mother, father, her friend Karlie",
+      "tokenF1": 0.000686106346483705,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Deborah`s mother pass away?",
+      "category": 2,
+      "goldAnswer": "a few years before 2023",
+      "tokenF1": 0.002058319039451115,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene`s mother pass away?",
+      "category": 2,
+      "goldAnswer": "in 2022",
+      "tokenF1": 0.0006868131868131869,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene's mom gift her a pendant?",
+      "category": 2,
+      "goldAnswer": "in 2010",
+      "tokenF1": 0.0006868131868131869,
+      "recallHitRate": 0
+    },
+    {
+      "question": "In what country did Jolene's mother buy her the pendant?",
+      "category": 3,
+      "goldAnswer": "In France",
+      "tokenF1": 0.0006868131868131869,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What symbolic gifts do Deborah and Jolene have from their mothers?",
+      "category": 1,
+      "goldAnswer": "pendants",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which country were Jolene and her mother visiting in 2010?",
+      "category": 2,
+      "goldAnswer": "France",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What helped Deborah find peace when grieving deaths of her loved ones?",
+      "category": 1,
+      "goldAnswer": "yoga, old photos, the roses and dahlias in a flower garden, nature",
+      "tokenF1": 0.004106776180698152,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Deborah's father pass away?",
+      "category": 2,
+      "goldAnswer": "January 25, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When was Deborah's parents' wedding?",
+      "category": 2,
+      "goldAnswer": "in 1993",
+      "tokenF1": 0.0006868131868131869,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Is Deborah married?",
+      "category": 3,
+      "goldAnswer": "yes",
+      "tokenF1": 0,
+      "recallHitRate": 0.25
+    },
+    {
+      "question": "When did Deborah receive an appreciation letter from her community?",
+      "category": 2,
+      "goldAnswer": "January 26, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What places give Deborah peace?",
+      "category": 1,
+      "goldAnswer": "sitting in a spot by the window in her Mom's house, sitting by the beach, Bali, forest trail in a nearby park",
+      "tokenF1": 0.008185538881309688,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What were Deborah's mother's hobbies?",
+      "category": 1,
+      "goldAnswer": "reading, traveling, art, cooking",
+      "tokenF1": 0.0006863417982155114,
+      "recallHitRate": 0.25
+    },
+    {
+      "question": "What pets does Jolene have?",
+      "category": 4,
+      "goldAnswer": "snakes",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are the names of Jolene's snakes?",
+      "category": 4,
+      "goldAnswer": "Susie, Seraphim",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene buy her pet Seraphim?",
+      "category": 2,
+      "goldAnswer": "in 2022",
+      "tokenF1": 0.0006868131868131869,
+      "recallHitRate": 0
+    },
+    {
+      "question": "In what country did Jolene buy snake Seraphim?",
+      "category": 3,
+      "goldAnswer": "In France",
+      "tokenF1": 0.0006868131868131869,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How many times has Jolene been to France?",
+      "category": 1,
+      "goldAnswer": "two times",
+      "tokenF1": 0.0013736263736263737,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which games have Jolene and her partner played together?",
+      "category": 1,
+      "goldAnswer": "Detroit, Walking Dead, Battlefield 1, It Takes Two, Overcooked 2",
+      "tokenF1": 0.0013698630136986301,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When do Jolene and her partner plan to complete the game \"Walking Dead\"?",
+      "category": 2,
+      "goldAnswer": "Saturday after 27 January, 2023",
+      "tokenF1": 0.000686106346483705,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Deborah meet Anna?",
+      "category": 2,
+      "goldAnswer": "31 January, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Jolene sometimes put off doing yoga?",
+      "category": 3,
+      "goldAnswer": "She's more interested in playing video games",
+      "tokenF1": 0.004113815563935551,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What new yoga poses did Deborah try?",
+      "category": 1,
+      "goldAnswer": "Warrior II, Dancer Pose (Natarajasana), Tree pose",
+      "tokenF1": 0.0013712718546451835,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are Jolene's favorite books?",
+      "category": 4,
+      "goldAnswer": "Sapiens, Avalanche by Neal Stephenson",
+      "tokenF1": 0.000686106346483705,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which book did Jolene read in January 2023?",
+      "category": 2,
+      "goldAnswer": "Avalanche by Neal Stephenson",
+      "tokenF1": 0.0006863417982155114,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When was Jolene in Bogota?",
+      "category": 2,
+      "goldAnswer": "in summer 2022",
+      "tokenF1": 0.0006865774116031583,
+      "recallHitRate": 0
+    },
+    {
+      "question": "In what country was Jolene during summer 2022?",
+      "category": 3,
+      "goldAnswer": "Colombia",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene have a mini-retreat to reflect on her career?",
+      "category": 2,
+      "goldAnswer": "Wednesday before 9 February, 2023",
+      "tokenF1": 0.000686106346483705,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene have a dinner and drinks with her friends?",
+      "category": 2,
+      "goldAnswer": "21 February, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When was the last photo of Deborah and Karlie taken?",
+      "category": 2,
+      "goldAnswer": "in summer 2022",
+      "tokenF1": 0.0006865774116031583,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When was Deborah in Bali?",
+      "category": 2,
+      "goldAnswer": "in 2022",
+      "tokenF1": 0.0006868131868131869,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How long have Jolene and her partner been together?",
+      "category": 4,
+      "goldAnswer": "for three years",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which year did Jolene and her partner start dating?",
+      "category": 2,
+      "goldAnswer": "2020",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Deborah go for her first morning jog in a nearby park?",
+      "category": 2,
+      "goldAnswer": "24 February, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How old is Jolene?",
+      "category": 3,
+      "goldAnswer": "likely no more than 30; since she's in school",
+      "tokenF1": 0.0027406646111682084,
+      "recallHitRate": 0.3
+    },
+    {
+      "question": "When did Jolene take Seraphim to the park?",
+      "category": 2,
+      "goldAnswer": "Sunday before 2 March, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Deborah start the yoga class in the neighborhood?",
+      "category": 2,
+      "goldAnswer": "Friday before 13 March, 2023",
+      "tokenF1": 0.000686106346483705,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What time management techniques do Deborah and Jolene use?",
+      "category": 1,
+      "goldAnswer": "the Pomodoro Technique - 25 minutes work and 5-minute break, scheduler or to-do list, The Eisenhower Matrix, bullet journal",
+      "tokenF1": 0.004096961420279959,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Does Deborah live close to the beach or the mountains?",
+      "category": 3,
+      "goldAnswer": "beach",
+      "tokenF1": 0.0006870491240123669,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What ways do Deborah and Jolene use to enhance their yoga practice?",
+      "category": 1,
+      "goldAnswer": "candles, music, essential oils",
+      "tokenF1": 0.0013726835964310228,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What music pieces does Deborah listen to during her yoga practice?",
+      "category": 4,
+      "goldAnswer": "Savana, Sleep",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Deborah go for a bicycle ride with Anna?",
+      "category": 2,
+      "goldAnswer": "first week of April, 2023",
+      "tokenF1": 0.000686106346483705,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Deborah go to an art show with Anna?",
+      "category": 2,
+      "goldAnswer": "on 9 April, 2023",
+      "tokenF1": 0.0006863417982155114,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene finish her robotics project?",
+      "category": 2,
+      "goldAnswer": "May 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How long did Jolene work on the robotics project given to her by her Professor?",
+      "category": 2,
+      "goldAnswer": "four months",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene do yoga at Talkeetna?",
+      "category": 2,
+      "goldAnswer": "on 5 June, 2023",
+      "tokenF1": 0.0006863417982155114,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which US state did Jolene visit during her internship?",
+      "category": 3,
+      "goldAnswer": "Alaska",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How long has Jolene been doing yoga and meditation?",
+      "category": 4,
+      "goldAnswer": "about 3 years",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which year did Jolene start practicing yoga?",
+      "category": 2,
+      "goldAnswer": "2020",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene buy a new aquarium for Seraphim?",
+      "category": 2,
+      "goldAnswer": "24 June, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene lose a lot of progress in her work?",
+      "category": 2,
+      "goldAnswer": "last week of July 2023",
+      "tokenF1": 0.00137221269296741,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene adopt her snake Susie?",
+      "category": 2,
+      "goldAnswer": "in 2021",
+      "tokenF1": 0.0006868131868131869,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "Which pet did Jolene adopt first - Susie or Seraphim?",
+      "category": 2,
+      "goldAnswer": "Susie",
+      "tokenF1": 0.0006870491240123669,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which pet did Jolene adopt more recently - Susie or Seraphim?",
+      "category": 2,
+      "goldAnswer": "Seraphim",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Deborah lead a meditation session during the sunset?",
+      "category": 2,
+      "goldAnswer": "week before 16 August, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene gift her partner a new console?",
+      "category": 2,
+      "goldAnswer": "17 August, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What games does Jolene recommend for Deborah?",
+      "category": 4,
+      "goldAnswer": "Zelda BOTW for Switch , Animal Crossing: New Horizons, Overcooked 2",
+      "tokenF1": 0.0013693940431359125,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What do Deborah and her husband do together?",
+      "category": 4,
+      "goldAnswer": "play detective games together, spend time outdoors and explore nature",
+      "tokenF1": 0.00410958904109589,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Deborah go to a yoga retreat near her mom's place?",
+      "category": 2,
+      "goldAnswer": "a week before 24 August,2023",
+      "tokenF1": 0.000686106346483705,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What projects is Jolene planning for next year?",
+      "category": 4,
+      "goldAnswer": "developing renewable energy finding ways to supply clean water to those with limited access",
+      "tokenF1": 0.003419972640218878,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Where did Deborah get her cats?",
+      "category": 4,
+      "goldAnswer": "Luna is from the shelter and Max is her mother's cat",
+      "tokenF1": 0.004108182129407737,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How old are Deborah's cats?",
+      "category": 4,
+      "goldAnswer": "Max is 8 years old and Luna is 5 years old",
+      "tokenF1": 0.004108182129407737,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Does Deborah like cats?",
+      "category": 4,
+      "goldAnswer": "Yes",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which country was Jolene located in during the last week of August 2023?",
+      "category": 2,
+      "goldAnswer": "Brazil",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene and her partner return home from Rio de Janeiro?",
+      "category": 2,
+      "goldAnswer": "29 August, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What was Jolene doing with her partner in Rio de Janeiro?",
+      "category": 4,
+      "goldAnswer": "they went on excursions, checked out some cool yoga classes, visited a lot of delicious cafes, visited an old temple",
+      "tokenF1": 0.008873720136518772,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Deborah visit Brazil?",
+      "category": 2,
+      "goldAnswer": "2020",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Have Deborah and Jolene been to Rio de Janeiro?",
+      "category": 4,
+      "goldAnswer": "yes",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Is the friend who wrote Deborah the motivational quote no longer alive?",
+      "category": 3,
+      "goldAnswer": "likely yes",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Deborah go to a community meetup?",
+      "category": 2,
+      "goldAnswer": "last week of August 2023",
+      "tokenF1": 0.00137221269296741,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene's parents give her first console?",
+      "category": 4,
+      "goldAnswer": "when she was 10",
+      "tokenF1": 0.002059025394646534,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Did Jolene teach herself how to play the console?",
+      "category": 1,
+      "goldAnswer": "yes",
+      "tokenF1": 0,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What do Deborah and Jolene plan to try when they meet in a new cafe?",
+      "category": 4,
+      "goldAnswer": "coffee and fresh pastries",
+      "tokenF1": 0.002059025394646534,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What card game is Deborah talking about?",
+      "category": 3,
+      "goldAnswer": "Exploding Kittens",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Jolene and her partner try scuba diving lessons?",
+      "category": 2,
+      "goldAnswer": "Friday before 17 September, 2023",
+      "tokenF1": 0.000686106346483705,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where did Jolene and her partner find a cool diving spot?",
+      "category": 1,
+      "goldAnswer": "Phuket",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where did Jolene and her partner spend most of September 2023?",
+      "category": 2,
+      "goldAnswer": "Phuket",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Has Deborah tried surfing?",
+      "category": 1,
+      "goldAnswer": "yes",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Has Jolene tried surfing?",
+      "category": 1,
+      "goldAnswer": "no",
+      "tokenF1": 0.0006870491240123669,
+      "recallHitRate": 0.6666666666666666
+    },
+    {
+      "question": "When did the Deboran and Jolene agree to go surfing?",
+      "category": 2,
+      "goldAnswer": "in October 2023",
+      "tokenF1": 0.0006865774116031583,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which locations does Deborah practice her yoga at?",
+      "category": 1,
+      "goldAnswer": "at her mother's old home, park, yoga studio, beach",
+      "tokenF1": 0.0034258307639602604,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of professional activities does Jolene participate in to gain more experience in her field?",
+      "category": 1,
+      "goldAnswer": "present work at virtual conference, attend workshops  and intern at firms",
+      "tokenF1": 0.002738788086271825,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of engineering projects has Jolene worked on?",
+      "category": 1,
+      "goldAnswer": "electrical engineering, robotics, sustainable water purifier, productive and affordable aerial surveillance system",
+      "tokenF1": 0.0006844626967830254,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which community activities have Deborah and Anna participated in?",
+      "category": 1,
+      "goldAnswer": "yoga, running",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What gifts has Deborah received?",
+      "category": 1,
+      "goldAnswer": "an appreciate letter from her community, a flower bouqet from her friend, a motivational quote from a friend",
+      "tokenF1": 0.007513661202185793,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which countries has Deborah traveled to?",
+      "category": 1,
+      "goldAnswer": "Thailand, Brazil",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What activities does Deborah pursue besides practicing and teaching yoga?",
+      "category": 1,
+      "goldAnswer": "biking, going to art shows, running, organizing workshops to practice mindfulness and self-care, surfing, gardening",
+      "tokenF1": 0.005470085470085471,
+      "recallHitRate": 0.4
+    },
+    {
+      "question": "What are the names of Jolene's snakes?",
+      "category": 4,
+      "goldAnswer": "Susie, Seraphim",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are Jolene's favorite books?",
+      "category": 4,
+      "goldAnswer": "Sapiens, Avalanche by Neal Stephenson",
+      "tokenF1": 0.000686106346483705,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What music pieces does Deborah listen to during her yoga practice?",
+      "category": 4,
+      "goldAnswer": "Savana, Sleep",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What games does Jolene recommend for Deborah?",
+      "category": 4,
+      "goldAnswer": "Zelda BOTW for Switch , Animal Crossing: New Horizons, Overcooked 2",
+      "tokenF1": 0.0013693940431359125,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What projects is Jolene planning for next year?",
+      "category": 4,
+      "goldAnswer": "developing renewable energy finding ways to supply clean water to those with limited access",
+      "tokenF1": 0.003419972640218878,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Where did Deborah get her cats?",
+      "category": 4,
+      "goldAnswer": "Luna is from the shelter and Max is her mother's cat",
+      "tokenF1": 0.004108182129407737,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How old are Deborah's cats?",
+      "category": 4,
+      "goldAnswer": "Max is 8 years old and Luna is 5 years old",
+      "tokenF1": 0.004108182129407737,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What was Jolene doing with her partner in Rio de Janeiro?",
+      "category": 4,
+      "goldAnswer": "they went on excursions, checked out some cool yoga classes, visited a lot of delicious cafes, visited an old temple",
+      "tokenF1": 0.008873720136518772,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Have Deborah and Jolene been to Rio de Janeiro?",
+      "category": 4,
+      "goldAnswer": "yes",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene's parents give her first console?",
+      "category": 4,
+      "goldAnswer": "when she was 10",
+      "tokenF1": 0.002059025394646534,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What do Deborah and Jolene plan to try when they meet in a new cafe?",
+      "category": 4,
+      "goldAnswer": "coffee and fresh pastries",
+      "tokenF1": 0.002059025394646534,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What project did Jolene finish last week before 23 January, 2023?",
+      "category": 4,
+      "goldAnswer": "an electrical engineering project",
+      "tokenF1": 0.002059025394646534,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jolene buy her pet snake?",
+      "category": 4,
+      "goldAnswer": "A year ago",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What project was Jolene working on as of 1 February, 2023?",
+      "category": 4,
+      "goldAnswer": "Robotics project",
+      "tokenF1": 0.0006868131868131869,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Where did Deborah meet her new neighbor Anna?",
+      "category": 4,
+      "goldAnswer": "yoga in the park",
+      "tokenF1": 0.002059025394646534,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What activity did Jolene and her partner plan to do together instead of resuming yoga?",
+      "category": 4,
+      "goldAnswer": "play the console",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What milestone did Jolene achieve recently on 4 February, 2023?",
+      "category": 4,
+      "goldAnswer": "Design and build a sustainable water purifier for a rural community",
+      "tokenF1": 0.003423485107839781,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is Jolene's favorite book which she mentioned on 4 February, 2023?",
+      "category": 4,
+      "goldAnswer": "\"Sapiens\"",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does Deborah bring with her whenever she comes to reflect on her mom?",
+      "category": 4,
+      "goldAnswer": "amulet",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What new outlook did Jolene gain after her mini retreat on 9 February, 2023?",
+      "category": 4,
+      "goldAnswer": "A confidence boost",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What cool stuff did Jolene accomplish at the retreat on 9 February, 2023?",
+      "category": 4,
+      "goldAnswer": "Came up with neat solutions for her engineering project",
+      "tokenF1": 0.0041109969167523125,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What idea did Jolene have to help underprivileged kids learn about STEM subjects on 9 February, 2023?",
+      "category": 4,
+      "goldAnswer": "A volunteer program where engineers teach STEM to underprivileged kids",
+      "tokenF1": 0.0027397260273972603,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Jolene plan to involve local engineers in her idea of teaching STEM to underprivileged kids?",
+      "category": 4,
+      "goldAnswer": "As guest speakers for workshops",
+      "tokenF1": 0.00137221269296741,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What gave Deborah peace in the garden she visited?",
+      "category": 4,
+      "goldAnswer": "Roses and dahlias",
+      "tokenF1": 0.0006865774116031583,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Deborah spend time in the garden?",
+      "category": 4,
+      "goldAnswer": "to find comfort after losing a friend",
+      "tokenF1": 0.0034281796366129585,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How did Jolene and her partner initially meet?",
+      "category": 4,
+      "goldAnswer": "In an engineering class in college",
+      "tokenF1": 0.0034293552812071334,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What activity does Deborah incorporate into her daily routine after going for a morning jog in the park?",
+      "category": 4,
+      "goldAnswer": "spending time with loved ones",
+      "tokenF1": 0.003430531732418525,
+      "recallHitRate": 0
+    },
+    {
+      "question": "According to Jolene, what does exercise help her to feel?",
+      "category": 4,
+      "goldAnswer": "connected to her body",
+      "tokenF1": 0.002059025394646534,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Deb share a photo of, which brought a smile to Jolene's face?",
+      "category": 4,
+      "goldAnswer": "a yellow coffee cup with a handwritten message",
+      "tokenF1": 0.0034270047978067174,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is one of Jolene's favorite dishes?",
+      "category": 4,
+      "goldAnswer": "lasagna",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What picture did Jolene share related to feeling overwhelmed?",
+      "category": 4,
+      "goldAnswer": "a photo of a desk with a notebook and a computer monitor",
+      "tokenF1": 0.005475701574264203,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Jolene and Deb discuss as a helpful strategy for studying and time management?",
+      "category": 4,
+      "goldAnswer": "breaking tasks into smaller pieces and setting goals, using planners or schedulers",
+      "tokenF1": 0.002053388090349076,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Jolene ask Deb to help with on 13 March, 2023?",
+      "category": 4,
+      "goldAnswer": "time management",
+      "tokenF1": 0.0006868131868131869,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What method does Deb suggest Jolene to try for organizing tasks based on importance and urgency?",
+      "category": 4,
+      "goldAnswer": "The Eisenhower Matrix",
+      "tokenF1": 0.0006865774116031583,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Jolene and Anna discuss while watching the sunset by the sea?",
+      "category": 4,
+      "goldAnswer": "They realized they inspire each other",
+      "tokenF1": 0.00205761316872428,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Jolene plan to pursue her dream of learning to surf?",
+      "category": 4,
+      "goldAnswer": "gathering information, watching videos, getting a beginners' guide",
+      "tokenF1": 0.0027416038382453737,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Deborah buy to enhance her yoga practice besides the props?",
+      "category": 4,
+      "goldAnswer": "candle",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What type of music does Deborah find helpful during her yoga practice?",
+      "category": 4,
+      "goldAnswer": "instrumental tracks with mellow melodies and rhythms",
+      "tokenF1": 0.0013712718546451835,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Who are the musicians mentioned by Jolene that she enjoys listening to during her yoga practice?",
+      "category": 4,
+      "goldAnswer": "Nils Frahm and Olafur Arnalds",
+      "tokenF1": 0.000686106346483705,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What album does Deborah recommend for meditation and deep relaxation?",
+      "category": 4,
+      "goldAnswer": "'Sleep'",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which show did Deborah go to with a friend on 9 April, 2023?",
+      "category": 4,
+      "goldAnswer": "an art show",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does Deborah find comforting about going to art shows?",
+      "category": 4,
+      "goldAnswer": "It makes her feel like she's still experiencing it with her mom",
+      "tokenF1": 0.007529089664613279,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Jolene describe the time spent with her snakes and partner?",
+      "category": 4,
+      "goldAnswer": "Valuable and relaxing",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does Jolene enjoy doing with her partner after a long day?",
+      "category": 4,
+      "goldAnswer": "Playing video games",
+      "tokenF1": 0.0020597322348094747,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is Jolene currently doing in June 2023?",
+      "category": 4,
+      "goldAnswer": "interning at a well-known engineering firm",
+      "tokenF1": 0.00205761316872428,
+      "recallHitRate": 0
+    },
+    {
+      "question": "For how long has Jolene had Seraphim as a pet?",
+      "category": 4,
+      "goldAnswer": "one year",
+      "tokenF1": 0.0013736263736263737,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Jolene feel when spending time with Seraphim?",
+      "category": 4,
+      "goldAnswer": "comforted",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which new yoga pose did Deborah share a photo of?",
+      "category": 4,
+      "goldAnswer": "tree pose",
+      "tokenF1": 0.0013736263736263737,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What group activity did Deborah start with Anna?",
+      "category": 4,
+      "goldAnswer": "running group",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What made being part of the running group easy for Deborah to stay motivated?",
+      "category": 4,
+      "goldAnswer": "helping and pushing each other during runs",
+      "tokenF1": 0.002742543709290367,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Jolene decide to get a snake as a pet?",
+      "category": 4,
+      "goldAnswer": "fascinated by reptiles and it felt like the perfect pet",
+      "tokenF1": 0.004794520547945206,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is the favorite game Jolene plays with her partner?",
+      "category": 4,
+      "goldAnswer": "It takes two",
+      "tokenF1": 0.0020597322348094747,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What activity does Deborah do with her cats?",
+      "category": 4,
+      "goldAnswer": "take them out for a run in the park every morning and evening",
+      "tokenF1": 0.005473828258638386,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Jolene describe the feeling of finding her snake snuggled under the bed after it got out?",
+      "category": 4,
+      "goldAnswer": "It really showed how much she loves her.",
+      "tokenF1": 0.004112405757368061,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why does Deborah take her cats out for a run in the park every day?",
+      "category": 4,
+      "goldAnswer": "Exercise and nature are important to her",
+      "tokenF1": 0.004113815563935551,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How did Jolene come to have her pet, Susie?",
+      "category": 4,
+      "goldAnswer": "She adopted her two years ago when feeling lonely.",
+      "tokenF1": 0.0041109969167523125,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What activities have been helping Jolene stay distracted during tough times?",
+      "category": 4,
+      "goldAnswer": "Video games and spending time with her pet, Susie",
+      "tokenF1": 0.005481329222336417,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of yoga routine does Deborah recommend to Jolene?",
+      "category": 4,
+      "goldAnswer": "A gentle flow routine focused on breathing and grounding",
+      "tokenF1": 0.0034258307639602604,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Jolene design inspired by their love for space and engines?",
+      "category": 4,
+      "goldAnswer": "Notebooks",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What journal has Jolene been using to help track tasks and stay organized?",
+      "category": 4,
+      "goldAnswer": "bullet journal",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What game did Jolene recommend for being calming and cute?",
+      "category": 4,
+      "goldAnswer": "Animal Crossing: New Horizons",
+      "tokenF1": 0.0006863417982155114,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What game did Jolene suggest as an awesome open-world game for the Nintendo Switch?",
+      "category": 4,
+      "goldAnswer": "Zelda BOTW",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Deborah and her husband use to play to bond and make memories?",
+      "category": 4,
+      "goldAnswer": "video games",
+      "tokenF1": 0.0013736263736263737,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is special about the bench at the park near Deborah's house?",
+      "category": 4,
+      "goldAnswer": "It holds special memories of conversations with her mom",
+      "tokenF1": 0.004796163069544365,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Deborah and her mom chat about at their special bench in the park?",
+      "category": 4,
+      "goldAnswer": "dreams and life",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What feeling does Deborah get when she thinks about the time spent with her mom at their special spot?",
+      "category": 4,
+      "goldAnswer": "peace and gratitude",
+      "tokenF1": 0.0020597322348094747,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What habits does Jolene practice to feel balanced?",
+      "category": 4,
+      "goldAnswer": "yoga, meditation, walks, and mindfulness",
+      "tokenF1": 0.00137221269296741,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which yoga pose is Jolene a fan of for rest and calmness?",
+      "category": 4,
+      "goldAnswer": "savasana (the corpse pose)",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How long has Jolene been doing yoga?",
+      "category": 4,
+      "goldAnswer": "3 years",
+      "tokenF1": 0.0006868131868131869,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Jolene participate in recently that provided her with a rewarding experience?",
+      "category": 4,
+      "goldAnswer": "presenting at a virtual conference",
+      "tokenF1": 0.00137221269296741,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How did Jolene feel after receiving positive feedback at the virtual conference?",
+      "category": 4,
+      "goldAnswer": "thrilled and rewarded",
+      "tokenF1": 0.0006865774116031583,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of event did Jolene present at recently?",
+      "category": 4,
+      "goldAnswer": "virtual conference",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Jolene's mom stress the value of, which she wants to keep in mind for her engineering projects?",
+      "category": 4,
+      "goldAnswer": "Helping others",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What type of projects is Jolene interested in getting involved in the future?",
+      "category": 4,
+      "goldAnswer": "Sustainable initiatives and developing innovative solutions for environmental issues",
+      "tokenF1": 0.0013703323055841042,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How did Deborah get Luna, one of her cats?",
+      "category": 4,
+      "goldAnswer": "From the shelter",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How old is Max?",
+      "category": 4,
+      "goldAnswer": "8 years old",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What type of classes did Jolene and her partner check out during their trip to Rio de Janeiro on 30 August, 2023?",
+      "category": 4,
+      "goldAnswer": "Yoga classes",
+      "tokenF1": 0.0006868131868131869,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What type of place does Jolene visit to meditate?",
+      "category": 4,
+      "goldAnswer": "A tranquil spot by a pond",
+      "tokenF1": 0.0034293552812071334,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What was the new plant Jolene got used as a reminder for on 30 August, 2023?",
+      "category": 4,
+      "goldAnswer": "To nurture herself and embrace fresh starts",
+      "tokenF1": 0.0020569077819677754,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Jolene get the new plant on 30 August, 2023?",
+      "category": 4,
+      "goldAnswer": "As a reminder to nurture herself and embrace fresh starts",
+      "tokenF1": 0.00410958904109589,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What has Jolene been focusing on lately besides studying?",
+      "category": 4,
+      "goldAnswer": "relationship with her partner",
+      "tokenF1": 0.002059025394646534,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How did Deborah's mom support her yoga practice when she first started?",
+      "category": 4,
+      "goldAnswer": "attended classes with her",
+      "tokenF1": 0.0013726835964310228,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What was the video game console that Jolene's parents got her at age 10?",
+      "category": 4,
+      "goldAnswer": "nintendo game console",
+      "tokenF1": 0.0006865774116031583,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What was one of Jolene's favorite games to play with her mom on the nintendo wii game system?",
+      "category": 4,
+      "goldAnswer": "Monster Hunter: World",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What course did Jolene sign up for on 6 September 2023?",
+      "category": 4,
+      "goldAnswer": "meditation",
+      "tokenF1": 0.0006870491240123669,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why did Jolene have to reschedule their meeting with Deborah on September 8, 2023?",
+      "category": 4,
+      "goldAnswer": "Jolene already had plans",
+      "tokenF1": 0.002059025394646534,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where did Jolene and her partner travel for a few weeks in September 2023?",
+      "category": 4,
+      "goldAnswer": "Phuket",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What was the main focus of the session that stood out to Jolene during the retreat?",
+      "category": 4,
+      "goldAnswer": "releasing expectations and judgments and savoring the present",
+      "tokenF1": 0.004797806716929405,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Jolene feel about her progress in practicing mindfulness and gratitude?",
+      "category": 4,
+      "goldAnswer": "experiencing a new level of joy and happiness",
+      "tokenF1": 0.0054832076764907475,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What positive change did Jolene experience during the retreat?",
+      "category": 4,
+      "goldAnswer": "finding inner peace",
+      "tokenF1": 0.0020597322348094747,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Jolene recently play that she described to Deb?",
+      "category": 4,
+      "goldAnswer": "a card game about cats",
+      "tokenF1": 0.00274442538593482,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Deborah do with their mom's old friends?",
+      "category": 4,
+      "goldAnswer": "reminisced and looked through photos",
+      "tokenF1": 0.003430531732418525,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where did Deborah get married?",
+      "category": 4,
+      "goldAnswer": "on the beach",
+      "tokenF1": 0.0020597322348094747,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does yoga on the beach provide for Deborah?",
+      "category": 4,
+      "goldAnswer": "a peaceful atmosphere",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Jolene describe their home room?",
+      "category": 4,
+      "goldAnswer": "little haven for peace and rest",
+      "tokenF1": 0.00411522633744856,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What new activity did Deborah and her neighbor organize for the community on 16 September, 2023?",
+      "category": 4,
+      "goldAnswer": "Free gardening class",
+      "tokenF1": 0.0020597322348094747,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What was Deborah's mom passionate about?",
+      "category": 4,
+      "goldAnswer": "Cooking",
+      "tokenF1": 0.0006870491240123669,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What food did Deborah's mom make for her on birthdays?",
+      "category": 4,
+      "goldAnswer": "Pineapple cakes",
+      "tokenF1": 0.0013736263736263737,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of cookies did Jolene used to bake with someone close to her?",
+      "category": 4,
+      "goldAnswer": "Chocolate chip cookies",
+      "tokenF1": 0.0013731548232063166,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What outdoor activity did Jolene suggest doing together with Deborah?",
+      "category": 4,
+      "goldAnswer": "Surfing",
+      "tokenF1": 0.0006870491240123669,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What activity did Deborah enjoy at the music festival with their pals on September 20, 2023?",
+      "category": 4,
+      "goldAnswer": "Dancing and bopping around",
+      "tokenF1": 0.0006863417982155114,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Deborah find freeing at the music festival?",
+      "category": 4,
+      "goldAnswer": "Dancing and bopping around",
+      "tokenF1": 0.0006863417982155114,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What are the names of Deborah's snakes?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are Deborah's favorite books?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Where did Deborah get her dogs?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How old are Jolene's cats?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Deborah's parents give her first console?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Jolene release her pet snake?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Where did Jolene meet her new friend Anna?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is Deborah's favorite book which she mentioned on 4 February, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What cool stuff did Deborah accomplish at the retreat on 9 February, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Deborah plan to involve local engineers in her idea of teaching STEM to underprivileged kids?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What gave Deborah anxiety in the garden she visited?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Jolene spend time in the garden?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How did Jolene and her rival initially meet?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What activity does Jolene incorporate into her daily routine after going for a morning jog in the park?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What method does Jolene suggest Deborah to try for organizing tasks based on importance and urgency?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Jolene plan to pursue her dream of climbing mountains?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Who are the authors mentioned by Jolene that she enjoys reading during her yoga practice?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which show did Jolene go to with a friend on 9 April, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does Deborah find comforting about going to horror movie screenings?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Deborah describe the time spent with her snakes and partner?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "For how long has Jolene had Lucifer as a pet?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Deborah feel when spending time with Seraphim?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What made being part of the running group easy for Jolene to stay motivated?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Jolene decide to get a tarantula as a pet?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How did Deborah come to have her pet, Susie?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Deborah design inspired by their love for space and engines?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What journal has Deborah been using to help track tasks and stay organized?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What game did Jolene recommend to Deborah for being thrilling and intense?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What game did Deborah suggest as an awesome open-world game for the Nintendo Switch?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is special about the bench at the park near Jolene's house?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Jolene and her mom chat about at their special bench in the park?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How did Deborah feel after receiving positive feedback at the virtual conference?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of event did Deborah present at recently?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Deborah's mom stress the value of, which she wants to keep in mind for her engineering projects?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What type of projects is Deborah interested in getting involved in the future?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How did Jolene get Luna, one of her cats?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What type of classes did Deborah and her partner check out during their trip to Rio de Janeiro on 30 August, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Deborah get the new plant on 30 August, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How did Jolene's mom support her yoga practice when she first started?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What was the video game console that Deborah's parents got her at age 10?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What was one of Deborah's favorite games to play with her mom on the PlayStation game system?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where did Deborah and her partner travel for a few weeks in September 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Jolene do with their mom's old friends?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where did Jolene get married?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What new activity did Jolene and her neighbor organize for the community on 16 September, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What food did Jolene's mom make for her on holidays?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of cookies did Deborah used to bake with someone close to her?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What activity did Jolene enjoy at the music festival with their pals on September 20, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    }
+  ],
+  "aggregated": {
+    "overallF1": 0.001293024308963139,
+    "overallRecall": 0.17726638772663877,
+    "byCategory": {
+      "1": {
+        "f1": 0.002084240324223189,
+        "recall": 0.20555555555555555,
+        "questionCount": 21
+      },
+      "2": {
+        "f1": 0.000457600552424809,
+        "recall": 0.05952380952380952,
+        "questionCount": 42
+      },
+      "3": {
+        "f1": 0.00089151556727425,
+        "recall": 0.155,
+        "questionCount": 10
+      },
+      "4": {
+        "f1": 0.002009571052194228,
+        "recall": 0.2033898305084746,
+        "questionCount": 118
+      },
+      "5": {
+        "f1": 0,
+        "recall": 0.20833333333333334,
+        "questionCount": 48
+      }
+    },
+    "totalQuestions": 239
+  }
+}

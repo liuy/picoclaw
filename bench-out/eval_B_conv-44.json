@@ -1,0 +1,1144 @@
+{
+  "mode": "B",
+  "sampleId": "conv-44",
+  "qaResults": [
+    {
+      "question": "Which year did Audrey adopt the first three of her dogs?",
+      "category": 2,
+      "goldAnswer": "2020",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Andrew start his new job as a financial analyst?",
+      "category": 2,
+      "goldAnswer": "The week before March 27, 2023",
+      "tokenF1": 0.00392156862745098,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of indoor activities has Andrew pursued with his girlfriend?",
+      "category": 1,
+      "goldAnswer": "boardgames, volunteering at pet shelter, wine tasting, growing flowers",
+      "tokenF1": 0.005338078291814947,
+      "recallHitRate": 0.25
+    },
+    {
+      "question": "What kind of places have Andrew and his girlfriend checked out around the city?",
+      "category": 1,
+      "goldAnswer": "cafes, new places to eat, open space for hikes, pet shelter, wine tasting event, park",
+      "tokenF1": 0.01020408163265306,
+      "recallHitRate": 0.75
+    },
+    {
+      "question": "When did Audrey make muffins for herself?",
+      "category": 2,
+      "goldAnswer": "The week of April 3rd to 9th",
+      "tokenF1": 0.011787819253438114,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Audrey see a hummingbird?",
+      "category": 2,
+      "goldAnswer": "first week of May 2023",
+      "tokenF1": 0.007339449541284404,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Audrey adopt Pixie?",
+      "category": 2,
+      "goldAnswer": "around April 2, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How many years passed between Audrey adopting Pixie and her other three dogs?",
+      "category": 2,
+      "goldAnswer": "three years",
+      "tokenF1": 0.0026990553306342783,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Did Andrew have a pet dog during March 2023?",
+      "category": 2,
+      "goldAnswer": "No",
+      "tokenF1": 0.0019550342130987292,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of classes or groups has Audrey joined to take better care of her dogs?",
+      "category": 1,
+      "goldAnswer": "positive reinforcement training workshop to bond with pets, dog training course, agility training course, grooming course, dog-owners group",
+      "tokenF1": 0.0117096018735363,
+      "recallHitRate": 0.4
+    },
+    {
+      "question": "When did Audrey's positive reinforcement training course for dogs take place?",
+      "category": 2,
+      "goldAnswer": "June, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Andrew go rock climbing?",
+      "category": 2,
+      "goldAnswer": "June 11, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What outdoor activities has Andrew done other than hiking in nature?",
+      "category": 1,
+      "goldAnswer": "rock climbing, fishing, camping",
+      "tokenF1": 0.001160092807424594,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "When did Audrey move to a new place?",
+      "category": 2,
+      "goldAnswer": "June 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is something that Andrew really misses while working in the city?",
+      "category": 1,
+      "goldAnswer": "being in nature",
+      "tokenF1": 0.003992015968063872,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is a shared frustration regarding dog ownership for Audrey and Andrew?",
+      "category": 1,
+      "goldAnswer": "Not being able to find pet friendly spots.",
+      "tokenF1": 0.0169971671388102,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When is Andrew going to go hiking with Audrey?",
+      "category": 2,
+      "goldAnswer": "August",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How many times did Audrey and Andew plan to hike together?",
+      "category": 1,
+      "goldAnswer": "three times",
+      "tokenF1": 0.0014958863126402395,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "Where did Audrey get Pixie from?",
+      "category": 1,
+      "goldAnswer": "breeder",
+      "tokenF1": 0,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What is an indoor activity that Andrew would enjoy doing while make his dog happy?",
+      "category": 3,
+      "goldAnswer": "cook dog treats",
+      "tokenF1": 0.0012594458438287155,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "Which meat does Audrey prefer eating more than others?",
+      "category": 3,
+      "goldAnswer": "chicken",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are the classes that Audrey took for her dogs to?",
+      "category": 1,
+      "goldAnswer": "Positive reinforcement training class for bonding, dog training course, agility class",
+      "tokenF1": 0.006359300476947535,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "Where did Andrew go during the first weekend of August 2023?",
+      "category": 2,
+      "goldAnswer": "camping with girlfriend",
+      "tokenF1": 0.003875968992248062,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What are some problems that Andrew faces before he adopted Toby?",
+      "category": 1,
+      "goldAnswer": "Finding the right dog and pet-friendly apartments close to open spaces",
+      "tokenF1": 0.011363636363636364,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Did Audrey and Andrew grow up with a pet dog?",
+      "category": 1,
+      "goldAnswer": "Yes",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Andrew and his girlfriend go fishing?",
+      "category": 2,
+      "goldAnswer": "weekend before August 24, 2023",
+      "tokenF1": 0.003194888178913738,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is the biggest stressor in Andrew's life besides not being able to hike frequently?",
+      "category": 1,
+      "goldAnswer": "work",
+      "tokenF1": 0.0019685039370078736,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Andrew feel about his current work?",
+      "category": 1,
+      "goldAnswer": "Stressful",
+      "tokenF1": 0.0017346053772766695,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What is something that Audrey often dresses up her dogs with?",
+      "category": 1,
+      "goldAnswer": "Hats",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are the names of Audrey's dogs?",
+      "category": 1,
+      "goldAnswer": "Pepper, Precious, Panda, and Pixie",
+      "tokenF1": 0.007677543186180422,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "When is Andrew planning to go to the beach with his girlfriend?",
+      "category": 2,
+      "goldAnswer": "November 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What has Andrew done with his dogs?",
+      "category": 1,
+      "goldAnswer": "Taking walks and hiking",
+      "tokenF1": 0.0072992700729927005,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of tattoo does Audrey have on her arm?",
+      "category": 1,
+      "goldAnswer": "Tattoos of her four dogs.",
+      "tokenF1": 0.010113780025284451,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What can Andrew potentially do to improve his stress and accomodate his living situation with his dogs?",
+      "category": 3,
+      "goldAnswer": "Change to a hybrid or remote job so he can move away from the city to the suburbs to have a larger living space and be closer to nature.",
+      "tokenF1": 0.059259259259259255,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "How many months passed between Andrew adopting Toby and Buddy?",
+      "category": 2,
+      "goldAnswer": "three months",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are the names of Andrew's dogs?",
+      "category": 1,
+      "goldAnswer": "Toby, Scout, Buddy",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are some foods that Audrey likes eating?",
+      "category": 1,
+      "goldAnswer": "chicken pot pie, chicken roast, blueberry muffins, sushi",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Audrey get into an accident in the park?",
+      "category": 2,
+      "goldAnswer": "between October 19 and 24, 2023",
+      "tokenF1": 0.0017746228926353148,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Andrew and his girlfriend go on a wine tasting trip?",
+      "category": 2,
+      "goldAnswer": "the weekend before October 24, 2023",
+      "tokenF1": 0.00489795918367347,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Audrey get wtih having so many dogs?",
+      "category": 1,
+      "goldAnswer": "Companionship",
+      "tokenF1": 0,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What is a good place for dogs to run around freely and meet new friends?",
+      "category": 1,
+      "goldAnswer": "The dog park",
+      "tokenF1": 0.00320855614973262,
+      "recallHitRate": 0.6666666666666666
+    },
+    {
+      "question": "What are the breeds of Audrey's dogs?",
+      "category": 1,
+      "goldAnswer": "Mongrel mixed with Lab for Pepper and Panda. Mongrel mixed with Chihuahua for Precious and Pixie.",
+      "tokenF1": 0.025225225225225224,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What technique is Audrey using to discipline her dogs?",
+      "category": 1,
+      "goldAnswer": "Positive reinforcement",
+      "tokenF1": 0.007067137809187279,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "Which US state do Audrey and Andrew potentially live in?",
+      "category": 3,
+      "goldAnswer": "Minnesota",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which national park could Audrey and Andrew be referring to in their conversations?",
+      "category": 3,
+      "goldAnswer": "Voyageurs National Park",
+      "tokenF1": 0.0038948393378773127,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "How many pets will Andrew have, as of December 2023?",
+      "category": 2,
+      "goldAnswer": "three",
+      "tokenF1": 0,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "How many pets did Andrew have, as of September 2023?",
+      "category": 2,
+      "goldAnswer": "one",
+      "tokenF1": 0.002350176263219741,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "How many months passed between Andrew adopting Buddy and Scout",
+      "category": 2,
+      "goldAnswer": "one month",
+      "tokenF1": 0.0033898305084745766,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does Andrew view his pets as?",
+      "category": 1,
+      "goldAnswer": "Family",
+      "tokenF1": 0.0021321961620469087,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What does Audrey view her pets as?",
+      "category": 1,
+      "goldAnswer": "Family",
+      "tokenF1": 0.002098635886673662,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What is a skill that Audrey learned to take care of her dogs?",
+      "category": 1,
+      "goldAnswer": "Grooming",
+      "tokenF1": 0.00186219739292365,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What items has Audrey bought or made for her dogs?",
+      "category": 1,
+      "goldAnswer": "dog tags, toys, dog beds, collars",
+      "tokenF1": 0.0021030494216614094,
+      "recallHitRate": 0.25
+    },
+    {
+      "question": "What is something that Andrew could do to make birdwatching hobby to fit in his city schedule?",
+      "category": 3,
+      "goldAnswer": "Install a bird feeder outside where he can see the birds without going outdoors.",
+      "tokenF1": 0.011678832116788322,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is a career that Andrew could potentially pursue with his love for animals and nature?",
+      "category": 3,
+      "goldAnswer": "Park ranger or a similar position working for the National Park Services.",
+      "tokenF1": 0.006976744186046512,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What activity do Audrey's dogs like to do in the dog park?",
+      "category": 1,
+      "goldAnswer": "Play fetch with ball and frisbee, run around and meet other dogs",
+      "tokenF1": 0.011009174311926606,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Andrew make his dogs a fun indoor area?",
+      "category": 2,
+      "goldAnswer": "few days before November 22, 2023",
+      "tokenF1": 0.001697792869269949,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Has Andrew moved into a new apartment for his dogs?",
+      "category": 1,
+      "goldAnswer": "No",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Andrew adopt Scout?",
+      "category": 2,
+      "goldAnswer": "few days before November 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Audrey eat for dinner on October 24, 2023?",
+      "category": 2,
+      "goldAnswer": "sushi",
+      "tokenF1": 0.004106776180698153,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How long has it been since Andrew adopted his first pet, as of November 2023?",
+      "category": 2,
+      "goldAnswer": "4 months",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How many dogs does Andrew have?",
+      "category": 1,
+      "goldAnswer": "3",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which specific type of bird mesmerizes Andrew?",
+      "category": 4,
+      "goldAnswer": "Eagles",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Andrew express missing about exploring nature trails with his family's dog?",
+      "category": 4,
+      "goldAnswer": "The peaceful moments",
+      "tokenF1": 0.0046801872074883,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of pastries did Andrew and his girlfriend have at the cafe?",
+      "category": 4,
+      "goldAnswer": "croissants, muffins, and tarts",
+      "tokenF1": 0.0017937219730941704,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of flowers does Audrey have a tattoo of?",
+      "category": 4,
+      "goldAnswer": "sunflowers",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Audrey do during dog playdates in the park?",
+      "category": 4,
+      "goldAnswer": "chat with people while dogs make new friends",
+      "tokenF1": 0.00974817221770918,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What type of dog was Andrew looking to adopt based on his living space?",
+      "category": 4,
+      "goldAnswer": "smaller dog",
+      "tokenF1": 0.0017346053772766697,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Where does Andrew want to live to give their dog a large, open space to run around?",
+      "category": 4,
+      "goldAnswer": "near a park or woods",
+      "tokenF1": 0.004716981132075472,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why did Audrey sign up for a workshop about bonding with pets?",
+      "category": 4,
+      "goldAnswer": "Strengthen the bond with her pets",
+      "tokenF1": 0.006821282401091405,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Audrey hear about the workshop on bonding with pets?",
+      "category": 4,
+      "goldAnswer": "Saw a workshop flyer at the local pet store",
+      "tokenF1": 0.014365522745411011,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of training was the workshop Audrey signed up for in May 2023?",
+      "category": 4,
+      "goldAnswer": "Positive reinforcement training",
+      "tokenF1": 0.005145797598627788,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Audrey describe she dog he met at the pet store?",
+      "category": 4,
+      "goldAnswer": "Friendly and playful",
+      "tokenF1": 0.002509410288582183,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why did Audrey think positive reinforcement training is important for pets?",
+      "category": 4,
+      "goldAnswer": "To have pets learn how to behave in a positive way",
+      "tokenF1": 0.014874915483434751,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What challenge is Andrew facing in their search for a pet?",
+      "category": 4,
+      "goldAnswer": "Finding a pet-friendly spot in the city",
+      "tokenF1": 0.012019230769230768,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Andrew feel about their search for a pet-friendly place?",
+      "category": 4,
+      "goldAnswer": "Discouraged but determined",
+      "tokenF1": 0.003409090909090909,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What outdoor activities does Andrew plan on trying after the rock climbing class?",
+      "category": 4,
+      "goldAnswer": "kayaking and bungee jumping",
+      "tokenF1": 0.003740648379052369,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How long does Audrey typically walk her dogs for?",
+      "category": 4,
+      "goldAnswer": "about an hour",
+      "tokenF1": 0.0025608194622279124,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Audrey set up in the backyard for their dogs on June 26, 2023?",
+      "category": 4,
+      "goldAnswer": "a doggy play area with agility stuff and toys",
+      "tokenF1": 0.012482662968099861,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Audrey and her friends stumble across during a hike a few years back, as mentioned on June 26, 2023?",
+      "category": 4,
+      "goldAnswer": "a stunning lake in the mountains",
+      "tokenF1": 0.010309278350515464,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Audrey's favorite recipe that she shares with Andrew on 3 July, 2023?",
+      "category": 4,
+      "goldAnswer": "Chicken Pot Pie",
+      "tokenF1": 0.0036900369003690036,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What dish is one of Audrey's favorite dishes that includes garlic and is shared with Andrew on 3 July, 2023?",
+      "category": 4,
+      "goldAnswer": "Roasted Chicken",
+      "tokenF1": 0.003404255319148936,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Andrew and his GF do on the Monday before July 24, 2023?",
+      "category": 4,
+      "goldAnswer": "volunteered at a pet shelter",
+      "tokenF1": 0.020887728459530026,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is the name of Audrey's childhood dog?",
+      "category": 4,
+      "goldAnswer": "Max",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What special memories does Audrey have with her childhood dog, Max?",
+      "category": 4,
+      "goldAnswer": "Long walks in the neighborhood, exploring new paths, sharing worries and hopes",
+      "tokenF1": 0.016105417276720352,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What are some of the personalities of Audrey's four fur babies?",
+      "category": 4,
+      "goldAnswer": "oldest is relaxed, second is playful, third can be naughty but loves cuddles, youngest is full of life",
+      "tokenF1": 0.0316205533596838,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of classes did Audrey start with her pups recently on 4 August, 2023?",
+      "category": 4,
+      "goldAnswer": "Agility classes",
+      "tokenF1": 0.0029498525073746312,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How often does Audrey take her pups to the park for practice?",
+      "category": 4,
+      "goldAnswer": "Twice a week",
+      "tokenF1": 0.004056795131845843,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How long did the trail hike that Audrey went on with her pups take?",
+      "category": 4,
+      "goldAnswer": "Two hours",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What advice did Audrey give to Andrew regarding grooming Toby?",
+      "category": 4,
+      "goldAnswer": "Grooming slowly and gently, paying attention to sensitive areas like ears and paws. And remember to stay patient and positive throughout the grooming process.",
+      "tokenF1": 0.03770620581304006,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is essential to keep the dogs looking good according to Audrey?",
+      "category": 4,
+      "goldAnswer": "Daily brushing, regular baths, nail trims, and lots of love",
+      "tokenF1": 0.015290519877675842,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Audrey organize with the neighbors' dogs?",
+      "category": 4,
+      "goldAnswer": "a doggy playdate",
+      "tokenF1": 0.010526315789473682,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Audrey do to give her dogs extra comfort as the weather cooled down?",
+      "category": 4,
+      "goldAnswer": "Got new beds for them",
+      "tokenF1": 0.007153075822603719,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Audrey describe the new beds for her dogs?",
+      "category": 4,
+      "goldAnswer": "Super cozy and comfy",
+      "tokenF1": 0.0021691973969631237,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How did Audrey calm down her dog after the leash incident?",
+      "category": 4,
+      "goldAnswer": "Petted, hugged, spoke calmly and slowly walked the dog",
+      "tokenF1": 0.0075187969924812035,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How often does Audrey take her dogs for walks?",
+      "category": 4,
+      "goldAnswer": "Multiple times a day",
+      "tokenF1": 0.008290155440414509,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of flowers does Audrey take care of?",
+      "category": 4,
+      "goldAnswer": "Peruvian Lilies",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Andrew learn from reading books about ecological systems?",
+      "category": 4,
+      "goldAnswer": "about animals, plants, and ecosystems and how they work together",
+      "tokenF1": 0.01869158878504673,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Andrew suggest as a way to reduce carbon footprint?",
+      "category": 4,
+      "goldAnswer": "biking or using public transport",
+      "tokenF1": 0.011851851851851851,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Andrew suggest helping the planet while also training the body?",
+      "category": 4,
+      "goldAnswer": "by biking",
+      "tokenF1": 0.0016778523489932888,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Audrey do with her pups over the weekend before 4th October, 2023?",
+      "category": 4,
+      "goldAnswer": "Took them to the beach",
+      "tokenF1": 0.008710801393728224,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What was the reason Audrey couldn't walk her dogs for a period of time?",
+      "category": 4,
+      "goldAnswer": "Knee injury",
+      "tokenF1": 0.001638001638001638,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of jewelry does Audrey make?",
+      "category": 4,
+      "goldAnswer": "Jewelry made from recycled objects",
+      "tokenF1": 0.010050251256281409,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why does Audrey make jewelry out of recycled objects?",
+      "category": 4,
+      "goldAnswer": "To show love for creativity and sustainability",
+      "tokenF1": 0.010300429184549357,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What organization does Audrey donate a portion of his profits to?",
+      "category": 4,
+      "goldAnswer": "Animal shelter",
+      "tokenF1": 0.0060790273556231,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Audrey help out the animal shelter?",
+      "category": 4,
+      "goldAnswer": "By donating a portion of his profits frmo selling jwelery",
+      "tokenF1": 0.0048543689320388345,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of games do Audrey's dogs like to play at the park?",
+      "category": 4,
+      "goldAnswer": "Fetch and Frisbee",
+      "tokenF1": 0.002834868887313962,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Audrey make to thank her neighbors?",
+      "category": 4,
+      "goldAnswer": "Goodies",
+      "tokenF1": 0.0025094102885821834,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How do Audrey's dogs react to snow?",
+      "category": 4,
+      "goldAnswer": "Confused",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Audrey describe her dogs' response to snow?",
+      "category": 4,
+      "goldAnswer": "They definitely prefer nice, sunny days in the grass.",
+      "tokenF1": 0.033210332103321034,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of experiences are Audrey's dogs the best companions for?",
+      "category": 4,
+      "goldAnswer": "Exploring the great outdoors",
+      "tokenF1": 0.004189944134078212,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What activity do Andrew and Buddy enjoy doing together?",
+      "category": 4,
+      "goldAnswer": "Walking",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What do Andrew and Buddy like doing on walks?",
+      "category": 4,
+      "goldAnswer": "Checking out new hiking trails",
+      "tokenF1": 0.00425531914893617,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What cuisine did Andrew recently try at a new spot in town?",
+      "category": 4,
+      "goldAnswer": "sushi",
+      "tokenF1": 0.0012492192379762648,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which type of sushi did Audrey suggest trying first to someone new to sushi?",
+      "category": 4,
+      "goldAnswer": "California or salmon roll",
+      "tokenF1": 0.009195402298850575,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of date is Andrew going on Sunday?",
+      "category": 4,
+      "goldAnswer": "picnic date",
+      "tokenF1": 0.004140786749482402,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Andrew and Audrey plan to do on the Saturday after October 28, 2023?",
+      "category": 4,
+      "goldAnswer": "Go hiking",
+      "tokenF1": 0.004597701149425287,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What aspect of autumn does Andrew find beautiful?",
+      "category": 4,
+      "goldAnswer": "The autumn colors",
+      "tokenF1": 0.006787330316742081,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Audrey do in November 2023 to better take care of her dogs?",
+      "category": 4,
+      "goldAnswer": "Joined a dog owners group",
+      "tokenF1": 0.008496176720475788,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How often does Audrey meet up with other dog owners for tips and playdates?",
+      "category": 4,
+      "goldAnswer": "Once a week",
+      "tokenF1": 0.0029168692270296545,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Audrey share to show ways to keep dogs active in the city?",
+      "category": 4,
+      "goldAnswer": "photography of a basket full of stuffed animals",
+      "tokenF1": 0.0055005500550055,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What type of activities does Audrey suggest for mental stimulation of the dogs?",
+      "category": 4,
+      "goldAnswer": "puzzles, training, hide-and-seek",
+      "tokenF1": 0.008733624454148471,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Andrew planning to do with Scout, Toby, and Buddy?",
+      "category": 4,
+      "goldAnswer": "Take them to a nearby park",
+      "tokenF1": 0.01141552511415525,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Andrew get for Scout to create a safe and fun space for them?",
+      "category": 4,
+      "goldAnswer": "essentials like a bed, toys, and puppy pads",
+      "tokenF1": 0.013190436933223413,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which specific type of bird mesmerizes Audrey?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of flowers does Andrew have a tattoo of?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of dog was Audrey looking to adopt based on her living space?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Audrey sign up for a workshop about car maintenance?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Andrew hear about the workshop on bonding with pets?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of training was the workshop Andrew signed up for in May 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Andrew describe the dog he met at the pet store?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What challenge is Audrey facing in their search for a pet?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What indoor activities does Andrew plan on trying after the rock climbing class?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Andrew set up in the backyard for their dogs on June 26, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Audrey and her GF do on the Monday before July 24, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is the name of Andrew's childhood dog?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What special memories does Andrew have with his childhood dog, Max?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What are some of the personalities of Andrew's four fur babies?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of classes did Andrew start with his pups recently on 4 August, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is essential to keep the dogs looking good according to Andrew?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Audrey organize with the neighbors' cats?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Andrew do to give his dogs extra comfort as the weather cooled down?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Andrew describe the new beds for his dogs?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How did Andrew calm down his dog after the leash incident?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How often does Andrew take his dogs for walks?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of vegetables does Audrey take care of?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Andrew learn from reading books about economic systems?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What was the reason Andrew couldn't walk his dogs for a period of time?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of jewelry does Andrew make?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why does Andrew make jewelry out of recycled objects?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of games do Andrew's dogs like to play at the park?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Andrew make to thank his neighbors?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How do Andrew's dogs react to snow?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Andrew describe his dogs' response to snow?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of experiences are Audrey's cats the best companions for?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What activity do Audrey and Buddy enjoy doing together?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of drink did Andrew recently try at a new spot in town?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which type of pizza did Audrey suggest trying first to someone new to Italian cuisine?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How often does Andrew meet up with other dog owners for tips and playdates?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    }
+  ],
+  "aggregated": {
+    "overallF1": 0.004857839883023291,
+    "overallRecall": 0.6570675105485232,
+    "byCategory": {
+      "1": {
+        "f1": 0.0050706578607882195,
+        "recall": 0.28833333333333333,
+        "questionCount": 30
+      },
+      "2": {
+        "f1": 0.0022079559181266465,
+        "recall": 0.6180555555555556,
+        "questionCount": 24
+      },
+      "3": {
+        "f1": 0.011867017249114304,
+        "recall": 0.19047619047619047,
+        "questionCount": 7
+      },
+      "4": {
+        "f1": 0.007731595208309575,
+        "recall": 0.8064516129032258,
+        "questionCount": 62
+      },
+      "5": {
+        "f1": 0,
+        "recall": 0.8285714285714286,
+        "questionCount": 35
+      }
+    },
+    "totalQuestions": 158
+  }
+}

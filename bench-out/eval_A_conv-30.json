@@ -1,0 +1,768 @@
+{
+  "mode": "A",
+  "sampleId": "conv-30",
+  "qaResults": [
+    {
+      "question": "When Jon has lost his job as a banker?",
+      "category": 2,
+      "goldAnswer": "19 January, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When Gina has lost her job at Door Dash?",
+      "category": 2,
+      "goldAnswer": "January, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How do Jon and Gina both like to destress?",
+      "category": 4,
+      "goldAnswer": "by dancing",
+      "tokenF1": 0.0013540961408259986,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What do Jon and Gina both have in common?",
+      "category": 1,
+      "goldAnswer": "They lost their jobs and decided to start their own businesses.",
+      "tokenF1": 0.004049949375632805,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Jon decide to start his dance studio?",
+      "category": 4,
+      "goldAnswer": "He lost his job and decided to start his own business to share his passion.",
+      "tokenF1": 0.004718570947084597,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What Jon thinks the ideal dance studio should look like?",
+      "category": 1,
+      "goldAnswer": "By the water, with natural light and Marley flooring",
+      "tokenF1": 0.002701789935832489,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When is Jon's group performing at a festival?",
+      "category": 2,
+      "goldAnswer": "February, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Gina launch an ad campaign for her store?",
+      "category": 2,
+      "goldAnswer": "29 January, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When was Jon in Paris?",
+      "category": 2,
+      "goldAnswer": "28 January 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which city have both Jean and John visited?",
+      "category": 1,
+      "goldAnswer": "Rome",
+      "tokenF1": 0.0006772773450728074,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "When did Gina team up with a local artist for some cool designs?",
+      "category": 2,
+      "goldAnswer": "February, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Gina get her tattoo?",
+      "category": 2,
+      "goldAnswer": "A few years ago",
+      "tokenF1": 0.0013531799729364006,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jon start to go to the gym?",
+      "category": 2,
+      "goldAnswer": "March, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Gina open her online clothing store?",
+      "category": 2,
+      "goldAnswer": "16 March, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jon start expanding his studio's social media presence?",
+      "category": 2,
+      "goldAnswer": "April, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jon host a dance competition?",
+      "category": 2,
+      "goldAnswer": "May, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jon go to a fair to get more exposure for his dance studio?",
+      "category": 2,
+      "goldAnswer": "24 April, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Gina decide to start her own clothing store?",
+      "category": 1,
+      "goldAnswer": "She always loved fashion trends and finding unique pieces and she lost her job so decided it was time to start her own business.",
+      "tokenF1": 0.01075268817204301,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Do Jon and Gina start businesses out of what they love?",
+      "category": 1,
+      "goldAnswer": "Yes",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Gina interview for a design internship?",
+      "category": 2,
+      "goldAnswer": "10 May, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Gina get accepted for the design internship?",
+      "category": 2,
+      "goldAnswer": "27 May, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Jon start reading \"The Lean Startup\"?",
+      "category": 2,
+      "goldAnswer": "May, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Gina develop a video presentation to teach how to style her fashion pieces? ",
+      "category": 2,
+      "goldAnswer": "June, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Gina promote her clothes store?",
+      "category": 1,
+      "goldAnswer": "worked with an artist to make unique fashion pieces, made limited-edition sweatshirts, got some new offers and promotions for online store, developed a video presentation showing how to style her pieces",
+      "tokenF1": 0.015420717398592023,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "Which events has Jon participated in to promote his business venture?",
+      "category": 1,
+      "goldAnswer": "fair, networking events, dance competition",
+      "tokenF1": 0.0013527223537368955,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "What does Jon's dance studio offer?",
+      "category": 1,
+      "goldAnswer": "one-on-one metoring and training to dancers,  workshops and classes to local schools and centers",
+      "tokenF1": 0.006743088334457182,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "When did Jon receive mentorship to promote his venture?",
+      "category": 2,
+      "goldAnswer": "15 June, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Did Jon and Gina both participate in dance competitions?",
+      "category": 1,
+      "goldAnswer": "Yes",
+      "tokenF1": 0,
+      "recallHitRate": 0.2
+    },
+    {
+      "question": "When was Jon in Rome?",
+      "category": 2,
+      "goldAnswer": "June 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which cities has Jon visited?",
+      "category": 1,
+      "goldAnswer": "Paris, Rome",
+      "tokenF1": 0.0006770480704129993,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "When Jon is planning to open his dance studio?",
+      "category": 2,
+      "goldAnswer": "20 June, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How long did it take for Jon to open his studio?",
+      "category": 1,
+      "goldAnswer": "six months",
+      "tokenF1": 0,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "When did Gina design a limited collection of hoodies?",
+      "category": 2,
+      "goldAnswer": "June 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Jon visit networking events for his store?",
+      "category": 2,
+      "goldAnswer": "20 June, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Gina start being recognized by fashion editors?",
+      "category": 2,
+      "goldAnswer": "July 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Jon start learning marketing and analytics tools?",
+      "category": 2,
+      "goldAnswer": "July, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Jon and Gina decide to collaborate to create dance content?",
+      "category": 2,
+      "goldAnswer": "21 July 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Gina mention Shia Labeouf?",
+      "category": 2,
+      "goldAnswer": " 23 July, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Gina go to a dance class with a group of friends?",
+      "category": 2,
+      "goldAnswer": "21 July 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Gina's favorite style of dance?",
+      "category": 4,
+      "goldAnswer": "Contemporary",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is Jon's favorite style of dance?",
+      "category": 4,
+      "goldAnswer": "Contemporary",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What was Gina's favorite dancing memory?",
+      "category": 4,
+      "goldAnswer": "Winning first place at a regionals dance competition",
+      "tokenF1": 0.002702702702702703,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of dance piece did Gina's team perform to win first place?",
+      "category": 4,
+      "goldAnswer": "\"Finding Freedom\"",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What do the dancers in the photo represent?",
+      "category": 4,
+      "goldAnswer": "They are performing at the festival",
+      "tokenF1": 0.0020283975659229213,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does Gina say about the dancers in the photo?",
+      "category": 4,
+      "goldAnswer": "They look graceful",
+      "tokenF1": 0.0006768189509306261,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is Jon's attitude towards being part of the dance festival?",
+      "category": 4,
+      "goldAnswer": "Glad",
+      "tokenF1": 0.0006772773450728074,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of flooring is Jon looking for in his dance studio?",
+      "category": 4,
+      "goldAnswer": "Marley flooring",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Gina find for her clothing store on 1 February, 2023?",
+      "category": 4,
+      "goldAnswer": "The perfect spot for her store",
+      "tokenF1": 0.003380662609871535,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Gina design for her store?",
+      "category": 4,
+      "goldAnswer": "the space, furniture, and decor",
+      "tokenF1": 0.0013527223537368955,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Gina want her customers to feel in her store?",
+      "category": 4,
+      "goldAnswer": "cozy and comfortable",
+      "tokenF1": 0.0006768189509306261,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Jon say about Gina's progress with her store?",
+      "category": 4,
+      "goldAnswer": "hard work's paying off",
+      "tokenF1": 0.0013531799729364006,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What made Gina choose the furniture and decor for her store?",
+      "category": 4,
+      "goldAnswer": "personal style and customer comfort",
+      "tokenF1": 0.002705444707473791,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Jon say about creating a special experience for customers?",
+      "category": 4,
+      "goldAnswer": "It's the key to making them feel welcome and coming back",
+      "tokenF1": 0.004724940938238271,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Gina say about creating an experience for her customers?",
+      "category": 4,
+      "goldAnswer": "making them want to come back",
+      "tokenF1": 0.003380662609871535,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How is Gina's store doing?",
+      "category": 4,
+      "goldAnswer": "The store is doing great.",
+      "tokenF1": 0.003381805884342239,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does Gina's tattoo symbolize?",
+      "category": 4,
+      "goldAnswer": "Freedom and expressing herself through dance",
+      "tokenF1": 0.0020283975659229213,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Jon and Gina compare their entrepreneurial journeys to?",
+      "category": 4,
+      "goldAnswer": "dancing together and supporting each other",
+      "tokenF1": 0.0020283975659229213,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What advice does Gina give to Jon about running a successful business?",
+      "category": 4,
+      "goldAnswer": "build relationships with customers, create a strong brand image, stay positive",
+      "tokenF1": 0.0033749578130273373,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Jon shut down his bank account?",
+      "category": 4,
+      "goldAnswer": "for his business",
+      "tokenF1": 0.0013536379018612521,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Gina combine her clothing business with dance?",
+      "category": 4,
+      "goldAnswer": "she is passionate about dance and fashion",
+      "tokenF1": 0.004055424129773572,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does Jon's dance make him?",
+      "category": 4,
+      "goldAnswer": "happy",
+      "tokenF1": 0.0006772773450728074,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Gina receive from a dance contest?",
+      "category": 4,
+      "goldAnswer": "a trophy",
+      "tokenF1": 0.0006770480704129993,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Gina stay confident in her business?",
+      "category": 4,
+      "goldAnswer": "By reminding herself of her successes and progress, having a support system, and focusing on why she started",
+      "tokenF1": 0.006734006734006735,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of professional experience did Gina get accepted for on May 23, 2023?",
+      "category": 4,
+      "goldAnswer": "fashion internship",
+      "tokenF1": 0.0006770480704129993,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Where is Gina's fashion internship?",
+      "category": 4,
+      "goldAnswer": "fashion department of an international company",
+      "tokenF1": 0.0020283975659229213,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What book is Jon currently reading?",
+      "category": 4,
+      "goldAnswer": "The Lean Startup",
+      "tokenF1": 0.0006768189509306261,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is Jon offering to the dancers at his dance studio?",
+      "category": 4,
+      "goldAnswer": "One-on-one mentoring and training",
+      "tokenF1": 0.0027063599458728013,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Jon use the clipboard with a notepad attached to it?",
+      "category": 4,
+      "goldAnswer": "To set goals, track achievements, and find areas for improvement",
+      "tokenF1": 0.0047265361242403775,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Jon tell Gina he won't do?",
+      "category": 4,
+      "goldAnswer": "quit",
+      "tokenF1": 0.0006772773450728074,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Jon take a trip to Rome for?",
+      "category": 4,
+      "goldAnswer": "To clear his mind",
+      "tokenF1": 0.002029769959404601,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Jon working on opening?",
+      "category": 4,
+      "goldAnswer": "a dance studio",
+      "tokenF1": 0.0020304568527918783,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Gina describe the studio that Jon has opened?",
+      "category": 4,
+      "goldAnswer": "amazing",
+      "tokenF1": 0.0006772773450728074,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Jon feel about the opening night of his dance studio?",
+      "category": 4,
+      "goldAnswer": "excited",
+      "tokenF1": 0.0006772773450728074,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Gina describe the feeling that dance brings?",
+      "category": 4,
+      "goldAnswer": "magical",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Jon plan to do at the grand opening of his dance studio?",
+      "category": 4,
+      "goldAnswer": "savor all the good vibes",
+      "tokenF1": 0.002705444707473791,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Gina say to Jon about the grand opening?",
+      "category": 4,
+      "goldAnswer": "Let's live it up and make some great memories",
+      "tokenF1": 0.006079027355623101,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is the general sentiment about the upcoming grand opening?",
+      "category": 4,
+      "goldAnswer": "excitement",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Gina make a limited edition line of?",
+      "category": 4,
+      "goldAnswer": "Hoodies",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "According to Gina, what makes Jon a perfect mentor and guide?",
+      "category": 4,
+      "goldAnswer": "His positivity and determination",
+      "tokenF1": 0.002029769959404601,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What temporary job did Jon take to cover expenses?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What plans does Jon have after receiving advice at the networking event?",
+      "category": 4,
+      "goldAnswer": "Sprucing up his business plan, tweaking his pitch to investors, and working on an online platform.",
+      "tokenF1": 0.008086253369272238,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What offer does Gina make to Jon regarding social media?",
+      "category": 4,
+      "goldAnswer": "Helping with making content and managing his social media accounts.",
+      "tokenF1": 0.005401755570560432,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Jon's favorite style of painting?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What was Jon's favorite dancing memory?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of dance piece did Jon's team perform to win first place?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is Gina's attitude towards participating in the dance festival?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of flooring is Gina looking for in her dance studio?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Jon find for his clothing store on 1 February, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Jon design for his store?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Jon want his customers to feel in her store?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What made Jon choose the furniture and decor for his store?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How is Jon's store doing?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does Jon's tattoo symbolize?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Gina shut down her bank account?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why did Jon combine his clothing business with dance?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Gina receive from a dance contest?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of professional experience did Jon get accepted for on May 23, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Where is Gina's HR internship?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Where is Jon's fashion internship?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What book is Gina currently reading?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Gina use the clipboard with a notepad attached to it?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Jon take a trip to Barcelona for?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Jon make a limited edition line of?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What temporary job did Gina take to cover expenses?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What plans does Gina have after receiving advice at the networking event?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    }
+  ],
+  "aggregated": {
+    "overallF1": 0.0013236302879217799,
+    "overallRecall": 0.33365079365079364,
+    "byCategory": {
+      "1": {
+        "f1": 0.003852298271434565,
+        "recall": 0.27575757575757576,
+        "questionCount": 11
+      },
+      "2": {
+        "f1": 0.00005204538357447695,
+        "recall": 0.4230769230769231,
+        "questionCount": 26
+      },
+      "4": {
+        "f1": 0.0021648345289334153,
+        "recall": 0.3409090909090909,
+        "questionCount": 44
+      },
+      "5": {
+        "f1": 0,
+        "recall": 0.25,
+        "questionCount": 24
+      }
+    },
+    "totalQuestions": 105
+  }
+}

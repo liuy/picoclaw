@@ -1,0 +1,1732 @@
+{
+  "mode": "B",
+  "sampleId": "conv-43",
+  "qaResults": [
+    {
+      "question": "what are John's goals with regards to his basketball career?",
+      "category": 1,
+      "goldAnswer": "improve shooting percentage, win a championship",
+      "tokenF1": 0.003430531732418525,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are John's goals for his career that are not related to his basketball skills?",
+      "category": 1,
+      "goldAnswer": "get endorsements, build his brand, do charity work",
+      "tokenF1": 0.006729475100942127,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What items does John collect?",
+      "category": 1,
+      "goldAnswer": "sneakers, fantasy movie DVDs, jerseys",
+      "tokenF1": 0.0053475935828877,
+      "recallHitRate": 0.6666666666666666
+    },
+    {
+      "question": "Would Tim enjoy reading books by C. S. Lewis or John Greene?",
+      "category": 3,
+      "goldAnswer": "C. S.Lewis",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What books has Tim read?",
+      "category": 1,
+      "goldAnswer": "Harry Potter, Game of Thrones, the Name of the Wind, The Alchemist, The Hobbit, A Dance with Dragons, and the Wheel of Time.",
+      "tokenF1": 0.03095975232198142,
+      "recallHitRate": 0.14285714285714285
+    },
+    {
+      "question": "Based on Tim's collections, what is a shop that he would enjoy visiting in New York city?",
+      "category": 3,
+      "goldAnswer": "House of MinaLima",
+      "tokenF1": 0.002098635886673662,
+      "recallHitRate": 0
+    },
+    {
+      "question": "In which month's game did John achieve a career-high score in points?",
+      "category": 2,
+      "goldAnswer": "June 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which geographical locations has Tim been to?",
+      "category": 1,
+      "goldAnswer": "California, London, the Smoky Mountains",
+      "tokenF1": 0.0028735632183908046,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "Which outdoor gear company likely signed up John for an endorsement deal?",
+      "category": 3,
+      "goldAnswer": "Under Armour",
+      "tokenF1": 0,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "Which endorsement deals has John been offered?",
+      "category": 1,
+      "goldAnswer": "basketball shoes and gear deal with Nike, potential sponsorship with Gatorade, Moxie a popular beverage company, outdoor gear company",
+      "tokenF1": 0.017075773745997867,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "When was John in Seattle for a game?",
+      "category": 2,
+      "goldAnswer": "early August, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What sports does John like besides basketball?",
+      "category": 1,
+      "goldAnswer": "surfing",
+      "tokenF1": 0.0013717421124828531,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What year did John start surfing?",
+      "category": 2,
+      "goldAnswer": "2018",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Tim do to escape reality?",
+      "category": 1,
+      "goldAnswer": "Read fantasy books.",
+      "tokenF1": 0.003003003003003003,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of writing does Tim do?",
+      "category": 1,
+      "goldAnswer": "comments on favorite books in a fantasy literature forum, articles on fantasy novels, studying characters, themes, and making book recommendations, writing a fantasy novel",
+      "tokenF1": 0.03536693191865606,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "Who is Anthony?",
+      "category": 3,
+      "goldAnswer": "likely John's friend, colleague or family",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "After how many weeks did Tim reconnect with the fellow Harry Potter fan from California?",
+      "category": 2,
+      "goldAnswer": "three weeks",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How many games has John mentioned winning?",
+      "category": 1,
+      "goldAnswer": "6",
+      "tokenF1": 0,
+      "recallHitRate": 0.6
+    },
+    {
+      "question": "What authors has Tim read books from?",
+      "category": 1,
+      "goldAnswer": "J.K. Rowling, R.R. Martin, Patrick Rothfuss, Paulo Coelho, and J. R. R. Tolkien.",
+      "tokenF1": 0.007332722273143905,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is a prominent charity organization that John might want to work with and why?",
+      "category": 3,
+      "goldAnswer": "Good Sports, because they work with Nike, Gatorade, and Under Armour and they aim toprovide youth sports opportunities for kids ages 3-18 in high-need communities.",
+      "tokenF1": 0.01925722145804677,
+      "recallHitRate": 0.6666666666666666
+    },
+    {
+      "question": "Which city was John in before traveling to Chicago?",
+      "category": 2,
+      "goldAnswer": "Seattle",
+      "tokenF1": 0.0018099547511312218,
+      "recallHitRate": 0.25
+    },
+    {
+      "question": "Which US cities does John mention visiting to Tim?",
+      "category": 1,
+      "goldAnswer": "Seattle, Chicago, New York",
+      "tokenF1": 0.004392386530014642,
+      "recallHitRate": 0.6666666666666666
+    },
+    {
+      "question": "When did John meet with his teammates after returning from Chicago?",
+      "category": 2,
+      "goldAnswer": "August 15, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When is Tim attending a book conference?",
+      "category": 2,
+      "goldAnswer": "September 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where was John between August 11 and August 15 2023?",
+      "category": 2,
+      "goldAnswer": "Chicago",
+      "tokenF1": 0,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "What similar sports collectible do Tim and John own?",
+      "category": 1,
+      "goldAnswer": "signed basketball",
+      "tokenF1": 0.0013504388926401081,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which TV series does Tim mention watching?",
+      "category": 1,
+      "goldAnswer": "That, Wheel of Time",
+      "tokenF1": 0.004210526315789474,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "Which popular time management technique does Tim use to prepare for exams?",
+      "category": 3,
+      "goldAnswer": "Pomodoro technique",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which popular music composer's tunes does Tim enjoy playing on the piano?",
+      "category": 3,
+      "goldAnswer": "John Williams",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What schools did John play basketball in and how many years was he with his team during high school?",
+      "category": 1,
+      "goldAnswer": "Middle school, high school, and college and he was with his high school team for 4 years.",
+      "tokenF1": 0.018122977346278317,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which cities has John been to?",
+      "category": 1,
+      "goldAnswer": "Seattle, Chicago, New York, and Paris.",
+      "tokenF1": 0.0091324200913242,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What month did Tim plan on going to Universal Studios?",
+      "category": 2,
+      "goldAnswer": "September, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which US states might Tim be in during September 2023 based on his plans of visiting Universal Studios?",
+      "category": 3,
+      "goldAnswer": "California or Florida",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When does John plan on traveling with his team on a team trip?",
+      "category": 2,
+      "goldAnswer": "October, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What could John do after his basketball career?",
+      "category": 3,
+      "goldAnswer": "become a basketball coach since he likes giving back and leadership",
+      "tokenF1": 0.012285012285012284,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What outdoor activities does John enjoy?",
+      "category": 1,
+      "goldAnswer": "Hiking, surfing",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Who is Tim and John's favorite basketball player?",
+      "category": 1,
+      "goldAnswer": "LeBron James",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which week did Tim visit the UK for the Harry Potter Conference?",
+      "category": 2,
+      "goldAnswer": "The week before October 13th, 2023.",
+      "tokenF1": 0.0015854141894569955,
+      "recallHitRate": 1
+    },
+    {
+      "question": "which country has Tim visited most frequently in his travels?",
+      "category": 1,
+      "goldAnswer": "UK",
+      "tokenF1": 0,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "What year did Tim go to the Smoky Mountains?",
+      "category": 2,
+      "goldAnswer": "2022",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Has Tim been to North Carolina and/or Tennesee states in the US?",
+      "category": 2,
+      "goldAnswer": "Yes",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of fiction stories does Tim write?",
+      "category": 1,
+      "goldAnswer": "Fantasy stories with plot twists",
+      "tokenF1": 0.005725190839694656,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What has John cooked?",
+      "category": 1,
+      "goldAnswer": "Soup, a slow cooker meal, and honey garlic chicken with roasted veg.",
+      "tokenF1": 0.025157232704402514,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does John like about Lebron James?",
+      "category": 1,
+      "goldAnswer": "His heart, determination, skills, and leadership.",
+      "tokenF1": 0.009836065573770493,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did John and his wife go on a European vacation?",
+      "category": 2,
+      "goldAnswer": "November, 2023.",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which country was Tim visiting in the second week of November?",
+      "category": 2,
+      "goldAnswer": "UK",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Where was Tim in the week before 16 November 2023?",
+      "category": 2,
+      "goldAnswer": "UK",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did John get married at a greenhouse?",
+      "category": 2,
+      "goldAnswer": "last week of September 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did John get an ankle injury in 2023?",
+      "category": 1,
+      "goldAnswer": "around November 16, 2023",
+      "tokenF1": 0.002805049088359046,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How many times has John injured his ankle?",
+      "category": 1,
+      "goldAnswer": "two times",
+      "tokenF1": 0.0019550342130987292,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "Which book was John reading during his recovery from an ankle injury?",
+      "category": 1,
+      "goldAnswer": "The Alchemist",
+      "tokenF1": 0.001417434443656981,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What kind of yoga for building core strength might John benefit from?",
+      "category": 3,
+      "goldAnswer": "Hatha Yoga",
+      "tokenF1": 0.0014673514306676445,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does John do to supplement his basketball training?",
+      "category": 1,
+      "goldAnswer": "Yoga, strength training",
+      "tokenF1": 0.004282655246252676,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What other exercises can help John with his basketball performance?",
+      "category": 3,
+      "goldAnswer": "Sprinting, long-distance running, and boxing.",
+      "tokenF1": 0.0013850415512465372,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did John take a trip to the Rocky Mountains?",
+      "category": 2,
+      "goldAnswer": "2022",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did John start playing professionally?",
+      "category": 2,
+      "goldAnswer": "May, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "When did Tim start playing the violin?",
+      "category": 2,
+      "goldAnswer": "August 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What instruments does Tim play?",
+      "category": 1,
+      "goldAnswer": "piano, violin",
+      "tokenF1": 0.0027662517289073307,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did John attend the Harry Potter trivia?",
+      "category": 2,
+      "goldAnswer": "August 2023.",
+      "tokenF1": 0.0022522522522522522,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which career-high performances did John achieve in 2023?",
+      "category": 1,
+      "goldAnswer": "highest point score, highest assist",
+      "tokenF1": 0.0015105740181268882,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "When did John achieve a career-high assist performance?",
+      "category": 2,
+      "goldAnswer": "December 11, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What books has John read?",
+      "category": 1,
+      "goldAnswer": "inpsiring book on dreaming big, The Alchemist, fantasy series, non-fiction books on personal development, Dune",
+      "tokenF1": 0.01862630966239814,
+      "recallHitRate": 0.6666666666666666
+    },
+    {
+      "question": "What does John do to share his knowledge?",
+      "category": 1,
+      "goldAnswer": "gives seminars, mentors younger players.",
+      "tokenF1": 0.0023640661938534274,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "When did John organize a basketball camp for kids?",
+      "category": 2,
+      "goldAnswer": "summer 2023",
+      "tokenF1": 0.0023474178403755865,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which month was John in Italy?",
+      "category": 2,
+      "goldAnswer": "December, 2023",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What fantasy movies does Tim like?",
+      "category": 1,
+      "goldAnswer": "Lord of the Rings, Harry Potter, and Star Wars.",
+      "tokenF1": 0.007473841554559043,
+      "recallHitRate": 0.2
+    },
+    {
+      "question": "What is a Star Wars book that Tim might enjoy?",
+      "category": 3,
+      "goldAnswer": "Star Wars: Jedi Apprentice by Judy Blundell and David Farland. It is a highly rated and immersive series about his favorite movies.",
+      "tokenF1": 0.015759312320916905,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What would be a good hobby related to his travel dreams for Tim to pick up?",
+      "category": 3,
+      "goldAnswer": "Writing a travel blog.",
+      "tokenF1": 0.002358490566037736,
+      "recallHitRate": 0.25
+    },
+    {
+      "question": "What day did Tim get into his study abroad program?",
+      "category": 2,
+      "goldAnswer": "Januarty 5, 2024",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When will Tim leave for Ireland?",
+      "category": 2,
+      "goldAnswer": "February, 2024",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which Star Wars-related locations would Tim enjoy during his visit to Ireland?",
+      "category": 3,
+      "goldAnswer": "Skellig Michael, Malin Head, Loop Head, Ceann Sibéal, and Brow Head because they are Star Wars filming locations.",
+      "tokenF1": 0.008438818565400843,
+      "recallHitRate": 0.6666666666666666
+    },
+    {
+      "question": "Which team did John sign with on 21 May, 2023?",
+      "category": 4,
+      "goldAnswer": "The Minnesota Wolves",
+      "tokenF1": 0.0029673590504451035,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is John's position on the team he signed with?",
+      "category": 4,
+      "goldAnswer": "shooting guard",
+      "tokenF1": 0.005134788189987163,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What challenge did John encounter during pre-season training?",
+      "category": 4,
+      "goldAnswer": "fitting into the new team's style of play",
+      "tokenF1": 0.011519078473722102,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What aspects of the Harry Potter universe will be discussed in John's fan project collaborations?",
+      "category": 4,
+      "goldAnswer": "characters, spells, magical creatures",
+      "tokenF1": 0.007125890736342043,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What forum did Tim join recently?",
+      "category": 4,
+      "goldAnswer": "fantasy literature forum",
+      "tokenF1": 0.0076045627376425855,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of picture did Tim share as part of their Harry Potter book collection?",
+      "category": 4,
+      "goldAnswer": "MinaLima's creation from the Harry Potter films",
+      "tokenF1": 0.0033305578684429647,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What was the highest number of points John scored in a game recently?",
+      "category": 4,
+      "goldAnswer": "40 points",
+      "tokenF1": 0.005970149253731344,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did John celebrate at a restaurant with teammates?",
+      "category": 4,
+      "goldAnswer": "a tough win",
+      "tokenF1": 0.004624277456647399,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of deals did John sign with Nike and Gatorade?",
+      "category": 4,
+      "goldAnswer": "basketball shoe and gear deal with Nike, potential sponsorship deal with Gatorade",
+      "tokenF1": 0.015429122468659595,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which city is John excited to have a game at?",
+      "category": 4,
+      "goldAnswer": "Seattle",
+      "tokenF1": 0.0011695906432748538,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How long has John been surfing?",
+      "category": 4,
+      "goldAnswer": "five years",
+      "tokenF1": 0.005018820577164366,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does John feel while surfing?",
+      "category": 4,
+      "goldAnswer": "super exciting and free-feeling",
+      "tokenF1": 0.006486486486486487,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of articles has Tim been writing about for the online magazine?",
+      "category": 4,
+      "goldAnswer": "different fantasy novels, characters, themes, and book recommendations",
+      "tokenF1": 0.012006861063464838,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which two fantasy novels does Tim particularly enjoy writing about?",
+      "category": 4,
+      "goldAnswer": "Harry Potter and Game of Thrones",
+      "tokenF1": 0.007147962830593281,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Anthony and John end up playing during the charity event?",
+      "category": 4,
+      "goldAnswer": "an intense Harry Potter trivia contest",
+      "tokenF1": 0.005305039787798409,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did John share with the person he skyped about?",
+      "category": 4,
+      "goldAnswer": "Characters from Harry Potter",
+      "tokenF1": 0.007434944237918215,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did John describe the team bond?",
+      "category": 4,
+      "goldAnswer": "Awesome",
+      "tokenF1": 0.002074688796680498,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did John get introduced to basketball?",
+      "category": 4,
+      "goldAnswer": "Dad signed him up for a local league",
+      "tokenF1": 0.007604562737642585,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is John's number one goal in his basketball career?",
+      "category": 4,
+      "goldAnswer": "Winning a championship",
+      "tokenF1": 0.003508771929824561,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What organization is John teaming up with for his charity work?",
+      "category": 4,
+      "goldAnswer": "A local organization helping disadvantaged kids with sports and school",
+      "tokenF1": 0.011577424023154847,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did John meet back up with his teammates after his trip in August 2023?",
+      "category": 4,
+      "goldAnswer": "Aug 15th",
+      "tokenF1": 0.0008054772452678212,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did John's teammates give him when they met on Aug 15th?",
+      "category": 4,
+      "goldAnswer": "a basketball with autographs on it",
+      "tokenF1": 0.005361930294906166,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why did John's teammates sign the basketball they gave him?",
+      "category": 4,
+      "goldAnswer": "to show their friendship and appreciation",
+      "tokenF1": 0.005431830526887561,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is the main intention behind Tim wanting to attend the book conference?",
+      "category": 4,
+      "goldAnswer": "to learn more about literature and create a stronger bond to it",
+      "tokenF1": 0.05466970387243736,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What new activity has Tim started learning in August 2023?",
+      "category": 4,
+      "goldAnswer": "play the piano",
+      "tokenF1": 0.0045906656465187455,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which movie's theme is Tim's favorite to play on the piano?",
+      "category": 4,
+      "goldAnswer": "\"Harry Potter and the Philosopher's Stone\"",
+      "tokenF1": 0.003194888178913738,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What special memory does \"Harry Potter and the Philosopher's Stone\" bring to Tim?",
+      "category": 4,
+      "goldAnswer": "Watching it with his family",
+      "tokenF1": 0.006289308176100629,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which movie does Tim mention they enjoy watching during Thanksgiving?",
+      "category": 4,
+      "goldAnswer": "\"Home Alone\"",
+      "tokenF1": 0.0023405500292568754,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What tradition does Tim mention they love during Thanksgiving?",
+      "category": 4,
+      "goldAnswer": "Prepping the feast and talking about what they're thankful for",
+      "tokenF1": 0.023014959723820484,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How long did John and his high school basketball teammates play together?",
+      "category": 4,
+      "goldAnswer": "Four years",
+      "tokenF1": 0.0018832391713747647,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How was John's experience in New York City?",
+      "category": 4,
+      "goldAnswer": "Amazing",
+      "tokenF1": 0.0014662756598240471,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did John say about NYC, enticing Tim to visit?",
+      "category": 4,
+      "goldAnswer": "It's got so much to check out - the culture, food - you won't regret it.",
+      "tokenF1": 0.029357798165137616,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of soup did John make recently?",
+      "category": 4,
+      "goldAnswer": "tasty soup with sage",
+      "tokenF1": 0.006493506493506494,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What spice did John add to the soup for flavor?",
+      "category": 4,
+      "goldAnswer": "sage",
+      "tokenF1": 0.0035149384885764497,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Tim excited to see at Universal Studios?",
+      "category": 4,
+      "goldAnswer": "The Harry Potter stuff",
+      "tokenF1": 0.005012531328320803,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where are John and his teammates planning to explore on a team trip?",
+      "category": 4,
+      "goldAnswer": "a new city",
+      "tokenF1": 0.003678724708767628,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What city did Tim suggest to John for the team trip next month?",
+      "category": 4,
+      "goldAnswer": "Edinburgh, Scotland",
+      "tokenF1": 0.002344665885111372,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does John want to do after his basketball career?",
+      "category": 4,
+      "goldAnswer": "positively influence and inspire others, potentially start a foundation and engage in charity work",
+      "tokenF1": 0.012587412587412587,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What advice did Tim give John about picking endorsements?",
+      "category": 4,
+      "goldAnswer": "Ensure they align with values and brand, look for companies that share the desire to make a change and help others, make sure the endorsement feels authentic",
+      "tokenF1": 0.037800687285223365,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What book recommendation did Tim give to John for the trip?",
+      "category": 4,
+      "goldAnswer": "A fantasy novel by Patrick Rothfuss",
+      "tokenF1": 0.0033370411568409346,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What type of venue did John and his girlfriend choose for their wedding ceremony?",
+      "category": 4,
+      "goldAnswer": "Greenhouse",
+      "tokenF1": 0.0053475935828877,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What was the setting for John and his wife's first dance?",
+      "category": 4,
+      "goldAnswer": "Cozy restaurant",
+      "tokenF1": 0.003577817531305904,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which basketball team does Tim support?",
+      "category": 4,
+      "goldAnswer": "The Wolves",
+      "tokenF1": 0.0020597322348094747,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What passion does Tim mention connects him with people from all over the world?",
+      "category": 4,
+      "goldAnswer": "passion for fantasy stuff",
+      "tokenF1": 0.0048543689320388345,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does John describe the game season for his team?",
+      "category": 4,
+      "goldAnswer": "intense with tough losses and great wins",
+      "tokenF1": 0.010610079575596818,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does John say his team handles tough opponents?",
+      "category": 4,
+      "goldAnswer": "by backing each other up and not quitting",
+      "tokenF1": 0.011059907834101382,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What motivates John's team to get better, according to John?",
+      "category": 4,
+      "goldAnswer": "facing tough opponents",
+      "tokenF1": 0.0025673940949935813,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did John's team win at the end of the season?",
+      "category": 4,
+      "goldAnswer": "a trophy",
+      "tokenF1": 0.0013586956521739128,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Where did Tim capture the photography of the sunset over the mountain range?",
+      "category": 4,
+      "goldAnswer": "Smoky Mountains",
+      "tokenF1": 0.0077972709551656924,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does John feel about being seen as a mentor by some of the younger players?",
+      "category": 4,
+      "goldAnswer": "It feels great",
+      "tokenF1": 0.006376195536663124,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does John find rewarding about mentoring the younger players?",
+      "category": 4,
+      "goldAnswer": "Seeing their growth, improvement, and confidence",
+      "tokenF1": 0.00881057268722467,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What has John been able to help the younger players achieve?",
+      "category": 4,
+      "goldAnswer": "reach their goals",
+      "tokenF1": 0.0029325513196480934,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What genre is the novel that Tim is writing?",
+      "category": 4,
+      "goldAnswer": "Fantasy",
+      "tokenF1": 0.001806684733514002,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Who is one of Tim's sources of inspiration for writing?",
+      "category": 4,
+      "goldAnswer": "J.K. Rowling",
+      "tokenF1": 0.002768166089965398,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What J.K. Rowling quote does Tim resonate with?",
+      "category": 4,
+      "goldAnswer": "\"Turn on the light - happiness hides in the darkest of times.\"",
+      "tokenF1": 0.05491990846681922,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does John write on the whiteboard to help him stay motivated?",
+      "category": 4,
+      "goldAnswer": "motivational quotes and strategies",
+      "tokenF1": 0.006230529595015576,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What hobby is a therapy for John when away from the court?",
+      "category": 4,
+      "goldAnswer": "Cooking",
+      "tokenF1": 0.0015822784810126582,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of meal does John often cook using a slow cooker?",
+      "category": 4,
+      "goldAnswer": "honey garlic chicken with roasted veg",
+      "tokenF1": 0.0035650623885918,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How will John share the honey garlic chicken recipe with the other person?",
+      "category": 4,
+      "goldAnswer": "write it down and mail it",
+      "tokenF1": 0.006369426751592357,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What was Tim's huge writing issue last week,as mentioned on November 6, 2023?",
+      "category": 4,
+      "goldAnswer": "He got stuck on a plot twist",
+      "tokenF1": 0.0063025210084033615,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Tim have that serves as a reminder of hard work and is his prized possession?",
+      "category": 4,
+      "goldAnswer": "a basketball signed by his favorite player",
+      "tokenF1": 0.00975609756097561,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why do Tim and John find LeBron inspiring?",
+      "category": 4,
+      "goldAnswer": "LeBron's determination and the epic block in Game 7 of the '16 Finals",
+      "tokenF1": 0.012074643249176729,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "How did John describe the views during their road trip out on the European coastline?",
+      "category": 4,
+      "goldAnswer": "Spectacular",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is one of Tim's favorite fantasy TV shows, as mentioned on November 11, 2023?",
+      "category": 4,
+      "goldAnswer": "\"That\"",
+      "tokenF1": 0.0014619883040935674,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Tim stay motivated during difficult study sessions?",
+      "category": 4,
+      "goldAnswer": "Visualizing goals and success",
+      "tokenF1": 0.004788507581803671,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Tim say about his injury on 16 November, 2023?",
+      "category": 4,
+      "goldAnswer": "The doctor said it's not too serious",
+      "tokenF1": 0.009153318077803204,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What was the setback Tim faced in his writing project on 21 November, 2023?",
+      "category": 4,
+      "goldAnswer": "Story based on experiences in the UK didn't go as planned",
+      "tokenF1": 0.018264840182648404,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did John overcome his ankle injury from last season?",
+      "category": 4,
+      "goldAnswer": "stayed focused on recovery and worked hard to strengthen his body",
+      "tokenF1": 0.01691729323308271,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What motivated Tim to keep pushing himself to get better in writing and reading?",
+      "category": 4,
+      "goldAnswer": "Love for writing and reading",
+      "tokenF1": 0.006747638326585696,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did John overcome a mistake he made during a big game in basketball?",
+      "category": 4,
+      "goldAnswer": "Worked hard to get better and focused on growth",
+      "tokenF1": 0.008700380641653072,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What book did John recently finish rereading that left him feeling inspired and hopeful about following dreams?",
+      "category": 4,
+      "goldAnswer": "The Alchemist",
+      "tokenF1": 0.002127659574468085,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did \"The Alchemist\" impact John's perspective on following dreams?",
+      "category": 4,
+      "goldAnswer": "made him think again about following dreams and searching for personal legends",
+      "tokenF1": 0.02252252252252252,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is John trying out to improve his strength and flexibility after recovery from ankle injury?",
+      "category": 4,
+      "goldAnswer": "yoga",
+      "tokenF1": 0.0013351134846461949,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How long does John usually hold the yoga pose he shared with Tim?",
+      "category": 4,
+      "goldAnswer": "30-60 seconds",
+      "tokenF1": 0.0019569471624266144,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where was the forest picture shared by John on December 1,2023 taken?",
+      "category": 4,
+      "goldAnswer": "near his hometown",
+      "tokenF1": 0.003454231433506045,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Tim recently start learning in addition to being part of a travel club and working on studies?",
+      "category": 4,
+      "goldAnswer": "an instrument",
+      "tokenF1": 0.002150537634408602,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What instrument is Tim learning to play in December 2023?",
+      "category": 4,
+      "goldAnswer": "violin",
+      "tokenF1": 0.0016694490818030048,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How long has Tim been playing the piano for, as of December 2023?",
+      "category": 4,
+      "goldAnswer": "about four months",
+      "tokenF1": 0.004043126684636119,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What book did Tim just finish reading on 8th December, 2023?",
+      "category": 4,
+      "goldAnswer": "\"A Dance with Dragons\"",
+      "tokenF1": 0.0055248618784530384,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which book did Tim recommend to John as a good story on 8th December, 2023?",
+      "category": 4,
+      "goldAnswer": "\"A Dance with Dragons\"",
+      "tokenF1": 0.004672897196261682,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is the topic of discussion between John and Tim on 11 December, 2023?",
+      "category": 4,
+      "goldAnswer": "Academic achievements and sports successes",
+      "tokenF1": 0.004796163069544364,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of game did John have a career-high in assists in?",
+      "category": 4,
+      "goldAnswer": "basketball",
+      "tokenF1": 0.0014749262536873156,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What was John's way of dealing with doubts and stress when he was younger?",
+      "category": 4,
+      "goldAnswer": "practicing basketball outside for hours",
+      "tokenF1": 0.007802340702210663,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did John feel about the atmosphere during the big game against the rival team?",
+      "category": 4,
+      "goldAnswer": "electric and intense",
+      "tokenF1": 0.003076923076923077,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did John feel after being able to jog without pain?",
+      "category": 4,
+      "goldAnswer": "It was a huge success.",
+      "tokenF1": 0.010050251256281409,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of deal did John get in December?",
+      "category": 4,
+      "goldAnswer": "Deal with a renowned outdoor gear company",
+      "tokenF1": 0.011162790697674419,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where was the photoshoot done for John's gear deal?",
+      "category": 4,
+      "goldAnswer": "In a gorgeous forest",
+      "tokenF1": 0.01596806387225549,
+      "recallHitRate": 1
+    },
+    {
+      "question": "In which area has John's team seen the most growth during training?",
+      "category": 4,
+      "goldAnswer": "Communication and bonding",
+      "tokenF1": 0.0030511060259344014,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of seminars is John conducting?",
+      "category": 4,
+      "goldAnswer": "Sports and marketing seminars",
+      "tokenF1": 0.02553191489361702,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What activity did Tim do after reading the stories about the Himalayan trek?",
+      "category": 4,
+      "goldAnswer": "visited a travel agency",
+      "tokenF1": 0.003693444136657433,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is one cause that John supports with his influence and resources?",
+      "category": 4,
+      "goldAnswer": "youth sports and fair chances in sports",
+      "tokenF1": 0.004073319755600814,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What new fantasy TV series is Tim excited about?",
+      "category": 4,
+      "goldAnswer": "\"The Wheel of Time\"",
+      "tokenF1": 0.0033898305084745766,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which language is Tim learning?",
+      "category": 4,
+      "goldAnswer": "German",
+      "tokenF1": 0.0016090104585679806,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What language does Tim know besides German?",
+      "category": 4,
+      "goldAnswer": "Spanish",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What book did Tim get in Italy that inspired him to cook?",
+      "category": 4,
+      "goldAnswer": "a cooking book",
+      "tokenF1": 0.0042046250875963555,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is John's favorite book series?",
+      "category": 4,
+      "goldAnswer": "Harry Potter",
+      "tokenF1": 0.0031923383878691143,
+      "recallHitRate": 1
+    },
+    {
+      "question": "According to John, who is his favorite character from Lord of the Rings?",
+      "category": 4,
+      "goldAnswer": "Aragorn",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why does John like Aragorn from Lord of the Rings?",
+      "category": 4,
+      "goldAnswer": "brave, selfless, down-to-earth attitude",
+      "tokenF1": 0.008247422680412371,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of painting does John have in his room as a reminder?",
+      "category": 4,
+      "goldAnswer": "a painting of Aragorn",
+      "tokenF1": 0.006920415224913495,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is the painting of Aragorn a reminder for John to be in everything he does?",
+      "category": 4,
+      "goldAnswer": "be a leader",
+      "tokenF1": 0.0075282308657465494,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What map does Tim show to his friend John?",
+      "category": 4,
+      "goldAnswer": "a map of Middle-earth from LOTR",
+      "tokenF1": 0.007648183556405353,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where will Tim be going for a semester abroad?",
+      "category": 4,
+      "goldAnswer": "Ireland",
+      "tokenF1": 0.0032573289902280136,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which city in Ireland will Tim be staying in during his semester abroad?",
+      "category": 4,
+      "goldAnswer": "Galway",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What charity event did John organize recently in 2024?",
+      "category": 4,
+      "goldAnswer": "benefit basketball game",
+      "tokenF1": 0.0035523978685612786,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What achievement did John share with Tim in January 2024?",
+      "category": 4,
+      "goldAnswer": "endorsement with a popular beverage company",
+      "tokenF1": 0.006938421509106678,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What was Johns's reaction to sealing the deal with the beverage company?",
+      "category": 4,
+      "goldAnswer": "crazy feeling, sense of accomplishment",
+      "tokenF1": 0.006688963210702341,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which city did John recommend to Tim in January 2024?",
+      "category": 4,
+      "goldAnswer": "Barcelona",
+      "tokenF1": 0.0015552099533437016,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which team did Tim sign with on 21 May, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is Tim's position on the team he signed with?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What challenge did Tim encounter during pre-season training?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What cult did Tim join recently?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What was the highest number of points Tim scored in a game recently?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Tim celebrate at a restaurant with teammates?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of deals did Tim sign with Nike and Gatorade?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Tim feel while surfing?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of articles has John been writing about for the online magazine?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which two mystery novels does Tim particularly enjoy writing about?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Anthony and Tim end up playing during the charity event?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Tim get introduced to basketball?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is Tim's number one goal in his basketball career?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What organization is Tim teaming up with for his charity work?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Tim's teammates give him when they met on Aug 15th?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why did John's teammates sign the football they gave him?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is the main intention behind John wanting to attend the book conference?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What new activity has John started learning in August 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What special memory does \"Fifty Shades of Grey\" bring to Tim?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which movie does John mention they enjoy watching during Thanksgiving?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What tradition does Tim mention they love during Halloween?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How long did Tim and his high school basketball teammates play together?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How was Tim's experience in New York City?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What spice did Tim add to the soup for flavor?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Tim excited to see at Disneyland?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where are John and his teammates planning to avoid on a team trip?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Tim want to do after his basketball career?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of venue did John and his girlfriend choose for their breakup?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What passion does John mention connects him with people from all over the world?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Tim say his team handles tough opponents?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where did Tim capture the painting of the sunset over the mountain range?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Tim find rewarding about mentoring the younger players?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What has Tim been able to help the younger players achieve?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What genre is the novel that John is writing?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Who is one of Tim's sources of inspiration for painting?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does Tim write on the whiteboard to help him stay motivated?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What hobby is a therapy for Tim when away from the court?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of meal does Tim often cook using a slow cooker?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How will Tim share the honey garlic chicken recipe with the other person?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is one of Tim's favorite crime TV shows, as mentioned on November 11, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What was the setback Tim faced in his coding project on 21 November, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Tim overcome his ankle injury from last season?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What motivated John to keep pushing himself to get better in writing and reading?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Tim overcome a mistake he made during a big game in basketball?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Tim trying out to improve his strength and flexibility after recovery from ankle injury?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did John recently start learning in addition to being part of a travel club and working on studies?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What instrument is John learning to play in December 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How long has John been playing the piano for, as of December 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What movie did Tim just finish watching on 8th December, 2023?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of game did Tim have a career-high in assists in?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What was Tim's way of dealing with doubts and stress when he was younger?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where was the photoshoot done for John's fragrance deal?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "In which area has Tim's team seen the most growth during training?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of seminars is Tim conducting?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is one cause that John opposes with his influence and resources?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What new fantasy TV series is John excited about?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which language is John learning?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "According to John, who is his least favorite character from Lord of the Rings?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why does Tim like Aragorn from Lord of the Rings?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of painting does Tim have in his room as a reminder?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is the sculpture of Aragorn a reminder for John to be in everything he does?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which city in Ireland will John be staying in during his semester abroad?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What charity event did Tim organize recently in 2024?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What was Tims's reaction to sealing the deal with the beverage company?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    }
+  ],
+  "aggregated": {
+    "overallF1": 0.0045269172472267374,
+    "overallRecall": 0.725659189295553,
+    "byCategory": {
+      "1": {
+        "f1": 0.007568372369452609,
+        "recall": 0.3852534562211981,
+        "questionCount": 31
+      },
+      "2": {
+        "f1": 0.0003075015012775406,
+        "recall": 0.7147435897435896,
+        "questionCount": 26
+      },
+      "3": {
+        "f1": 0.004503563147428741,
+        "recall": 0.3630952380952381,
+        "questionCount": 14
+      },
+      "4": {
+        "f1": 0.007381771096061877,
+        "recall": 0.822429906542056,
+        "questionCount": 107
+      },
+      "5": {
+        "f1": 0,
+        "recall": 0.8125,
+        "questionCount": 64
+      }
+    },
+    "totalQuestions": 242
+  }
+}

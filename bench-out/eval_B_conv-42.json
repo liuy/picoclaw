@@ -1,0 +1,1858 @@
+{
+  "mode": "B",
+  "sampleId": "conv-42",
+  "qaResults": [
+    {
+      "question": "Is it likely that Nate has friends besides Joanna?",
+      "category": 3,
+      "goldAnswer": "Yesteammates on hisvideo game team.",
+      "tokenF1": 0.005657708628005658,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of interests do Joanna and Nate share?",
+      "category": 1,
+      "goldAnswer": "Watching movies, making desserts",
+      "tokenF1": 0.003398470688190315,
+      "recallHitRate": 0.14285714285714285
+    },
+    {
+      "question": "When did Joanna first watch \"Eternal Sunshine of the Spotless Mind?",
+      "category": 2,
+      "goldAnswer": "2019",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Nate win his first video game tournament?",
+      "category": 2,
+      "goldAnswer": "the week before 21Janury, 2022",
+      "tokenF1": 0.002185792349726776,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What pets wouldn't cause any discomfort to Joanna?",
+      "category": 3,
+      "goldAnswer": "Hairless cats or pigs,since they don't have fur, which is one of the main causes of Joanna's allergy.",
+      "tokenF1": 0.02173913043478261,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are Joanna's hobbies?",
+      "category": 1,
+      "goldAnswer": "Writing, watchingmovies, exploringnature, hanging withfriends.",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How long has Nate had his first two turtles?",
+      "category": 2,
+      "goldAnswer": "three years",
+      "tokenF1": 0.0014184397163120566,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Joanna finish her first screenplay?",
+      "category": 2,
+      "goldAnswer": "The Friday before 23January, 2022",
+      "tokenF1": 0.0019821605550049554,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Nate get his first two turtles?",
+      "category": 2,
+      "goldAnswer": "2019",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What major achievement did Joanna accomplish in January 2022?",
+      "category": 2,
+      "goldAnswer": "finished her screenplay and printed it",
+      "tokenF1": 0.03076923076923077,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What emotions is Joanna feeling about  the screenplay she submitted?",
+      "category": 1,
+      "goldAnswer": "Relief, excitement,worry, hope,anxiety.",
+      "tokenF1": 0.0016722408026755855,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Joanna allergic to?",
+      "category": 1,
+      "goldAnswer": "Most reptiles,animals with fur,cockroaches, dairy",
+      "tokenF1": 0.012539184952978058,
+      "recallHitRate": 0.6666666666666666
+    },
+    {
+      "question": "What underlying condition might Joanna have based on her allergies?",
+      "category": 3,
+      "goldAnswer": "asthma",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Joanna have an audition for a writing gig?",
+      "category": 2,
+      "goldAnswer": "23 March, 2022.",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What nickname does Nate use for Joanna?",
+      "category": 3,
+      "goldAnswer": "Jo",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Nate get purple hair?",
+      "category": 2,
+      "goldAnswer": "The week before 15April, 2022.",
+      "tokenF1": 0.012195121951219513,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What physical transformation did Nate undergo in April 2022?",
+      "category": 2,
+      "goldAnswer": "dyed his hair purple",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What movie did Joanna watch on 1 May, 2022?",
+      "category": 2,
+      "goldAnswer": "Lord of the Rings",
+      "tokenF1": 0.007211538461538461,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which outdoor spot did Joanna visit in May?",
+      "category": 2,
+      "goldAnswer": "Whispering Falls waterfall",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How many times has Joanna found new hiking trails?",
+      "category": 1,
+      "goldAnswer": "twice",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Nate adopt Max?",
+      "category": 2,
+      "goldAnswer": "May 2022",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Who was the new addition to Nate's family in May 2022?",
+      "category": 2,
+      "goldAnswer": "Max",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Joanna start writing her third screenplay?",
+      "category": 2,
+      "goldAnswer": "May 2022",
+      "tokenF1": 0,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "Which of Joanna's screenplay were rejected from production companies?",
+      "category": 1,
+      "goldAnswer": "first screenplay on drama and romance, third screenplay on loss identity and connection",
+      "tokenF1": 0.021978021978021976,
+      "recallHitRate": 0.6
+    },
+    {
+      "question": "When is Nate hosting a gaming party?",
+      "category": 2,
+      "goldAnswer": "The weekend after 3June, 2022.",
+      "tokenF1": 0.005805515239477504,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Joanna hike with her buddies?",
+      "category": 2,
+      "goldAnswer": "The weekend after 3June, 2022.",
+      "tokenF1": 0.012232415902140673,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Nate win his third tourney?",
+      "category": 2,
+      "goldAnswer": "The week before 3June, 2022",
+      "tokenF1": 0.004504504504504505,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What places has Joanna submitted her work to?",
+      "category": 1,
+      "goldAnswer": "film contest, film festival.",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Nate make vegan icecream and share it with a vegan diet group?",
+      "category": 2,
+      "goldAnswer": "The Friday before 24June, 2022.",
+      "tokenF1": 0.003766478342749529,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When is Joanna going to make Nate's ice cream for her family?",
+      "category": 2,
+      "goldAnswer": "The weekend of 24June, 2022.",
+      "tokenF1": 0.004087193460490463,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of writings does Joanna do?",
+      "category": 1,
+      "goldAnswer": "Screenplays,books, online blog posts, journal",
+      "tokenF1": 0.005988023952095809,
+      "recallHitRate": 0.25
+    },
+    {
+      "question": "When did Nate win his fourth video game tournament?",
+      "category": 2,
+      "goldAnswer": "The Friday before 10July, 2022.",
+      "tokenF1": 0.001292824822236587,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where did Joanna travel to in July 2022?",
+      "category": 2,
+      "goldAnswer": "Woodhaven",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did someone write Joanna a touching letter?",
+      "category": 2,
+      "goldAnswer": "The week before 14August, 2022.",
+      "tokenF1": 0.004784688995215311,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What book recommendations has Joanna given to Nate?",
+      "category": 1,
+      "goldAnswer": "\"Little Women\",'A Court of Thorns andRoses'.",
+      "tokenF1": 0.0025673940949935818,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "When did Nate take time off to chill with his pets?",
+      "category": 2,
+      "goldAnswer": "The weekend of 22August, 2022.",
+      "tokenF1": 0.003007518796992481,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Joanna share her book with her writers group?",
+      "category": 2,
+      "goldAnswer": "The week before 22August, 2022.",
+      "tokenF1": 0.003218020917135961,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Nate win an international tournament?",
+      "category": 2,
+      "goldAnswer": "21 August, 2022",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Joanna make a desert with almond milk?",
+      "category": 2,
+      "goldAnswer": "The Friday before 14September, 2022",
+      "tokenF1": 0.0024067388688327317,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Nate attend a cooking show?",
+      "category": 2,
+      "goldAnswer": "The Monday before 14September, 2022",
+      "tokenF1": 0.006557377049180328,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Joanna's laptop crash?",
+      "category": 2,
+      "goldAnswer": "The week before 14September, 2022",
+      "tokenF1": 0.012658227848101266,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Joanna make a chocolate tart with raspberries?",
+      "category": 2,
+      "goldAnswer": "5 October, 2022",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What movies have both Joanna and Nate seen?",
+      "category": 1,
+      "goldAnswer": "\"Little Women\", \"Lord of the Rings\"",
+      "tokenF1": 0.005347593582887701,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How long did it take for Joanna to finish writing her book?",
+      "category": 2,
+      "goldAnswer": "four months",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Nate win a lot of money in a video game tournament?",
+      "category": 2,
+      "goldAnswer": "September 2022",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Joanna finish up the writing for her book?",
+      "category": 2,
+      "goldAnswer": "The week before 6October, 2022",
+      "tokenF1": 0.002212389380530974,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What board games has Nate played?",
+      "category": 1,
+      "goldAnswer": "Chess, Catan.",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What places has Nate met new people?",
+      "category": 1,
+      "goldAnswer": "A tournament and agaming convention.",
+      "tokenF1": 0.0028129395218002813,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "When did Nate go to a convention and meet new people?",
+      "category": 2,
+      "goldAnswer": "The Friday before 9October, 2022.",
+      "tokenF1": 0.003270645952575634,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How many times has Joanna's scripts been rejected?",
+      "category": 1,
+      "goldAnswer": "Twice",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is something Nate gave to Joanna that brings her a lot of joy?",
+      "category": 1,
+      "goldAnswer": "stuffed toy pup",
+      "tokenF1": 0.0015048908954100827,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Nate get Tilly for Joanna?",
+      "category": 1,
+      "goldAnswer": "25 May, 2022",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How many of Joanna's writing have made it to the big screen?",
+      "category": 1,
+      "goldAnswer": "two",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How many times has Nate taken his turtles on a walk?",
+      "category": 1,
+      "goldAnswer": "Twice.",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When was Joanna's second movie script shown on the big screens?",
+      "category": 2,
+      "goldAnswer": "The Sunday before 25October, 2022.",
+      "tokenF1": 0.0024984384759525295,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is Joanna inspired by?",
+      "category": 1,
+      "goldAnswer": "Personal experiences,her own journey ofself discovery, Nate,nature, validation,stories about findingcourage and takingrisks, people she knows, stuff she sees, imagination",
+      "tokenF1": 0.020920502092050212,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What animal do both Nate and Joanna like?",
+      "category": 1,
+      "goldAnswer": "Turtles.",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Joanna plan to go over to Nate's and share recipes?",
+      "category": 2,
+      "goldAnswer": "5 November, 2022.",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What things has Nate reccomended to Joanna?",
+      "category": 1,
+      "goldAnswer": "A pet,\"The Lord of the Rings\" movies,a dragon book series,coconut flavoring,\"Project Hail Mary\" book,Xenoblade Chronicles, dairy-free margarine, coconut oil",
+      "tokenF1": 0.0107095046854083,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does Joanna do to remember happy memories?",
+      "category": 1,
+      "goldAnswer": "Hangs them on a corkboard, writes themin a notebook.",
+      "tokenF1": 0.009422850412249707,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What Console does Nate own?",
+      "category": 3,
+      "goldAnswer": "A Nintendo Switch; since the game \"Xenoblade 2\" is made for this console.",
+      "tokenF1": 0.01953125,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What mediums does Nate use to play games?",
+      "category": 1,
+      "goldAnswer": "Gamecube, PC,Playstation.",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How many letters has Joanna recieved?",
+      "category": 1,
+      "goldAnswer": "Two",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What video games does Nate play?",
+      "category": 1,
+      "goldAnswer": "Valorant, Counter Strike:Global Offensive,Xenoblade Chronicles, StreetFighter, Cyberpunk 2077",
+      "tokenF1": 0,
+      "recallHitRate": 0.6
+    },
+    {
+      "question": "When did Nate win a big Valorant tourney?",
+      "category": 2,
+      "goldAnswer": "The Saturday before 7November, 2022",
+      "tokenF1": 0.001401541695865452,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which torunament did Nate win in the beginning of November 2022?",
+      "category": 2,
+      "goldAnswer": "Valorant",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What alternative career might Nate consider after gaming?",
+      "category": 3,
+      "goldAnswer": "an animalkeeper at a localzoo and workingwith turtles; as heknows a great dealabout turtles andhow to care for them,and he enjoys it.",
+      "tokenF1": 0.02125398512221041,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What pets does Nate have?",
+      "category": 1,
+      "goldAnswer": "A dog and threeturtles.",
+      "tokenF1": 0.009693053311793215,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How many hikes has Joanna been on?",
+      "category": 3,
+      "goldAnswer": "Four",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How many turtles does Nate have?",
+      "category": 1,
+      "goldAnswer": "Three",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What activities does Nate do with his turtles?",
+      "category": 1,
+      "goldAnswer": "takes them onwalks, holds them,feeds themstrawberries, givesthem baths.",
+      "tokenF1": 0.0033057851239669425,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "What do both Joanna and Nate appreciate the beauty of?",
+      "category": 1,
+      "goldAnswer": "Nature",
+      "tokenF1": 0.001941747572815534,
+      "recallHitRate": 1
+    },
+    {
+      "question": "When did Joanna plan on going to Nate's to watch him play with his turtles?",
+      "category": 2,
+      "goldAnswer": "10 November, 2022",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What state did Joanna visit in summer 2021?",
+      "category": 3,
+      "goldAnswer": "Indiana",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What recommendations has Nate received from Joanna?",
+      "category": 1,
+      "goldAnswer": "\"Eternal Sunshine of the Spotless Mind\" movie, \"A Court of Thorns and Roses\" book, pointers for making living room comfy, starting a cork board for memories, \"Little Women\" movie",
+      "tokenF1": 0.041237113402061855,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are Nate's favorite desserts?",
+      "category": 1,
+      "goldAnswer": "coconut milk icecream, dairy-free chocolate cake with berries, chocolate and mixed-berry icecream, dairy-free chocolate mousse",
+      "tokenF1": 0.021978021978021976,
+      "recallHitRate": 0.25
+    },
+    {
+      "question": "How has Nate tried to disburse his vegan ice-cream recipes?",
+      "category": 1,
+      "goldAnswer": "teaching others, cooking show",
+      "tokenF1": 0.0019860973187686196,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "When did Nate win his second tournament?",
+      "category": 2,
+      "goldAnswer": "The week before 2 May, 2022.",
+      "tokenF1": 0.0036330608537693005,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How many video game tournaments has Nate participated in?",
+      "category": 1,
+      "goldAnswer": "nine",
+      "tokenF1": 0,
+      "recallHitRate": 0.8888888888888888
+    },
+    {
+      "question": "How many screenplays has Joanna written?",
+      "category": 1,
+      "goldAnswer": "three",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How many tournaments has Nate won?",
+      "category": 1,
+      "goldAnswer": "seven",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What recipes has Joanna made?",
+      "category": 1,
+      "goldAnswer": "dairy free vanilla cake with strawberry filling and coconut cream frosting, parfait, strawberry chocolate cake, chocolate coconut cupcakes, chocolate raspberry tart, chocolate cake with raspberries, blueberry cheesecake bars",
+      "tokenF1": 0.02482758620689655,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "What recipes has Nate made?",
+      "category": 1,
+      "goldAnswer": "coconut milk icecream, chocolate and vanilla swirl",
+      "tokenF1": 0.011494252873563218,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are the skills that Nate has helped others learn?",
+      "category": 1,
+      "goldAnswer": "coconut milk ice cream recipe, reset high scores, tips to improve gaming skills",
+      "tokenF1": 0.01612903225806452,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Was the first half of September 2022 a good month career-wise for Nate and Joanna? Answer yes or no.",
+      "category": 3,
+      "goldAnswer": "No; because both of them faced setbacks in their career",
+      "tokenF1": 0.007957559681697613,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What kind of job is Joanna beginning to preform the duties of because of her movie scripts?",
+      "category": 3,
+      "goldAnswer": "filmmaker.",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "When did Nate take his turtles to the beach?",
+      "category": 2,
+      "goldAnswer": "10 November, 2022",
+      "tokenF1": 0.002296211251435132,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What state did Nate visit?",
+      "category": 3,
+      "goldAnswer": "Florida",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is one of Joanna's favorite movies?",
+      "category": 4,
+      "goldAnswer": "\"Eternal Sunshineof the Spotless Mind\"",
+      "tokenF1": 0.0016934801016088063,
+      "recallHitRate": 0.3333333333333333
+    },
+    {
+      "question": "What color did Nate choose for his hair?",
+      "category": 4,
+      "goldAnswer": "purple",
+      "tokenF1": 0,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What is Nate's favorite movie trilogy?",
+      "category": 4,
+      "goldAnswer": "Lord of the Rings",
+      "tokenF1": 0.006230529595015577,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Nate's favorite book series about?",
+      "category": 4,
+      "goldAnswer": "dragons",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of lighting does Nate's gaming room have?",
+      "category": 4,
+      "goldAnswer": "red and purple lighting",
+      "tokenF1": 0.0015661707126076742,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What game was the second tournament that Nate won based on?",
+      "category": 4,
+      "goldAnswer": "Street Fighter",
+      "tokenF1": 0.0033898305084745766,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Joanna's third screenplay about?",
+      "category": 4,
+      "goldAnswer": "loss, identity, and connection",
+      "tokenF1": 0.0036832412523020264,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What is Nate's favorite video game?",
+      "category": 4,
+      "goldAnswer": "Xenoblade Chronicles",
+      "tokenF1": 0,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What type of movies does Nate enjoy watching the most?",
+      "category": 4,
+      "goldAnswer": "action and sci-fi",
+      "tokenF1": 0.006472491909385114,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Joanna just finish last Friday on 23 January, 2022?",
+      "category": 4,
+      "goldAnswer": "screenplay",
+      "tokenF1": 0.0015128593040847202,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What genre is Joanna's first screenplay?",
+      "category": 4,
+      "goldAnswer": "drama and romance",
+      "tokenF1": 0.005018820577164367,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are Joanna's plans for her finished screenplay in January 2022?",
+      "category": 4,
+      "goldAnswer": "submit it to film festivals and get producers and directors to check it out",
+      "tokenF1": 0.02574002574002574,
+      "recallHitRate": 0
+    },
+    {
+      "question": "For how long has Nate had his turtles?",
+      "category": 4,
+      "goldAnswer": "3 years",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Nate think of the coconut milk ice cream he made?",
+      "category": 4,
+      "goldAnswer": "Super good, rich and creamy",
+      "tokenF1": 0.0064557779212395085,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which dairy-free dessert flavors does Nate enjoy?",
+      "category": 4,
+      "goldAnswer": "chocolate and mixed berry",
+      "tokenF1": 0.006717044500419815,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Joanna recently watch and recommend to Nate on February 7, 2022?",
+      "category": 4,
+      "goldAnswer": "\"Little Women\"",
+      "tokenF1": 0.0033955857385398977,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is \"Little Women\" about according to Joanna?",
+      "category": 4,
+      "goldAnswer": "Sisterhood, love, and reaching for your dreams",
+      "tokenF1": 0.018489984591679505,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What flavor of ice cream did Nate make for his friend on 25 February, 2022?",
+      "category": 4,
+      "goldAnswer": "chocolate and vanilla swirl",
+      "tokenF1": 0.0036014405762304926,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What inspired Joanna's new screenplay on 25 February, 2022?",
+      "category": 4,
+      "goldAnswer": "personal experiences and her own journey of self-discovery",
+      "tokenF1": 0.011764705882352941,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why does Nate like turtles as pets?",
+      "category": 4,
+      "goldAnswer": "Their slow pace and calming nature",
+      "tokenF1": 0.005852231163130943,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How does Nate describe the process of taking care of turtles?",
+      "category": 4,
+      "goldAnswer": "Not tough; keep their area clean, feed them properly, give them enough light.",
+      "tokenF1": 0.014329580348004096,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What was Joanna's audition for?",
+      "category": 4,
+      "goldAnswer": "writing gig",
+      "tokenF1": 0.014814814814814812,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why did Nate choose the hair color he did?",
+      "category": 4,
+      "goldAnswer": "Bright and bold - like him",
+      "tokenF1": 0.029325513196480937,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What are the main ingredients of the ice cream recipe shared by Nate?",
+      "category": 4,
+      "goldAnswer": "Coconut milk, vanilla extract, sugar, salt",
+      "tokenF1": 0.008333333333333333,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Joanna's project called in the writers group?",
+      "category": 4,
+      "goldAnswer": "\"Finding Home\"",
+      "tokenF1": 0.0029455081001472758,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Nate's favorite genre of movies?",
+      "category": 4,
+      "goldAnswer": "Fantasy and sci-fi",
+      "tokenF1": 0.006993006993006993,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of books does Nate enjoy?",
+      "category": 4,
+      "goldAnswer": "Adventures and magic",
+      "tokenF1": 0.001773049645390071,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What kind of films does Joanna enjoy?",
+      "category": 4,
+      "goldAnswer": "Dramas and emotionally-driven films",
+      "tokenF1": 0.005958291956305859,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which activity helps Nate escape and stimulates his imagination?",
+      "category": 4,
+      "goldAnswer": "watching fantasy and sci-fi movies",
+      "tokenF1": 0.012886597938144331,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What filling did Joanna use in the cake she made recently in May 2022?",
+      "category": 4,
+      "goldAnswer": "strawberry",
+      "tokenF1": 0.0013449899125756557,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of frosting did Joanna use on the cake she made recently in May 2022?",
+      "category": 4,
+      "goldAnswer": "coconut cream",
+      "tokenF1": 0.0024630541871921183,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Nate feel he could do when out in cool places like Whispering Falls?",
+      "category": 4,
+      "goldAnswer": "write a whole movie",
+      "tokenF1": 0.0051813471502590676,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What creative activity does Nate joke about pursuing after being inspired by their hikes with Jo?",
+      "category": 4,
+      "goldAnswer": "Start thinking about a drama and publish a screenplay",
+      "tokenF1": 0.01388888888888889,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Who invited Nate to join her on the trails sometime?",
+      "category": 4,
+      "goldAnswer": "Joanna",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Nate do for Joanna on 25 May, 2022?",
+      "category": 4,
+      "goldAnswer": "get her a stuffed animal",
+      "tokenF1": 0.020408163265306124,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Nate describe the stuffed animal he got for Joanna?",
+      "category": 4,
+      "goldAnswer": "A stuffed animal to remind you of the good vibes",
+      "tokenF1": 0.021352313167259787,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What event is Nate organizing in June 2022?",
+      "category": 4,
+      "goldAnswer": "A gaming party",
+      "tokenF1": 0.031413612565445025,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Who did Nate plan to invite to his gaming party in June 2022?",
+      "category": 4,
+      "goldAnswer": "Tournament friends, old friends, teammates",
+      "tokenF1": 0.002145922746781116,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What special items did Nate get for everyone at his gaming party?",
+      "category": 4,
+      "goldAnswer": "Custom controller decorations",
+      "tokenF1": 0.003742981908920773,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Joanna write yesterday that appeared on the big screen?",
+      "category": 4,
+      "goldAnswer": "screenplay bits",
+      "tokenF1": 0.00221606648199446,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What superhero is Joanna a fan of?",
+      "category": 4,
+      "goldAnswer": "Spider-Man",
+      "tokenF1": 0.004597701149425287,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which superhero toy figure does Nate share a photo of?",
+      "category": 4,
+      "goldAnswer": "Iron Man",
+      "tokenF1": 0.003536693191865606,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is displayed on Joanna's cork board for motivation and creativity?",
+      "category": 4,
+      "goldAnswer": "inspiring quotes, photos, and little keepsakes",
+      "tokenF1": 0.029498525073746312,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does the photo on Joanna's cork board remind her of?",
+      "category": 4,
+      "goldAnswer": "love and encouragement from her family",
+      "tokenF1": 0.011467889908256881,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Nate make and share with his vegan diet group?",
+      "category": 4,
+      "goldAnswer": "vegan ice cream",
+      "tokenF1": 0.004858299595141701,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How many people attended the gaming party hosted by Nate in June 2022?",
+      "category": 4,
+      "goldAnswer": "7",
+      "tokenF1": 0.0019193857965451057,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What recipe Nate offer to share with Joanna?",
+      "category": 4,
+      "goldAnswer": "vegan ice cream recipe",
+      "tokenF1": 0.007292616226071104,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Joanna plan to do with the recipe Nate promised to share?",
+      "category": 4,
+      "goldAnswer": "make it for her family",
+      "tokenF1": 0.006060606060606061,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How many video game tournaments has Nate won by July 10, 2022?",
+      "category": 4,
+      "goldAnswer": "Four",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where did Joanna go for a road trip for research?",
+      "category": 4,
+      "goldAnswer": "Woodhaven",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Joanna discover at the library in Woodhaven?",
+      "category": 4,
+      "goldAnswer": "cool old book collection",
+      "tokenF1": 0.018018018018018014,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What specific themes are explored in Joanna's new book?",
+      "category": 4,
+      "goldAnswer": "loss, redemption, and forgiveness",
+      "tokenF1": 0.005342831700801425,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What inspired Joanna's new script in July 2022?",
+      "category": 4,
+      "goldAnswer": "Woodhaven's interesting past and people",
+      "tokenF1": 0.005899705014749262,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Nate do while Joanna was on her road trip?",
+      "category": 4,
+      "goldAnswer": "Won a video game tournament",
+      "tokenF1": 0.00554016620498615,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Nate do that he loves and can make money from?",
+      "category": 4,
+      "goldAnswer": "Competing in video game tournaments",
+      "tokenF1": 0.016494845360824743,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Joanna feel when someone wrote her a letter after reading her blog post?",
+      "category": 4,
+      "goldAnswer": "Touched",
+      "tokenF1": 0.0019102196752626551,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of impact does Joanna hope to have with her writing?",
+      "category": 4,
+      "goldAnswer": "share her stories and hopefully have an impact",
+      "tokenF1": 0.007926023778071334,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of content did Joanna share that someone wrote her a letter about?",
+      "category": 4,
+      "goldAnswer": "A blog post about a hard moment in her life",
+      "tokenF1": 0.011544011544011542,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What motivates Joanna to keep writing even on tough days?",
+      "category": 4,
+      "goldAnswer": "Knowing that her writing can make a difference",
+      "tokenF1": 0.007692307692307694,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of ice cream does Joanna mention that Nate makes and is delicious?",
+      "category": 4,
+      "goldAnswer": "Coconut milk ice cream",
+      "tokenF1": 0.00837696335078534,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Nate feel about sharing his love for dairy-free desserts with Joanna?",
+      "category": 4,
+      "goldAnswer": "Happy to share",
+      "tokenF1": 0.0027605244996549345,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Joanna share with her writers group in August 2022?",
+      "category": 4,
+      "goldAnswer": "her book",
+      "tokenF1": 0.005208333333333334,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Joanna celebrate after sharing her book with her writers group?",
+      "category": 4,
+      "goldAnswer": "making a delicious treat",
+      "tokenF1": 0.008447729672650476,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Nate celebrate winning the international tournament?",
+      "category": 4,
+      "goldAnswer": "Taking time off to chill with pets",
+      "tokenF1": 0.009779951100244499,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Why is Joanna experimenting with dairy-free options in her dessert recipes?",
+      "category": 4,
+      "goldAnswer": "lactose intolerance",
+      "tokenF1": 0.0019398642095053344,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What substitution does Nate suggest for butter in dairy-free baking?",
+      "category": 4,
+      "goldAnswer": "dairy-free margarine or coconut oil",
+      "tokenF1": 0.016,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of show did Nate host where he taught vegan ice cream recipes?",
+      "category": 4,
+      "goldAnswer": "a cooking show",
+      "tokenF1": 0.010695187165775402,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Nate's favorite dish from the cooking show he hosted?",
+      "category": 4,
+      "goldAnswer": "Coconut milk ice cream",
+      "tokenF1": 0.007655502392344498,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What is one of Nate's favorite dairy-free treats besides coconut milk ice cream?",
+      "category": 4,
+      "goldAnswer": "dairy-free chocolate mousse",
+      "tokenF1": 0.002909090909090909,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What dessert did Joanna share a photo of that has an almond flour crust, chocolate ganache, and fresh raspberries?",
+      "category": 4,
+      "goldAnswer": "chocolate raspberry tart",
+      "tokenF1": 0.00329489291598023,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of cake did Joanna share a photo of that she likes making for birthdays and special days?",
+      "category": 4,
+      "goldAnswer": "chocolate cake with raspberries",
+      "tokenF1": 0.004101161995898838,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What two main ingredients are part of the dessert Joanna shared a photo of with blueberries, coconut milk, and a gluten-free crust?",
+      "category": 4,
+      "goldAnswer": "blueberries and coconut milk",
+      "tokenF1": 0.006309148264984227,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What movie did Nate recently watch and enjoy on October 6, 2022?",
+      "category": 4,
+      "goldAnswer": "Little Women",
+      "tokenF1": 0.001466275659824047,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Joanna make for one of the ladies at her writing club?",
+      "category": 4,
+      "goldAnswer": "a bookmark",
+      "tokenF1": 0.0030418250950570345,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What game did Nate play at the game convention he attended on 9 October, 2022?",
+      "category": 4,
+      "goldAnswer": "Catan",
+      "tokenF1": 0.0020964360587002098,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What movie has Nate recently seen that blew his mind?",
+      "category": 4,
+      "goldAnswer": "\"Inception\"",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What game has Nate been playing nonstop with a futuristic setting and gameplay on October 9, 2022?",
+      "category": 4,
+      "goldAnswer": "Cyberpunk 2077",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Nate share a photo of when mentioning unwinding at home?",
+      "category": 4,
+      "goldAnswer": "a bookcase filled with dvds and movies",
+      "tokenF1": 0.007532956685499058,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Joanna describe the classic movie he watched?",
+      "category": 4,
+      "goldAnswer": "gripping with great actors",
+      "tokenF1": 0.011477761836441893,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Joanna recommend to make a living room comfy like hers?",
+      "category": 4,
+      "goldAnswer": "couch for multiple people, fluffy blanket, lights that can be dimmed",
+      "tokenF1": 0.012499999999999999,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What helps Joanna stay focused and brings her joy?",
+      "category": 4,
+      "goldAnswer": "stuffed animal dog named Tilly",
+      "tokenF1": 0.006968641114982578,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Joanna do while she writes?",
+      "category": 4,
+      "goldAnswer": "have a stuffed animal dog named Tilly with her",
+      "tokenF1": 0.02797202797202797,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why did Joanna name the stuffed animal dog Tilly?",
+      "category": 4,
+      "goldAnswer": "after a dog she had in Michigan",
+      "tokenF1": 0.010881392818280738,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Joanna do after receiving a rejection from a production company?",
+      "category": 4,
+      "goldAnswer": "keep grinding and moving ahead",
+      "tokenF1": 0.016326530612244896,
+      "recallHitRate": 0
+    },
+    {
+      "question": "How does Nate feel about Joanna's ability to bounce back from setbacks?",
+      "category": 4,
+      "goldAnswer": "respect Joanna for being able to bounce back",
+      "tokenF1": 0.011774600504625737,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What encouragement does Nate give to Joanna after her setback?",
+      "category": 4,
+      "goldAnswer": "rejections don't define her, keep grinding and she'll find the perfect opportunity",
+      "tokenF1": 0.008465608465608466,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does Nate rely on for cheer and joy?",
+      "category": 4,
+      "goldAnswer": "his turtles",
+      "tokenF1": 0.003913894324853229,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Joanna use to remember her dog from Michigan?",
+      "category": 4,
+      "goldAnswer": "naming a stuffed animal dog Tilly",
+      "tokenF1": 0.010857763300760043,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Joanna contribute to that was shown on the big screen on the Sunday before October 25, 2022?",
+      "category": 4,
+      "goldAnswer": "movie script",
+      "tokenF1": 0.003484320557491289,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What inspires Joanna to create drawings of her characters?",
+      "category": 4,
+      "goldAnswer": "visuals to help bring the characters alive in her head so she can write better",
+      "tokenF1": 0.04771371769383698,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where does Joanna get her ideas for the characters from?",
+      "category": 4,
+      "goldAnswer": "people she knows, things she saw, her imagination",
+      "tokenF1": 0.007481296758104737,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Joanna feel on October 25, 2022 about seeing her characters come alive on the big screen?",
+      "category": 4,
+      "goldAnswer": "surreal and cool",
+      "tokenF1": 0.0034692107545533394,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of diet do Nate's turtles have?",
+      "category": 4,
+      "goldAnswer": "combination of vegetables, fruits, and insects",
+      "tokenF1": 0.013495276653171389,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What ingredient did Nate use to make the ice cream lactose-free?",
+      "category": 4,
+      "goldAnswer": "coconut milk",
+      "tokenF1": 0.002688172043010753,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Joanna find in old notebooks last week that prompted her to reflect on her progress as a writer?",
+      "category": 4,
+      "goldAnswer": "early writings",
+      "tokenF1": 0.002035623409669211,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What game is Nate currently playing and recommends to others on November 7, 2022?",
+      "category": 4,
+      "goldAnswer": "\"Xenoblade Chronicles\"",
+      "tokenF1": 0.0025252525252525255,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Joanna receive from her brother that brought back childhood memories?",
+      "category": 4,
+      "goldAnswer": "a handwritten letter",
+      "tokenF1": 0.005031446540880504,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is the type of game \"Xenoblade Chronicles\" that Nate is playing?",
+      "category": 4,
+      "goldAnswer": "fantasy RPG",
+      "tokenF1": 0.00684931506849315,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What dish did Nate make on 9 November, 2022?",
+      "category": 4,
+      "goldAnswer": "Homemade coconut ice cream",
+      "tokenF1": 0.004282655246252677,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What project is Joanna working on in her notebook on November 9, 2022?",
+      "category": 4,
+      "goldAnswer": "A suspenseful thriller set in a small Midwestern town",
+      "tokenF1": 0.019950124688279305,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Nate creating for YouTube on 9 November, 2022?",
+      "category": 4,
+      "goldAnswer": "gaming content",
+      "tokenF1": 0.022727272727272724,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What inspired Nate to start making gaming videos?",
+      "category": 4,
+      "goldAnswer": "Love of gaming and connecting with others who enjoy it too",
+      "tokenF1": 0.012106537530266345,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What new content is Nate creating for YouTube?",
+      "category": 4,
+      "goldAnswer": "Gaming videos",
+      "tokenF1": 0.0034188034188034184,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What advice does Joanna give to Nate about making YouTube videos?",
+      "category": 4,
+      "goldAnswer": "Watch other people's videos to understand what the audience likes",
+      "tokenF1": 0.011090573012939002,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Joanna take a picture of near Fort Wayne last summer?",
+      "category": 4,
+      "goldAnswer": "Sunset",
+      "tokenF1": 0.002442002442002442,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What inspired Joanna to take a picture of the sunset in the field near Fort Wayne?",
+      "category": 4,
+      "goldAnswer": "The incredible sunset and surrounding beauty",
+      "tokenF1": 0.010869565217391304,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why did Nate get a third turtle?",
+      "category": 4,
+      "goldAnswer": "He saw another one at a pet store and wanted to get it",
+      "tokenF1": 0.018993352326685663,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Nate want to do when he goes over to Joanna's place?",
+      "category": 4,
+      "goldAnswer": "Watch one of Joanna's movies together or go to the park",
+      "tokenF1": 0.018934911242603547,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Nate take to the beach in Tampa?",
+      "category": 4,
+      "goldAnswer": "turtles",
+      "tokenF1": 0.004464285714285714,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Nate love most about having turtles?",
+      "category": 4,
+      "goldAnswer": "They make him feel calm and don't require much looking after",
+      "tokenF1": 0.013750954927425516,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Nate share a photo of as a part of his experimentation in November 2022?",
+      "category": 4,
+      "goldAnswer": "colorful bowls of coconut milk ice cream",
+      "tokenF1": 0.005240174672489084,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What color did Joanna choose for her hair?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What is Joanna's favorite movie trilogy?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Joanna's favorite book series about?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of lighting does Joanna's gaming room have?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What game was the second tournament that Joanna won based on?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Nate's third screenplay about?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0.5
+    },
+    {
+      "question": "What type of movies does Nate hate watching the most?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What genre is Joanna's first novella?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What are Nate's plans for his finished screenplay in January 2022?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "For how long has Nate had his snakes?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Nate think of the caramel ice cream he made?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What flavor of cake did Nate make for his friend on 25 February, 2022?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What was Nate's audition for?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why did Joanna choose the hair color she did?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What are the main ingredients of the ice cream recipe shared by Joanna?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Nate's project called in the writers group?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Which activity helps Nate escape and numbs his mind?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What filling did Nate use in the cake he made recently in May 2022?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Who did Joanna plan to invite to her gaming party in June 2022?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What special items did Joanna get for everyone at her gaming party?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What supervillain is Joanna a fan of?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "Which superhero toy figure does Joanna share a photo of?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Joanna make and share with her vegan diet group?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How many people attended the gaming party hosted by Joanna in June 2022?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Where did Nate go for a road trip for research?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What did Joanna discover at the museum in Woodhaven?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What specific themes are explored in Nate's new book?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Nate feel when someone wrote him a letter after reading his blog post?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What kind of impact does Joanna hope to have with her painting?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Nate share with his writers group in August 2022?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Nate celebrate after sharing his book with a writers group?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Joanna celebrate winning the international tournament?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What substitution does Nate suggest for sugar in dairy-free baking?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of show did Joanna host where she taught vegan ice cream recipes?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Joanna's favorite dish from the cooking show she hosted?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What dessert did Nate share a photo of that has an almond flour crust, chocolate ganache, and fresh raspberries?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What two main ingredients are part of the dessert Nate shared a photo of with blueberries, coconut milk, and a gluten-free crust?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What movie did Joanna recently watch and enjoy on October 6, 2022?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Nate make for one of the ladies at his writing club?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What game has Joanna been playing nonstop with a futuristic setting and gameplay on October 9, 2022?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "How did Nate describe the classic movie he watched?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Nate recommend to make a living room comfy like his?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What helps Joanna stay distracted and brings her sadness?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Nate do while he writes?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Nate do after receiving a rejection from a production company?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 0
+    },
+    {
+      "question": "What does Joanna rely on for cheer and joy?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Nate use to remember his dog from Michigan?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What inspires Joanna to create music for her characters?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What type of diet do Joanna's turtles have?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Nate find in old notebooks last week that prompted him to reflect on her progress as a writer?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What game is Joanna currently playing and recommends to others on November 7, 2022?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Nate receive from his brother that brought back childhood memories?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is the type of game \"Xenoblade Chronicles\" that Joanna is playing?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What project is Nate working on in his notebook on November 9, 2022?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What is Joanna creating for YouTube on 9 November, 2022?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What inspired Joanna to start making gaming videos?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What new content is Nate creating for television?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Nate take a picture of near Fort Wayne last summer?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "Why did Joanna get a third turtle?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What did Joanna take to the beach in Tampa?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    },
+    {
+      "question": "What does Joanna love most about having turtles?",
+      "category": 5,
+      "goldAnswer": "",
+      "tokenF1": 0,
+      "recallHitRate": 1
+    }
+  ],
+  "aggregated": {
+    "overallF1": 0.005274961653181334,
+    "overallRecall": 0.673968253968254,
+    "byCategory": {
+      "1": {
+        "f1": 0.006255521829857135,
+        "recall": 0.36211926211926215,
+        "questionCount": 37
+      },
+      "2": {
+        "f1": 0.003384901904005473,
+        "recall": 0.7125,
+        "questionCount": 40
+      },
+      "3": {
+        "f1": 0.006921784896972391,
+        "recall": 0.13636363636363635,
+        "questionCount": 11
+      },
+      "4": {
+        "f1": 0.008364864973833493,
+        "recall": 0.7552552552552552,
+        "questionCount": 111
+      },
+      "5": {
+        "f1": 0,
+        "recall": 0.7868852459016393,
+        "questionCount": 61
+      }
+    },
+    "totalQuestions": 260
+  }
+}
